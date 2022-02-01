@@ -1,0 +1,448 @@
+***********************************REQUEST START ***************************************
+{  
+   "Authentication":{  
+      "Password":"EMT@uytrFYTREt",
+      "UserName":"EMTB2B",
+      "IpAddress":"10.34.11.9",
+      "PortalID":26
+   },
+   "BookSegment":[  
+      {  
+         "BondType":"OutBound",
+         "Bonds":[  
+            {
+							"BoundType": "OutBound",
+							"IsBaggageFare": false,
+							"IsSSR": false,
+							"JourneyTime": "13h 55m",
+							"Legs": [
+								{
+									"AircraftCode": "jBgLYxnB0BKAMYYoXPAAAA==",
+									"AirlineName": "TK",
+									"ArrivalDate": "Thu-03Oct2019",
+									"ArrivalTerminal": "",
+									"ArrivalTime": "10:30",
+									"AvailableSeat": "5",
+									"BaggageUnit": "KG",
+									"BaggageWeight": "10",
+									"BoundType": "OutBound",
+									"Cabin": "Economy",
+									"Capacity": 0,
+									"CarrierCode": "TK",
+									"DepartureDate": "Thu-03Oct2019",
+									"DepartureTerminal": "3",
+									"DepartureTime": "06:25",
+									"Destination": "IST",
+									"Duration": "06h 35m",
+									"FareClassOfService": "T",
+									"FlightDetailRefKey": "jBgLYxnB0BKANYYoXPAAAA==",
+									"FlightName": "Turkish Airlines",
+									"FlightNumber": "717",
+									"Group": "0",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"NumberOfStops": "0",
+									"Origin": "DEL",
+									"ProviderCode": "1G",
+									"Remarks": "",
+									"Sold": 0
+								},
+								{
+									"AircraftCode": "jBgLYxnB0BKAOYYoXPAAAA==",
+									"AirlineName": "TK",
+									"ArrivalDate": "Thu-03Oct2019",
+									"ArrivalTerminal": "1",
+									"ArrivalTime": "16:50",
+									"AvailableSeat": "5",
+									"BaggageUnit": "KG",
+									"BaggageWeight": "10",
+									"BoundType": "OutBound",
+									"Cabin": "Economy",
+									"Capacity": 0,
+									"CarrierCode": "TK",
+									"DepartureDate": "Thu-03Oct2019",
+									"DepartureTerminal": "",
+									"DepartureTime": "14:00",
+									"Destination": "CDG",
+									"Duration": "03h 50m",
+									"FareClassOfService": "T",
+									"FlightDetailRefKey": "jBgLYxnB0BKAPYYoXPAAAA==",
+									"FlightName": "Turkish Airlines",
+									"FlightNumber": "1833",
+									"Group": "0",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"NumberOfStops": "0",
+									"Origin": "IST",
+									"ProviderCode": "1G",
+									"Remarks": "",
+									"Sold": 0
+								}
+							]
+						},
+						{
+							"BoundType": "InBound",
+							"IsBaggageFare": false,
+							"IsSSR": false,
+							"JourneyTime": "11h 20m",
+							"Legs": [
+								{
+									"AircraftCode": "jBgLYxnB0BKAQYYoXPAAAA==",
+									"AirlineName": "TK",
+									"ArrivalDate": "Fri-04Oct2019",
+									"ArrivalTerminal": "",
+									"ArrivalTime": "18:40",
+									"AvailableSeat": "9",
+									"BaggageUnit": "KG",
+									"BaggageWeight": "10",
+									"BoundType": "InBound",
+									"Cabin": "Economy",
+									"Capacity": 0,
+									"CarrierCode": "TK",
+									"DepartureDate": "Fri-04Oct2019",
+									"DepartureTerminal": "1",
+									"DepartureTime": "14:15",
+									"Destination": "IST",
+									"Duration": "03h 25m",
+									"FareClassOfService": "L",
+									"FlightDetailRefKey": "jBgLYxnB0BKARYYoXPAAAA==",
+									"FlightName": "Turkish Airlines",
+									"FlightNumber": "1824",
+									"Group": "1",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"NumberOfStops": "0",
+									"Origin": "CDG",
+									"ProviderCode": "1G",
+									"Remarks": "",
+									"Sold": 0
+								},
+								{
+									"AircraftCode": "jBgLYxnB0BKASYYoXPAAAA==",
+									"AirlineName": "TK",
+									"ArrivalDate": "Sat-05Oct2019",
+									"ArrivalTerminal": "3",
+									"ArrivalTime": "05:05",
+									"AvailableSeat": "9",
+									"BaggageUnit": "KG",
+									"BaggageWeight": "10",
+									"BoundType": "InBound",
+									"Cabin": "Economy",
+									"Capacity": 0,
+									"CarrierCode": "TK",
+									"DepartureDate": "Fri-04Oct2019",
+									"DepartureTerminal": "",
+									"DepartureTime": "20:40",
+									"Destination": "DEL",
+									"Duration": "05h 55m",
+									"FareClassOfService": "L",
+									"FlightDetailRefKey": "jBgLYxnB0BKATYYoXPAAAA==",
+									"FlightName": "Turkish Airlines",
+									"FlightNumber": "4652",
+									"Group": "1",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"NumberOfStops": "0",
+									"OperatedBy": "INDIGO",
+									"Origin": "IST",
+									"ProviderCode": "1G",
+									"Remarks": "",
+									"Sold": 0
+								}
+							]
+						}
+         ],
+         "Deeplink":"",
+         "EngineID":7,
+         "Fare":{  
+            "BasicFare":57535.0,
+            "ExchangeRate":0.0,
+            "PaxFares":[  
+               {  
+                  "BaggageUnit":"KG",
+                  "BaggageWeight":"30",
+                  "BaseTransactionAmount":0,
+                  "BasicFare":31100.0,
+                  "CancelPenalty":36940.0,
+                  "ChangePenalty":18460.0,
+                  "Fare":[  
+                     {  
+                        "Amount":2373.0,
+                        "ChargeCode":"K3"
+                     },
+                     {  
+                        "Amount":590.0,
+                        "ChargeCode":"PSF"
+                     },
+                     {  
+                        "Amount":796.0,
+                        "ChargeCode":"TR"
+                     },
+                     {  
+                        "Amount":1587.0,
+                        "ChargeCode":"FR"
+                     },
+                     {  
+                        "Amount":359.0,
+                        "ChargeCode":"IZ"
+                     },
+                     {  
+                        "Amount":2288.0,
+                        "ChargeCode":"QX"
+                     },
+                     {  
+                        "Amount":16334.0,
+                        "ChargeCode":"YR"
+                     }
+                  ],
+                  "MarkUP":0,
+                  "PaxType":0,
+                  "Refundable":true,
+                  "TotalFare":55427.0,
+                  "TotalTax":24327.0
+               },
+               {  
+                  "BaggageUnit":"KG",
+                  "BaggageWeight":"30",
+                  "BaseTransactionAmount":0,
+                  "BasicFare":23325.0,
+                  "CancelPenalty":36940.0,
+                  "ChangePenalty":18460.0,
+                  "Fare":[  
+                     {  
+                        "Amount":1985.0,
+                        "ChargeCode":"K3"
+                     },
+                     {  
+                        "Amount":590.0,
+                        "ChargeCode":"PSF"
+                     },
+                     {  
+                        "Amount":796.0,
+                        "ChargeCode":"TR"
+                     },
+                     {  
+                        "Amount":1587.0,
+                        "ChargeCode":"FR"
+                     },
+                     {  
+                        "Amount":359.0,
+                        "ChargeCode":"IZ"
+                     },
+                     {  
+                        "Amount":2288.0,
+                        "ChargeCode":"QX"
+                     },
+                     {  
+                        "Amount":16334.0,
+                        "ChargeCode":"YR"
+                     }
+                  ],
+                  "MarkUP":0,
+                  "PaxType":1,
+                  "Refundable":true,
+                  "TotalFare":47264.0,
+                  "TotalTax":23939.0
+               },
+               {  
+                  "BaggageUnit":"KG",
+                  "BaggageWeight":"10",
+                  "BaseTransactionAmount":0,
+                  "BasicFare":3110.0,
+                  "CancelPenalty":36940.0,
+                  "ChangePenalty":18460.0,
+                  "Fare":[  
+                     {  
+                        "Amount":156.0,
+                        "ChargeCode":"K3"
+                     }
+                  ],
+                  "MarkUP":0,
+                  "PaxType":2,
+                  "Refundable":true,
+                  "TotalFare":3266.0,
+                  "TotalTax":156.0
+               }
+            ],
+            "TotalFareWithOutMarkUp":105957.0,
+            "TotalTaxWithOutMarkUp":48422.0
+         },
+         "FareRule":"CAN-BEF 4_0:36940.0|CHG-BEF 4_0:18460.0|EMTFee-500|CANCEL-BEF 4_0:36940.0|CHANGE-BEF 4_0:18460.0",
+         "IsBaggageFare":false,
+         "IsCache":false,
+         "IsHoldBooking":false,
+         "IsInternational":false,
+         "IsRoundTrip":true,
+         "IsSpecial":false,
+         "IsSpecialId":false,
+         "ItineraryKey":"6F9E0B150A07406B29CF37F2CCA91D79",
+         "JourneyIndex":0,
+         "NearByAirport":false,
+         "SearchId":"114,ADT:BF\u003d31100 Tax\u003d24327,CHD:BF\u003d23325 Tax\u003d23939,INF:BF\u003d3110 Tax\u003d156"
+      }
+   ],
+   "EngineID":7,
+   "EngineIDList":[  
+      7
+   ],
+   "PaymentDetails":{  
+      "BookingCurrencyCode":"INR",
+      "BookingAmount":105957.0
+   },
+   "FlightSearchDetails":[  
+      {  
+         "BeginDate":"2019-10-03",
+         "Origin":"DEL",
+         "Destination":"CDG"
+      },
+      {  
+         "BeginDate":"2019-10-04",
+         "Origin":"CDG",
+         "Destination":"DEL"
+      }
+   ],
+   "Cabin":0,
+   "TripType":1,
+   "TraceId":"AYTM00011111111110001",
+   "TransactionId":"6565656565656",
+   "Traveller":{  
+      "AdultTraveller":[  
+         {  
+            "DOB":"1980-01-01",
+            "LastName":"C Venkateswarlu",
+            "ResidentCountry":"India",
+            "Title":"Mr",
+            "Nationality":"IN",
+            "MiddleName":"K",
+            "Gender":1,
+            "EmailAddress":"kc.venkateswarlu@Easemytrip.com",
+            "FrequentFlierNumber":"",
+            "FirstName":"K",
+            "CountryCode":"IN",
+            "PassportExpiryDate":"2020-01-01",
+            "PassportNo":"HVJGHJGJ",
+            "MobileNumber":"7799791224"
+         }
+      ],
+      "ChildTraveller":[  
+         {  
+            "DOB":"2015-01-01",
+            "LastName":"C",
+            "ResidentCountry":"India",
+            "Title":"Mr",
+            "Nationality":"IN",
+            "MiddleName":"K",
+            "Gender":1,
+            "EmailAddress":"kc.venkateswarlu@Easemytrip.com",
+            "FrequentFlierNumber":"",
+            "FirstName":"K",
+            "CountryCode":"IN",
+            "PassportExpiryDate":"2020-01-01",
+            "PassportNo":"GKGKGKHJK",
+            "MobileNumber":"7799791224"
+         }
+      ],
+      "InfantTraveller":[  
+         {  
+            "DOB":"2018-01-01",
+            "LastName":"AJ",
+            "ResidentCountry":"India",
+            "Title":"Mr",
+            "Nationality":"IN",
+            "MiddleName":"K",
+            "Gender":1,
+            "EmailAddress":"kc.venkateswarlu@Easemytrip.com",
+            "FrequentFlierNumber":"",
+            "FirstName":"K",
+            "CountryCode":"IN",
+            "PassportExpiryDate":"2020-01-01",
+            "PassportNo":"GKGJKHKH",
+            "MobileNumber":"7799791224"
+         }
+      ]
+   }
+}
+***********************************REQUEST END *****************************************
+***********************************RESPONSE START ***************************************
+{  
+   "BookingDetail":{  
+      "CurrencyCode":"INR",
+      "PaymentAmount":105957.0,
+      "PnrDetail":{  
+         "Pnr":[  
+            {  
+               "Destination":"CDG",
+               "EngineID":7,
+               "Origin":"DEL",
+               "PNR":"TESTBT",
+               "TYPE":1
+            },
+            {  
+               "Destination":"CDG",
+               "EngineID":7,
+               "Origin":"DEL",
+               "PNR":"TESTBT",
+               "TYPE":0
+            },
+            {  
+               "Destination":"CDG",
+               "EngineID":7,
+               "Origin":"DEL",
+               "PNR":"",
+               "TYPE":5
+            },
+            {  
+               "Destination":"CDG",
+               "EngineID":7,
+               "Origin":"DEL",
+               "PNR":"105957.0",
+               "TYPE":6
+            }
+         ],
+         "Tickets":[  
+            {  
+               "Destination":"CDG",
+               "EngineID":7,
+               "FirstName":"K",
+               "IsBaggBooked":false,
+               "IsMealBooked":false,
+               "LastName":"",
+               "Origin":"DEL",
+               "PassengerNumber":1,
+               "PaxType":0,
+               "Prefix":"",
+               "TicketNumber":"13909811-1"
+            },
+            {  
+               "Destination":"CDG",
+               "EngineID":7,
+               "FirstName":"K",
+               "IsBaggBooked":false,
+               "IsMealBooked":false,
+               "LastName":"",
+               "Origin":"DEL",
+               "PassengerNumber":2,
+               "PaxType":1,
+               "Prefix":"",
+               "TicketNumber":"13909812-2"
+            },
+            {  
+               "Destination":"CDG",
+               "EngineID":7,
+               "FirstName":"K",
+               "IsBaggBooked":false,
+               "IsMealBooked":false,
+               "LastName":"",
+               "Origin":"DEL",
+               "PassengerNumber":3,
+               "PaxType":2,
+               "Prefix":"",
+               "TicketNumber":"13909813-3"
+            }
+         ]
+      }
+   },
+   "BookingId":"",
+   "TransactionId":"6565656565656#EMT61592800"
+}
+***********************************RESPONSE END *****************************************
