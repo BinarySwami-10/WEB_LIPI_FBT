@@ -1,0 +1,76 @@
+<style type="text/css">
+	#factory-gallery .swiper{
+		min-height: 100%;
+		width: auto;
+	}	
+	#factory-gallery .swiper-slide{
+		width: auto;
+
+
+	}
+	#factory-gallery .swiper img{
+		height: 50vh;
+	}
+</style>
+<!-- ---------------------------- -->
+<div id="factory-gallery" class="bg-black py-5 py-lg-5">
+    <h2 class="text-center text-white">Gallery</h2>
+    <div class="swiper py-lg-5">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination pt-5 mt-5"></div>
+    </div>
+</div>
+<!-- ---------------------------- -->
+<script>
+    $(document).ready(function() {
+        var imglist=[
+	        "img/gallery/a4/IMG-20220106-WA0004.jpg",
+			"img/gallery/a4/IMG-20220106-WA0006.jpg",
+			"img/gallery/a4/IMG-20220106-WA0015.jpg",
+			"img/gallery/a4/IMG-20220106-WA0019.jpg",
+			"img/gallery/a4/IMG-20220106-WA0019.jpg",
+			"img/gallery/a4/IMG-20220106-WA0019.jpg",
+			'img/gallery/notebook/flexo printing.jpg',
+			'img/gallery/notebook/notebook cutting machine.jpg',
+			'img/gallery/notebook/notebook press.jpg',
+
+            ].reverse()
+        var container_id="#factory-gallery";
+        var generategallerySlides = (() => {
+            for (d of imglist) {
+                $(`${container_id} .swiper-wrapper`).append(`
+                    <div class="swiper-slide text-center pr-1">
+                        <img loading="lazy" src="${d}" alt="">
+
+                    </div>
+                `)
+            }
+        })()
+
+        var galleryswiper = new Swiper("#factory-gallery .swiper", {
+
+            speed: 5000,
+            loop:true,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay:{
+                delay:1000,
+
+            },
+            breakpoints: {
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 'auto',
+                  spaceBetween: 10
+                }
+            }
+        });
+        
+    });
+</script>

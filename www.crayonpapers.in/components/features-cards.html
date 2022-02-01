@@ -1,0 +1,222 @@
+<style type="text/css">
+    #spin-container{
+        position: absolute;
+        width: 100%;
+        border-radius: 0.5em;
+        overflow: hidden !important;
+
+    }
+    .overlay{
+        position: absolute;
+        width: 100%;
+        background-color: #0003;
+    }
+
+    #featurecards .swiper-slide{
+        /*height: 100%;*/
+        position:relative;
+        border-radius: 0.33em;
+        background-color: #fff;
+        opacity: 0.98 ;
+        box-shadow: 0 0 2em #0008;
+        text-align: center;
+    }
+
+    #featurecards .swiper-slide .card-body{
+        /*vertical-align: middle !important;*/
+    }
+
+    #featurecards .swiper-slide h3{
+        text-align: center;
+        font-family: "Teko","Black Ops One";
+        font-size:3em ;
+        font-weight: 600;
+    }
+    #featurecards .swiper-slide p{
+        font-family: "Teko";
+        text-align: justify;
+    }
+    #featurecards .swiper-slide img{
+        max-height: 15vh;
+    }
+
+    @media(max-width: 768px){
+        #featurecards .swiper-slide{
+            /*min-height: 50vh;*/
+            padding: 0.5em;
+        }
+
+        #featurecards .swiper-slide img{
+            max-height: 10vh;
+        }
+
+    }
+
+</style>
+
+<div class=" text-dark" >
+
+    <!-- <div id="spin-container"></div> -->
+    <!-- <div class="overlay"></div> -->
+    
+    <div id="featurecards" class="swiper py-5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide row py-3 ">
+                <div class="col-12">
+                    <!-- <img loading="lazy" class="col-auto " src="./icons/aim.webp" alt=""> -->
+                    <h3 class="col-auto">VISION</h3>
+                </div>
+                <div class="col card-body ">
+                    <p class="f-2  p-0">
+                        At Crayon papers, our vision is to provide best quality and service by manufacturing excellent quality pulp and papers. customer success is our success.
+                    </p>
+
+                </div>
+            </div>
+            <div class="swiper-slide row py-3 ">
+                <div class="col-12">
+                    <!-- <img loading="lazy" class="col-auto" src="./icons/folder.webp" alt=""> -->
+                    <h3 class="col-auto">PRODUCTS</h3>
+                </div>
+                <div class="col card-body ">
+                    <p class="f-2  p-0">
+                        We produce A4 Sheets, Notebooks, Copier paper and feather paper. please scroll below to know more info. our exclusive range of products will definitely impress you!
+                    </p>
+
+                </div>
+            </div>
+            <div class="swiper-slide row py-3 ">
+                <div class="col-12">
+                    <!-- <img loading="lazy" class="col-auto" src="./icons/teamwork2.webp" alt=""> -->
+                    <h3 class="col-auto">CLIENTS</h3>
+                </div>
+                <div class="col card-body ">
+                    <p class="f-2  p-0">
+                        We deal pan india, with well known distributors. they are one of the top 5 distrubitors in their region! that is possible due to our excellent delivery network, and one of the lowest wholesale rates. 
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        var swiper = new Swiper("#featurecards.swiper", {
+            effect: "coverflow",
+            coverflowEffect: {
+                rotate: 5,
+                stretch: 25,
+                depth: 200,
+                modifier: 1,
+                slideShadows: false,
+            },
+
+            autoHeight: false,
+            grabCursor: true,
+            loop:true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay:true,
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView:3,
+                    spaceBetween: 20
+                }
+            }
+        });
+    });
+</script>
+<!-- ------------------------------ -->
+<!-- ------------------------------ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r50/three.min.js"></script> -->
+<!-- <script  src="https://cdn.jsdelivr.net/npm/three@0.132/build/three.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var $container = $('#spin-container');
+        var renderer = new THREE.WebGLRenderer({antialias: true});
+        var camera = new THREE.PerspectiveCamera(80,window.innerWidth/window.innerHeight,0.1,10000);
+        var scene = new THREE.Scene();
+        var mouseX = 0, mouseY = 0;
+        scene.add(camera);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        $container.append(renderer.domElement);
+        window.addEventListener( 'resize', onWindowResize, false );
+    //////
+    var Controls = function() {
+        this.speed = 0.25;
+        this.rotation = 0;
+    };
+    var text = new Controls();
+    // gui = new dat.GUI();
+    // gui.add(text, 'speed', 0, 10);
+    // gui.add(text, 'rotation',0,15);
+    //////
+    // Normalmaterial
+    normalMaterial = new THREE.MeshNormalMaterial({ flatShading: true});
+    // normalMaterial.
+    // Torus
+    function Torus(f){
+        this.b = new THREE.Mesh(new THREE.TorusGeometry(220, 40, 5, 8),normalMaterial);
+        this.b.position.x = 10*Math.cos(f);
+        this.b.position.y = 10*Math.sin(f);
+        this.b.position.z = f*5;
+        this.b.rotation.z = f*0.5;
+    }
+    var numTorus = 240;
+    var tabTorus = [];
+    for(var i=0; i<numTorus; i++){
+        tabTorus.push(new Torus(-i*13));
+        scene.add(tabTorus[i].b);
+    }
+    // Update
+    function update(){
+        for(var i=0; i<numTorus; i++){
+            tabTorus[i].b.position.z+=text.speed;
+            tabTorus[i].b.rotation.z+=i*text.rotation/10000;
+            if(tabTorus[i].b.position.z>0)
+            {
+                tabTorus[i].b.position.z=-10;
+            }
+        }
+    }
+    function onWindowResize() {
+        windowHalfX = window.innerWidth / 2;
+        windowHalfY = window.innerHeight / 2;
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize( window.innerWidth, window.innerHeight );
+    }
+    function onDocumentMouseMove(event) {
+        mouseX = ( event.clientX - windowHalfX );
+        mouseY = ( event.clientY - windowHalfY );
+    }
+    // Render
+    function render() {
+        requestAnimationFrame( render);
+        camera.position.x += ( mouseX - camera.position.x ) * 0.05;
+        camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
+        renderer.render(scene, camera);
+        update();
+    }
+    render();
+});
+</script>

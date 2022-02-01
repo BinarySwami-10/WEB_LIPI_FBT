@@ -1,0 +1,296 @@
+{
+    "Errors": null,
+    "Insurance": null,
+    "Journeys": [
+        {
+            "JourneyDetail": null,
+            "Segments": [
+                {
+                    "BondType": "OutBound",
+                    "Bonds": [
+                        {
+                            "BoundType": null,
+                            "IsBaggageFare": false,
+                            "IsSSR": false,
+                            "ItineraryKey": null,
+                            "JourneyTime": null,
+                            "Legs": [
+                                {
+                                    "AircraftCode": "syVa0uKc1BKAsvOScEAAAA==",
+                                    "AircraftType": null,
+                                    "AirlineName": "MH",
+                                    "ArrivalDate": "Thu-01Aug2019",
+                                    "ArrivalTerminal": null,
+                                    "ArrivalTime": "06:55",
+                                    "AvailableSeat": null,
+                                    "BaggageUnit": "KG",
+                                    "BaggageWeight": "10",
+                                    "BookSeat": null,
+                                    "BoundType": "OutBound",
+                                    "Cabin": "Economy",
+                                    "CabinClasses": null,
+                                    "Capacity": 0,
+                                    "CarrierCode": "MH",
+                                    "CurrencyCode": null,
+                                    "DepartureDate": "Wed-31Jul2019",
+                                    "DepartureTerminal": null,
+                                    "DepartureTime": "23:00",
+                                    "Destination": "KUL",
+                                    "Duration": "05h 25m",
+                                    "FareBasisCode": null,
+                                    "FareClassOfService": "N",
+                                    "FlightDesignator": null,
+                                    "FlightDetailRefKey": null,
+                                    "FlightName": "Malayasian Airways",
+                                    "FlightNumber": "191",
+                                    "Group": "0",
+                                    "IsConnecting": false,
+                                    "IsSeatOpen": false,
+                                    "LayoverAt": null,
+                                    "LayoverDuration": null,
+                                    "NumberOfStops": "0",
+                                    "OperatedBy": "Malaysia Airlines Berhad",
+                                    "Origin": "DEL",
+                                    "ProviderCode": "1G",
+                                    "Remarks": "MH",
+                                    "SSRDetails": null,
+                                    "Sold": 0,
+                                    "Status": null
+                                },
+                                {
+                                    "AircraftCode": "syVa0uKc1BKAuvOScEAAAA==",
+                                    "AircraftType": null,
+                                    "AirlineName": "MH",
+                                    "ArrivalDate": "Thu-01Aug2019",
+                                    "ArrivalTerminal": null,
+                                    "ArrivalTime": "16:20",
+                                    "AvailableSeat": null,
+                                    "BaggageUnit": null,
+                                    "BaggageWeight": null,
+                                    "BookSeat": null,
+                                    "BoundType": "OutBound",
+                                    "Cabin": "Economy",
+                                    "CabinClasses": null,
+                                    "Capacity": 0,
+                                    "CarrierCode": "MH",
+                                    "CurrencyCode": null,
+                                    "DepartureDate": "Thu-01Aug2019",
+                                    "DepartureTerminal": null,
+                                    "DepartureTime": "15:05",
+                                    "Destination": "BKK",
+                                    "Duration": "02h 15m",
+                                    "FareBasisCode": null,
+                                    "FareClassOfService": "N",
+                                    "FlightDesignator": null,
+                                    "FlightDetailRefKey": null,
+                                    "FlightName": "Malayasian Airways",
+                                    "FlightNumber": "782",
+                                    "Group": "0",
+                                    "IsConnecting": false,
+                                    "IsSeatOpen": false,
+                                    "LayoverAt": null,
+                                    "LayoverDuration": null,
+                                    "NumberOfStops": "0",
+                                    "OperatedBy": "Malaysia Airlines Berhad",
+                                    "Origin": "KUL",
+                                    "ProviderCode": "1G",
+                                    "Remarks": null,
+                                    "SSRDetails": null,
+                                    "Sold": 0,
+                                    "Status": null
+                                }
+                            ],
+                            "addOnDetail": null
+                        }
+                    ],
+                    "CurrencyCode": null,
+                    "Deeplink": "",
+                    "EngineID": 7,
+                    "Fare": {
+                        "BasicFare": 24225,
+                        "ExchangeRate": 0,
+                        "PaxFares": [
+                            {
+                                "BaggageUnit": "KG",
+                                "BaggageWeight": "25",
+                                "BaseTransactionAmount": 0,
+                                "BasicFare": 12420,
+                                "CancelPenalty": 0,
+                                "Cashback": 0,
+                                "ChangePenalty": 6000,
+                                "Commission": 0,
+                                "DFValue": "0",
+                                "EquivCurrencyCode": null,
+                                "Fare": [
+                                    {
+                                        "Amount": 635,
+                                        "ChargeCode": "K3",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 552,
+                                        "ChargeCode": "PSF",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 79,
+                                        "ChargeCode": "E7",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 34,
+                                        "ChargeCode": "G8",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 276,
+                                        "ChargeCode": "YQ",
+                                        "ChargeType": null
+                                    }
+                                ],
+                                "FareBasisCode": null,
+                                "FareInfoKey": null,
+                                "FareInfoValue": null,
+                                "IsZeroCancellation": false,
+                                "MarkUP": 0,
+                                "PaxType": 0,
+                                "Refundable": false,
+                                "STF": 0,
+                                "ServiceFee": 0,
+                                "TDS": 0,
+                                "TotalFare": 13996,
+                                "TotalTax": 1576,
+                                "TransactionAmount": 0,
+                                "TransactionFee": 0,
+                                "ZeroCancellationCharge": 1000,
+                                "ZeroCancellationValidity": "28"
+                            },
+                            {
+                                "BaggageUnit": "KG",
+                                "BaggageWeight": "25",
+                                "BaseTransactionAmount": 0,
+                                "BasicFare": 10560,
+                                "CancelPenalty": 0,
+                                "Cashback": 0,
+                                "ChangePenalty": 6000,
+                                "Commission": 0,
+                                "DFValue": "0",
+                                "EquivCurrencyCode": null,
+                                "Fare": [
+                                    {
+                                        "Amount": 542,
+                                        "ChargeCode": "K3",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 552,
+                                        "ChargeCode": "PSF",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 79,
+                                        "ChargeCode": "E7",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 34,
+                                        "ChargeCode": "G8",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 276,
+                                        "ChargeCode": "YQ",
+                                        "ChargeType": null
+                                    }
+                                ],
+                                "FareBasisCode": null,
+                                "FareInfoKey": null,
+                                "FareInfoValue": null,
+                                "IsZeroCancellation": false,
+                                "MarkUP": 0,
+                                "PaxType": 1,
+                                "Refundable": false,
+                                "STF": 0,
+                                "ServiceFee": 0,
+                                "TDS": 0,
+                                "TotalFare": 12043,
+                                "TotalTax": 1483,
+                                "TransactionAmount": 0,
+                                "TransactionFee": 0,
+                                "ZeroCancellationCharge": 1000,
+                                "ZeroCancellationValidity": "28"
+                            },
+                            {
+                                "BaggageUnit": "KG",
+                                "BaggageWeight": "10",
+                                "BaseTransactionAmount": 0,
+                                "BasicFare": 1245,
+                                "CancelPenalty": 0,
+                                "Cashback": 0,
+                                "ChangePenalty": 6000,
+                                "Commission": 0,
+                                "DFValue": "0",
+                                "EquivCurrencyCode": null,
+                                "Fare": [
+                                    {
+                                        "Amount": 63,
+                                        "ChargeCode": "K3",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 79,
+                                        "ChargeCode": "E7",
+                                        "ChargeType": null
+                                    },
+                                    {
+                                        "Amount": 34,
+                                        "ChargeCode": "G8",
+                                        "ChargeType": null
+                                    }
+                                ],
+                                "FareBasisCode": null,
+                                "FareInfoKey": null,
+                                "FareInfoValue": null,
+                                "IsZeroCancellation": false,
+                                "MarkUP": 0,
+                                "PaxType": 2,
+                                "Refundable": false,
+                                "STF": 0,
+                                "ServiceFee": 0,
+                                "TDS": 0,
+                                "TotalFare": 1421,
+                                "TotalTax": 176,
+                                "TransactionAmount": 0,
+                                "TransactionFee": 0,
+                                "ZeroCancellationCharge": 0,
+                                "ZeroCancellationValidity": null
+                            }
+                        ],
+                        "TotalFareWithOutMarkUp": 27460,
+                        "TotalTaxWithOutMarkUp": 3235
+                    },
+                    "FareIndicator": 0,
+                    "FareRule": "CAN-BEF 4_0:0|CHG-BEF 4_0:6000.0|EMTFee-500|CANCEL-BEF 4_0:NA|CHANGE-BEF 4_0:6000.0|Msg:As per airline rules.",
+                    "IsBaggageFare": false,
+                    "IsCache": false,
+                    "IsHoldBooking": false,
+                    "IsInternational": false,
+                    "IsRoundTrip": false,
+                    "IsSpecial": false,
+                    "IsSpecialId": false,
+                    "ItineraryKey": "BB81D53C0A07570A4DE9C9B1BF571989",
+                    "JourneyIndex": 0,
+                    "MemoryCreationTime": "/Date(1562218975596+0530)/",
+                    "NearByAirport": false,
+                    "PromoCode": null,
+                    "Remark": null,
+                    "SSDetails": "Free Meals",
+                    "SearchId": "114,ADT:BF=12420 Tax=1576,CHD:BF=10560 Tax=1483,INF:BF=1245 Tax=176",
+                    "Sessionfilepath": "",
+                    "description": null
+                }
+            ]
+        }
+    ],
+    "TraceId": ""
+}

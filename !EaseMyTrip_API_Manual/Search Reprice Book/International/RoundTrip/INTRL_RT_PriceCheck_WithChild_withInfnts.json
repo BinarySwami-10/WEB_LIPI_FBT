@@ -1,0 +1,609 @@
+***********************************REQUEST START ***************************************
+{  
+   "FlightAvailabilityRQ":{  
+      "Adults":1,
+      "Authentication":{  
+         "Password":"EMT@uytrFYTREt",
+         "UserName":"EMTB2B",
+         "IpAddress":"10.34.11.9",
+         "PortalID":26
+      },
+      "Cabin":0,
+      "Childs":1,
+      "EngineID":[  
+         7
+      ],
+      "FlightSearchDetails":[  
+         {  
+            "BeginDate":"2019-10-03",
+            "Origin":"DEL",
+            "Destination":"CDG"
+         },
+         {  
+            "BeginDate":"2019-10-04",
+            "Origin":"CDG",
+            "Destination":"DEL"
+         }
+      ],
+      "Infants":1,
+      "TripType":1
+   },
+   "Segment":[  
+      {  
+         "BondType":"OutBound",
+         "Bonds":[  
+            {
+							"BoundType": "OutBound",
+							"IsBaggageFare": false,
+							"IsSSR": false,
+							"JourneyTime": "13h 55m",
+							"Legs": [
+								{
+									"AircraftCode": "jBgLYxnB0BKAMYYoXPAAAA==",
+									"AirlineName": "TK",
+									"ArrivalDate": "Thu-03Oct2019",
+									"ArrivalTerminal": "",
+									"ArrivalTime": "10:30",
+									"AvailableSeat": "5",
+									"BaggageUnit": "KG",
+									"BaggageWeight": "10",
+									"BoundType": "OutBound",
+									"Cabin": "Economy",
+									"Capacity": 0,
+									"CarrierCode": "TK",
+									"DepartureDate": "Thu-03Oct2019",
+									"DepartureTerminal": "3",
+									"DepartureTime": "06:25",
+									"Destination": "IST",
+									"Duration": "06h 35m",
+									"FareClassOfService": "T",
+									"FlightDetailRefKey": "jBgLYxnB0BKANYYoXPAAAA==",
+									"FlightName": "Turkish Airlines",
+									"FlightNumber": "717",
+									"Group": "0",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"NumberOfStops": "0",
+									"Origin": "DEL",
+									"ProviderCode": "1G",
+									"Remarks": "",
+									"Sold": 0
+								},
+								{
+									"AircraftCode": "jBgLYxnB0BKAOYYoXPAAAA==",
+									"AirlineName": "TK",
+									"ArrivalDate": "Thu-03Oct2019",
+									"ArrivalTerminal": "1",
+									"ArrivalTime": "16:50",
+									"AvailableSeat": "5",
+									"BaggageUnit": "KG",
+									"BaggageWeight": "10",
+									"BoundType": "OutBound",
+									"Cabin": "Economy",
+									"Capacity": 0,
+									"CarrierCode": "TK",
+									"DepartureDate": "Thu-03Oct2019",
+									"DepartureTerminal": "",
+									"DepartureTime": "14:00",
+									"Destination": "CDG",
+									"Duration": "03h 50m",
+									"FareClassOfService": "T",
+									"FlightDetailRefKey": "jBgLYxnB0BKAPYYoXPAAAA==",
+									"FlightName": "Turkish Airlines",
+									"FlightNumber": "1833",
+									"Group": "0",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"NumberOfStops": "0",
+									"Origin": "IST",
+									"ProviderCode": "1G",
+									"Remarks": "",
+									"Sold": 0
+								}
+							]
+						},
+						{
+							"BoundType": "InBound",
+							"IsBaggageFare": false,
+							"IsSSR": false,
+							"JourneyTime": "11h 20m",
+							"Legs": [
+								{
+									"AircraftCode": "jBgLYxnB0BKAQYYoXPAAAA==",
+									"AirlineName": "TK",
+									"ArrivalDate": "Fri-04Oct2019",
+									"ArrivalTerminal": "",
+									"ArrivalTime": "18:40",
+									"AvailableSeat": "9",
+									"BaggageUnit": "KG",
+									"BaggageWeight": "10",
+									"BoundType": "InBound",
+									"Cabin": "Economy",
+									"Capacity": 0,
+									"CarrierCode": "TK",
+									"DepartureDate": "Fri-04Oct2019",
+									"DepartureTerminal": "1",
+									"DepartureTime": "14:15",
+									"Destination": "IST",
+									"Duration": "03h 25m",
+									"FareClassOfService": "L",
+									"FlightDetailRefKey": "jBgLYxnB0BKARYYoXPAAAA==",
+									"FlightName": "Turkish Airlines",
+									"FlightNumber": "1824",
+									"Group": "1",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"NumberOfStops": "0",
+									"Origin": "CDG",
+									"ProviderCode": "1G",
+									"Remarks": "",
+									"Sold": 0
+								},
+								{
+									"AircraftCode": "jBgLYxnB0BKASYYoXPAAAA==",
+									"AirlineName": "TK",
+									"ArrivalDate": "Sat-05Oct2019",
+									"ArrivalTerminal": "3",
+									"ArrivalTime": "05:05",
+									"AvailableSeat": "9",
+									"BaggageUnit": "KG",
+									"BaggageWeight": "10",
+									"BoundType": "InBound",
+									"Cabin": "Economy",
+									"Capacity": 0,
+									"CarrierCode": "TK",
+									"DepartureDate": "Fri-04Oct2019",
+									"DepartureTerminal": "",
+									"DepartureTime": "20:40",
+									"Destination": "DEL",
+									"Duration": "05h 55m",
+									"FareClassOfService": "L",
+									"FlightDetailRefKey": "jBgLYxnB0BKATYYoXPAAAA==",
+									"FlightName": "Turkish Airlines",
+									"FlightNumber": "4652",
+									"Group": "1",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"NumberOfStops": "0",
+									"OperatedBy": "INDIGO",
+									"Origin": "IST",
+									"ProviderCode": "1G",
+									"Remarks": "",
+									"Sold": 0
+								}
+							]
+						}
+         ],
+         "Deeplink":"",
+         "EngineID":7,
+         "Fare":{  
+            "BasicFare":57535.0,
+            "ExchangeRate":0.0,
+            "PaxFares":[  
+               {  
+                  "BaggageUnit":"KG",
+                  "BaggageWeight":"30",
+                  "BaseTransactionAmount":0,
+                  "BasicFare":31100.0,
+                  "CancelPenalty":18470.0,
+                  "ChangePenalty":9230.0,
+                  "Fare":[  
+                     {  
+                        "Amount":2373.0,
+                        "ChargeCode":"K3"
+                     },
+                     {  
+                        "Amount":590.0,
+                        "ChargeCode":"PSF"
+                     },
+                     {  
+                        "Amount":796.0,
+                        "ChargeCode":"TR"
+                     },
+                     {  
+                        "Amount":1587.0,
+                        "ChargeCode":"FR"
+                     },
+                     {  
+                        "Amount":359.0,
+                        "ChargeCode":"IZ"
+                     },
+                     {  
+                        "Amount":2288.0,
+                        "ChargeCode":"QX"
+                     },
+                     {  
+                        "Amount":16334.0,
+                        "ChargeCode":"YR"
+                     }
+                  ],
+                  "FareBasisCode":"Economy",
+                  "FareInfoKey":"jBgLYxnB0BKAxYYoXPAAAA\u003d\u003d",
+                  "FareInfoValue":"gws-eJxNTkEKAzEIfMwyd02zJL2lJNkWupU9bCG59P/PqIYUqqgjo6MpJUd8pUgx/duCz3I+Ie8MCJxGqTs4rsSj6yAij31z7WgwCbZehvdZeYyVkFctqGHzg+qiNnMud+XcxXRVkWGHYVA38AP1oVBu5Txq83rH2cprkhSgn34BkiUrqQ\u003d\u003d",
+                  "MarkUP":0,
+                  "PaxType":0,
+                  "Refundable":true,
+                  "TotalFare":55427.0,
+                  "TotalTax":24327.0
+               },
+               {  
+                  "BaggageUnit":"KG",
+                  "BaggageWeight":"30",
+                  "BaseTransactionAmount":0,
+                  "BasicFare":23325.0,
+                  "CancelPenalty":18470.0,
+                  "ChangePenalty":9230.0,
+                  "Fare":[  
+                     {  
+                        "Amount":1985.0,
+                        "ChargeCode":"K3"
+                     },
+                     {  
+                        "Amount":590.0,
+                        "ChargeCode":"PSF"
+                     },
+                     {  
+                        "Amount":796.0,
+                        "ChargeCode":"TR"
+                     },
+                     {  
+                        "Amount":1587.0,
+                        "ChargeCode":"FR"
+                     },
+                     {  
+                        "Amount":359.0,
+                        "ChargeCode":"IZ"
+                     },
+                     {  
+                        "Amount":2288.0,
+                        "ChargeCode":"QX"
+                     },
+                     {  
+                        "Amount":16334.0,
+                        "ChargeCode":"YR"
+                     }
+                  ],
+                  "FareBasisCode":"Economy",
+                  "FareInfoKey":"jBgLYxnB0BKAfZYoXPAAAA\u003d\u003d",
+                  "FareInfoValue":"gws-eJxNTssKAyEM/Jhl7jFr1d4Edbuw27CHFvTS//+MRrHQhCQTZvKIMTKZOwUK8d8WfJbXAXknQMAauZwwa/BudA1EZHFuXK+KvsL0Xoa3WXnIsk83LSh+s4NqojZzyg/ljHfs+kZGP4wOdQI/UHaFkkSuUq3eYVWuz0mSh376BZwgK8Y\u003d",
+                  "MarkUP":0,
+                  "PaxType":1,
+                  "Refundable":true,
+                  "TotalFare":47264.0,
+                  "TotalTax":23939.0
+               },
+               {  
+                  "BaggageUnit":"KG",
+                  "BaggageWeight":"10",
+                  "BaseTransactionAmount":0,
+                  "BasicFare":3110.0,
+                  "CancelPenalty":18470.0,
+                  "ChangePenalty":9230.0,
+                  "Fare":[  
+                     {  
+                        "Amount":156.0,
+                        "ChargeCode":"K3"
+                     }
+                  ],
+                  "FareBasisCode":"Economy",
+                  "FareInfoKey":"jBgLYxnB0BKADaYoXPAAAA\u003d\u003d",
+                  "FareInfoValue":"gws-eJxNTssKAzEI/Jhl7uaxJL0F8mhLt7KHFpJL//8zqiGFKjoj6mhKyZK5UKSY/m3DZ3s9wO8MMKxEqQdM3GkWA0TkcTTbzw5VMFrz9LHQzbES8i6AGpqfrcFiK+dyVSXrRFfQQe9CqWzgR+pNKN+5nbV7uWN147maFCCPfgFraCt/",
+                  "MarkUP":0,
+                  "PaxType":2,
+                  "Refundable":true,
+                  "TotalFare":3266.0,
+                  "TotalTax":156.0
+               }
+            ],
+            "TotalFareWithOutMarkUp":105957.0,
+            "TotalTaxWithOutMarkUp":48422.0
+         },
+         "FareRule":"CAN-BEF 4_0:18470.0|CHG-BEF 4_0:9230.0|EMTFee-500|CANCEL-BEF 4_0:18470.0|CHANGE-BEF 4_0:9230.0",
+         "IsBaggageFare":false,
+         "IsCache":false,
+         "IsHoldBooking":false,
+         "IsInternational":false,
+         "IsRoundTrip":true,
+         "IsSpecial":false,
+         "IsSpecialId":false,
+         "ItineraryKey":"6F9D5BDD0A074067961AEDA96387B11F",
+         "JourneyIndex":0,
+         "NearByAirport":false,
+         "SearchId":"114,ADT:BF\u003d31100 Tax\u003d24327,CHD:BF\u003d23325 Tax\u003d23939,INF:BF\u003d3110 Tax\u003d156"
+      }
+   ]
+}
+***********************************REQUEST END *****************************************
+***********************************RESPONSE START ***************************************
+{  
+   "Journeys":[  
+      {  
+         "Segments":[  
+            {  
+               "BondType":"OutBound",
+               "Bonds":[  
+                  {  
+                     "BoundType":"OutBound",
+                     "IsBaggageFare":false,
+                     "IsSSR":false,
+                     "Legs":[  
+                        {  
+                           "AircraftCode":"SIfLYxrB0BKAlIsRYPAAAA\u003d\u003d",
+                           "AirlineName":"TK",
+                           "ArrivalDate":"Thu-03Oct2019",
+                           "ArrivalTime":"10:30",
+                           "BaggageUnit":"KG",
+                           "BaggageWeight":"10",
+                           "BoundType":"OutBound",
+                           "Cabin":"Economy",
+                           "Capacity":0,
+                           "CarrierCode":"TK",
+                           "DepartureDate":"Thu-03Oct2019",
+                           "DepartureTime":"06:25",
+                           "Destination":"IST",
+                           "Duration":"06h 35m",
+                           "FareClassOfService":"T",
+                           "FlightName":"Turkish Airlines",
+                           "FlightNumber":"717",
+                           "Group":"0",
+                           "IsConnecting":false,
+                           "IsSeatOpen":false,
+                           "NumberOfStops":"0",
+                           "OperatedBy":"Turkish Airlines Inc",
+                           "Origin":"DEL",
+                           "ProviderCode":"1G",
+                           "Remarks":"TK",
+                           "Sold":0
+                        },
+                        {  
+                           "AircraftCode":"SIfLYxrB0BKAnIsRYPAAAA\u003d\u003d",
+                           "AirlineName":"TK",
+                           "ArrivalDate":"Thu-03Oct2019",
+                           "ArrivalTime":"16:50",
+                           "BoundType":"OutBound",
+                           "Cabin":"Economy",
+                           "Capacity":0,
+                           "CarrierCode":"TK",
+                           "DepartureDate":"Thu-03Oct2019",
+                           "DepartureTime":"14:00",
+                           "Destination":"CDG",
+                           "Duration":"03h 50m",
+                           "FareClassOfService":"T",
+                           "FlightName":"Turkish Airlines",
+                           "FlightNumber":"1833",
+                           "Group":"0",
+                           "IsConnecting":false,
+                           "IsSeatOpen":false,
+                           "NumberOfStops":"0",
+                           "OperatedBy":"Turkish Airlines Inc",
+                           "Origin":"IST",
+                           "ProviderCode":"1G",
+                           "Sold":0
+                        }
+                     ]
+                  },
+                  {  
+                     "BoundType":"InBound",
+                     "IsBaggageFare":false,
+                     "IsSSR":false,
+                     "Legs":[  
+                        {  
+                           "AircraftCode":"SIfLYxrB0BKApIsRYPAAAA\u003d\u003d",
+                           "AirlineName":"TK",
+                           "ArrivalDate":"Fri-04Oct2019",
+                           "ArrivalTime":"18:40",
+                           "BoundType":"InBound",
+                           "Cabin":"Economy",
+                           "Capacity":0,
+                           "CarrierCode":"TK",
+                           "DepartureDate":"Fri-04Oct2019",
+                           "DepartureTime":"14:15",
+                           "Destination":"IST",
+                           "Duration":"03h 25m",
+                           "FareClassOfService":"L",
+                           "FlightName":"Turkish Airlines",
+                           "FlightNumber":"1824",
+                           "Group":"1",
+                           "IsConnecting":false,
+                           "IsSeatOpen":false,
+                           "NumberOfStops":"0",
+                           "OperatedBy":"Turkish Airlines Inc",
+                           "Origin":"CDG",
+                           "ProviderCode":"1G",
+                           "Sold":0
+                        },
+                        {  
+                           "AircraftCode":"SIfLYxrB0BKArIsRYPAAAA\u003d\u003d",
+                           "AirlineName":"TK",
+                           "ArrivalDate":"Sat-05Oct2019",
+                           "ArrivalTime":"05:05",
+                           "BoundType":"InBound",
+                           "Cabin":"Economy",
+                           "Capacity":0,
+                           "CarrierCode":"TK",
+                           "DepartureDate":"Fri-04Oct2019",
+                           "DepartureTime":"20:40",
+                           "Destination":"DEL",
+                           "Duration":"05h 55m",
+                           "FareClassOfService":"L",
+                           "FlightName":"Turkish Airlines",
+                           "FlightNumber":"4652",
+                           "Group":"1",
+                           "IsConnecting":false,
+                           "IsSeatOpen":false,
+                           "NumberOfStops":"0",
+                           "OperatedBy":"IndiGo",
+                           "Origin":"IST",
+                           "ProviderCode":"1G",
+                           "Sold":0
+                        }
+                     ]
+                  }
+               ],
+               "Deeplink":"",
+               "EngineID":7,
+               "Fare":{  
+                  "BasicFare":57535,
+                  "ExchangeRate":0,
+                  "PaxFares":[  
+                     {  
+                        "BaggageUnit":"KG",
+                        "BaggageWeight":"30",
+                        "BaseTransactionAmount":0,
+                        "BasicFare":31100,
+                        "CancelPenalty":36940.0,
+                        "Cashback":0,
+                        "ChangePenalty":18460.0,
+                        "Commission":0,
+                        "DFValue":"0",
+                        "Fare":[  
+                           {  
+                              "Amount":2373,
+                              "ChargeCode":"K3"
+                           },
+                           {  
+                              "Amount":590,
+                              "ChargeCode":"PSF"
+                           },
+                           {  
+                              "Amount":796,
+                              "ChargeCode":"TR"
+                           },
+                           {  
+                              "Amount":1587,
+                              "ChargeCode":"FR"
+                           },
+                           {  
+                              "Amount":359,
+                              "ChargeCode":"IZ"
+                           },
+                           {  
+                              "Amount":2288,
+                              "ChargeCode":"QX"
+                           },
+                           {  
+                              "Amount":16334,
+                              "ChargeCode":"YR"
+                           }
+                        ],
+                        "IsZeroCancellation":false,
+                        "MarkUP":0,
+                        "PaxType":0,
+                        "Refundable":true,
+                        "STF":0,
+                        "ServiceFee":0,
+                        "TDS":0,
+                        "TotalFare":55427,
+                        "TotalTax":24327,
+                        "TransactionAmount":0,
+                        "TransactionFee":0,
+                        "ZeroCancellationCharge":0
+                     },
+                     {  
+                        "BaggageUnit":"KG",
+                        "BaggageWeight":"30",
+                        "BaseTransactionAmount":0,
+                        "BasicFare":23325,
+                        "CancelPenalty":36940.0,
+                        "Cashback":0,
+                        "ChangePenalty":18460.0,
+                        "Commission":0,
+                        "DFValue":"0",
+                        "Fare":[  
+                           {  
+                              "Amount":1985,
+                              "ChargeCode":"K3"
+                           },
+                           {  
+                              "Amount":590,
+                              "ChargeCode":"PSF"
+                           },
+                           {  
+                              "Amount":796,
+                              "ChargeCode":"TR"
+                           },
+                           {  
+                              "Amount":1587,
+                              "ChargeCode":"FR"
+                           },
+                           {  
+                              "Amount":359,
+                              "ChargeCode":"IZ"
+                           },
+                           {  
+                              "Amount":2288,
+                              "ChargeCode":"QX"
+                           },
+                           {  
+                              "Amount":16334,
+                              "ChargeCode":"YR"
+                           }
+                        ],
+                        "IsZeroCancellation":false,
+                        "MarkUP":0,
+                        "PaxType":1,
+                        "Refundable":true,
+                        "STF":0,
+                        "ServiceFee":0,
+                        "TDS":0,
+                        "TotalFare":47264,
+                        "TotalTax":23939,
+                        "TransactionAmount":0,
+                        "TransactionFee":0,
+                        "ZeroCancellationCharge":0
+                     },
+                     {  
+                        "BaggageUnit":"KG",
+                        "BaggageWeight":"10",
+                        "BaseTransactionAmount":0,
+                        "BasicFare":3110,
+                        "CancelPenalty":36940.0,
+                        "Cashback":0,
+                        "ChangePenalty":18460.0,
+                        "Commission":0,
+                        "DFValue":"0",
+                        "Fare":[  
+                           {  
+                              "Amount":156,
+                              "ChargeCode":"K3"
+                           }
+                        ],
+                        "IsZeroCancellation":false,
+                        "MarkUP":0,
+                        "PaxType":2,
+                        "Refundable":true,
+                        "STF":0,
+                        "ServiceFee":0,
+                        "TDS":0,
+                        "TotalFare":3266,
+                        "TotalTax":156,
+                        "TransactionAmount":0,
+                        "TransactionFee":0,
+                        "ZeroCancellationCharge":0
+                     }
+                  ],
+                  "TotalFareWithOutMarkUp":105957,
+                  "TotalTaxWithOutMarkUp":48422
+               },
+               "FareIndicator":0,
+               "FareRule":"CAN-BEF 4_0:36940.0|CHG-BEF 4_0:18460.0|EMTFee-500|CANCEL-BEF 4_0:36940.0|CHANGE-BEF 4_0:18460.0",
+               "IsBaggageFare":false,
+               "IsCache":false,
+               "IsHoldBooking":false,
+               "IsInternational":false,
+               "IsRoundTrip":true,
+               "IsSpecial":false,
+               "IsSpecialId":false,
+               "ItineraryKey":"6F9E0B150A07406B29CF37F2CCA91D79",
+               "JourneyIndex":0,
+               "MemoryCreationTime":"/Date(1565240724977+0530)/",
+               "NearByAirport":false,
+               "SSDetails":"Free Meals",
+               "SearchId":"114,ADT:BF\u003d31100 Tax\u003d24327,CHD:BF\u003d23325 Tax\u003d23939,INF:BF\u003d3110 Tax\u003d156",
+               "Sessionfilepath":""
+            }
+         ]
+      }
+   ]
+}
+***********************************RESPONSE END *****************************************

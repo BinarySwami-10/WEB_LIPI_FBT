@@ -1,0 +1,34 @@
+{
+    "Adults": "1",
+    "Infants": "1",
+    "Childs": "1",
+    "Authentication": {
+        "IpAddress": "13.126.21.116",
+        "Password": "EMT@uytrFYTREt",
+        "PortalID": "26",
+        "UserName": "EMTB2B"
+    },
+    "TraceId": "",
+    "EngineID": [
+        "0",
+        "1",
+        "5",
+        "7",
+        "10",
+        "11"
+    ],
+    "FlightSearchDetails": [
+        {
+            "BeginDate": "2019-07-31",
+            "Origin": "DEL",
+            "Destination": "BKK"
+        },
+        {
+            "BeginDate": "2019-08-01",
+            "Origin": "BKK",
+            "Destination": "DEL"
+        }
+    ],
+    "TripType": 1,
+    "Cabin": 0
+}

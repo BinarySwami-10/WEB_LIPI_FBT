@@ -1,0 +1,54 @@
+<div class="product-carousel p-lg-3 p-1 ">
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+</div>
+<!-- ---------------------------------- -->
+<script type="text/javascript">
+	DATA_PAPERPRODUCTS=[
+	{
+		title:"Crayon 80GSM",
+		desc:"80 GSM is the industry standard for multipurpose usage, best suited for legal documents and premium presentation grade paper. rich texture and moisture resistant. instantly improves the holder's mood upon touching.",
+		img:"./img/paperbox/webp/fr.webp",
+		btn:"more details",
+	},
+	{
+		title:"Crayon 75GSM",
+		desc:"75 GSM can be used for office as well as home, its the ideal paper to print photos, drafts and footnotes. tear tolerant and smooth to touch.",
+		img:"./img/paperbox/webp/fr.webp",
+		btn:"more details",
+	},
+	{
+		title:"Crayon 70GSM",
+		desc:"70 GSM this is the most economic paper. easy to fold . suited for bulk printing and home use. our clients are in love with this paper model.",
+		img:"./img/paperbox/webp/fr.webp",
+		btn:"more details",
+	},
+	]
+
+	var generateProductSlides = (() => {
+		for (d of DATA_PAPERPRODUCTS) {
+			$('.product-carousel .swiper-wrapper').append(`
+				<div class="swiper-slide">
+				<div class="row mx-0">
+				<imholder class="col-lg-4 px-1">
+				<img class="img-fluid rounded" src="${d.img}" alt="Card image cap">
+				</imholder>
+				<descriptor class="col-lg-8 px-1">
+				<h3 class="">${d.title}</h3>
+				<p class="">
+				${d.desc} 
+				<a href="#" class="btn btn-outline-light py-0">${d.btn}</a>
+				</p>
+
+				</descriptor>
+				</div>
+				</div>
+				`)
+				// console.log(d)
+			}
+		})()
+	</script>

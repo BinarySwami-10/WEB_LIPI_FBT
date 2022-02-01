@@ -1,0 +1,1 @@
+pip install selenium requests flask django requests-cache

@@ -1,0 +1,9 @@
+{
+    "Errors": {
+        "Code": "011",
+        "Description": "Flight sold out. "
+    },
+    "Insurance": null,
+    "Journeys": [],
+    "TraceId": ""
+}

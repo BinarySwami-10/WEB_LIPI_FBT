@@ -1,0 +1,684 @@
+************************ Request Start**************************
+
+{
+  "Segment" : [
+    {
+      "Deeplink" : "",
+      "EngineID" : 7,
+      "NearByAirport" : false,
+      "description" : "",
+      "Fare" : {
+        "TotalFareWithOutMarkUp" : 33303,
+        "TotalTaxWithOutMarkUp" : 4103,
+        "ExchangeRate" : 0,
+        "PaxFares" : [
+          {
+            "IsZeroCancellation" : false,
+            "TDS" : 0,
+            "PaxType" : 0,
+            "Fare" : [
+              {
+                "ChargeCode" : "K3.",
+                "Amount" : 1489,
+                "ChargeType" : ""
+              },
+              {
+                "ChargeCode" : "PSF",
+                "Amount" : 245,
+                "ChargeType" : ""
+              },
+              {
+                "ChargeCode" : "E7.",
+                "Amount" : 158,
+                "ChargeType" : ""
+              },
+              {
+                "ChargeCode" : "G8.",
+                "Amount" : 68,
+                "ChargeType" : ""
+              },
+              {
+                "ChargeCode" : "TS.",
+                "Amount" : 1573,
+                "ChargeType" : ""
+              },
+              {
+                "ChargeCode" : "YQ",
+                "Amount" : 570,
+                "ChargeType" : ""
+              }
+            ],
+            "Refundable" : false,
+            "CancelPenalty" : 0,
+            "GDSPnr" : "",
+            "STF" : 0,
+            "Commission" : 0,
+            "ZeroCancellationValidity" : "28",
+            "FareBasicCode" : "Economy",
+            "TotalFare" : 33303,
+            "AirlinePnr" : "",
+            "BasicFare" : 29200,
+            "BaggageUnit" : "KG",
+            "BaseTransactionAmount" : 0,
+            "Cashback" : 0,
+            "EquivCurrencyCode" : "",
+            "TransactionAmount" : 0,
+            "FareInfoKey" : "SbxnmhBAAA\/BH\/byCTAAAA==",
+            "ServiceFee" : 0,
+            "ZeroCancellationCharge" : 1000,
+            "BaggageWeight" : "30",
+            "ChangePenalty" : 4602,
+            "TotalTax" : 4103,
+            "MarkUP" : 0,
+            "FareInfoValue" : "gws-eJxNjrEOgzAMRD8G3e6EEmBLS4JAUC+lQzr0\/z+DS0ilWnJ80bPP9t5bMaMY2\/n\/aPBtngv0PQEKywxxhxV3G8ovQUQG7K\/DpPWD6uFItNCrmtI3jaFjwdzOUlBSRn0f20Z2GdPSIG9GlpzAT8SFUu\/hWLXNi3vHmVih9OCpJ8wpK+E=",
+            "TransactionFee" : 0
+          }
+        ],
+        "BasicFare" : 29200
+      },
+      "MemoryCreationTime" : "\/Date(1548419164187+0530)\/",
+      "IsSpecialId" : false,
+      "SearchId" : "260,ADT:BF=29200 Tax=4103,CHD:BF=0 Tax=0,INF:BF=0 Tax=0,DFValue=0,DFValue=0,APFV=33303`4103`29200`0`4602.0`0`0`Economy``KG`30`False`0`0`0`0`,CPFV=,IPFV=,ATB=`K3.:1489`PSF:245`E7.:158`G8.:68`TS.:1573`YQ:570,CTB=,ITB=,TBA=29200,TTA=4103,TFA=33303",
+      "IsRoundTrip" : true,
+      "Sessionfilepath" : "",
+      "FareIndicator" : 3,
+      "FareRule" : "CAN-BEF 4_0:0|CHG-BEF 4_0:4602.0|EMTFee-500|CANCEL-BEF 4_0:10974.0|CHANGE-BEF 4_0:4602.0|Msg:As per airline rules.",
+      "BondType" : "OutBound",
+      "SSDetails" : "Free Meals",
+      "IsSpecial" : false,
+      "CurrencyCode" : "",
+      "Remark" : "",
+      "IsBaggageFare" : false,
+      "IsInternational" : false,
+      "ItineraryKey" : "84F95A300A074256CCD367B58724D1FF",
+      "IsCache" : false,
+      "IsHoldBooking" : false,
+      "JourneyIndex" : 7,
+      "PromoCode" : "",
+      "Bonds" : [
+        {
+          "BoundType" : "OutBound",
+          "ItineraryKey" : "",
+          "IsBaggageFare" : false,
+          "Legs" : [
+            {
+              "DepartureTerminal" : "3",
+              "FlightDetailRefKey" : "SbxnmhBAAA\/Bx+byCTAAAA==",
+              "ArrivalDate" : "Sat-26Jan2019",
+              "ArrivalTime" : "07:00",
+              "FlightDesignator" : "",
+              "CarrierCode" : "MH",
+              "AirlinePnr" : "",
+              "AvailableSeat" : "9",
+              "ProviderCode" : "1G!`333`M`9`KG`30`Economy``MH`3`0`False`0````P``05h 20m``L",
+              "LayoverDuration" : "",
+              "BaggageWeight" : "30",
+              "IsConnecting" : false,
+              "DepartureDate" : "Fri-25Jan2019",
+              "FareClassOfService" : "L",
+              "CurrencyCode" : "",
+              "SSRDetails" : [
+
+              ],
+              "Remarks" : "Enjoy more services and added legroom space with Economy Smart\n\nKick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality\n\n• Please note that if the flight is operated by another airline then the onboard product or service may be different to that described above.",
+              "Duration" : "05h 20m",
+              "Group" : "0",
+              "Origin" : "DEL",
+              "Status" : "",
+              "Capacity" : 0,
+              "GDSPnr" : "",
+              "OperatedBy" : "",
+              "Cabin" : "Economy",
+              "FlightNumber" : "191",
+              "AircraftCode" : "SbxnmhBAAA\/Bw+byCTAAAA==",
+              "NumberOfStops" : "0",
+              "Destination" : "KUL",
+              "CabinClasses" : [
+
+              ],
+              "AircraftType" : "333",
+              "ArrivalTerminal" : "M",
+              "FareBasisCode" : "",
+              "BaggageUnit" : "KG",
+              "LayoverAt" : "",
+              "BookSeat" : "",
+              "Sold" : 0,
+              "Amount" : 0,
+              "IsSeatOpen" : false,
+              "AirlineName" : "MH",
+              "BoundType" : "OutBound",
+              "DepartureTime" : "23:10"
+            },
+            {
+              "DepartureTerminal" : "M",
+              "FlightDetailRefKey" : "SbxnmhBAAA\/Bi\/byCTAAAA==",
+              "ArrivalDate" : "Sat-26Jan2019",
+              "ArrivalTime" : "14:10",
+              "FlightDesignator" : "",
+              "CarrierCode" : "MH",
+              "AirlinePnr" : "",
+              "AvailableSeat" : "9",
+              "ProviderCode" : "1G!`773``9`KG`30`Economy``MH`M`0`False`0``THAI AIRWAYS INTL``P``02h 05m``L",
+              "LayoverDuration" : "",
+              "BaggageWeight" : "30",
+              "IsConnecting" : false,
+              "DepartureDate" : "Sat-26Jan2019",
+              "FareClassOfService" : "L",
+              "CurrencyCode" : "",
+              "SSRDetails" : [
+
+              ],
+              "Remarks" : "Enjoy more services and added legroom space with Economy Smart\n\nKick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality\n\n• Please note that if the flight is operated by another airline then the onboard product or service may be different to that described above.",
+              "Duration" : "02h 05m",
+              "Group" : "0",
+              "Origin" : "KUL",
+              "Status" : "",
+              "Capacity" : 0,
+              "GDSPnr" : "",
+              "OperatedBy" : "THAI AIRWAYS INTL",
+              "Cabin" : "Economy",
+              "FlightNumber" : "5860",
+              "AircraftCode" : "SbxnmhBAAA\/Bh\/byCTAAAA==",
+              "NumberOfStops" : "0",
+              "Destination" : "BKK",
+              "CabinClasses" : [
+
+              ],
+              "AircraftType" : "773",
+              "ArrivalTerminal" : "",
+              "FareBasisCode" : "",
+              "BaggageUnit" : "KG",
+              "LayoverAt" : "",
+              "BookSeat" : "",
+              "Sold" : 0,
+              "Amount" : 0,
+              "IsSeatOpen" : false,
+              "AirlineName" : "MH",
+              "BoundType" : "OutBound",
+              "DepartureTime" : "13:05"
+            }
+          ],
+          "addOnDetail" : [
+
+          ],
+          "JourneyTime" : "13h 30m",
+          "IsSSR" : false,
+          "SpecialServices" : [
+
+          ]
+        },
+        {
+          "BoundType" : "InBound",
+          "ItineraryKey" : "",
+          "IsBaggageFare" : false,
+          "Legs" : [
+            {
+              "DepartureTerminal" : "",
+              "FlightDetailRefKey" : "SbxnmhBAAA\/B1+byCTAAAA==",
+              "ArrivalDate" : "Sat-26Jan2019",
+              "ArrivalTime" : "17:30",
+              "FlightDesignator" : "",
+              "CarrierCode" : "MH",
+              "AirlinePnr" : "",
+              "AvailableSeat" : "9",
+              "ProviderCode" : "1G!`738`M`9`KG`30`Economy``MH``1`False`0````S``02h 15m``L",
+              "LayoverDuration" : "",
+              "BaggageWeight" : "30",
+              "IsConnecting" : false,
+              "DepartureDate" : "Sat-26Jan2019",
+              "FareClassOfService" : "L",
+              "CurrencyCode" : "",
+              "SSRDetails" : [
+
+              ],
+              "Remarks" : "Enjoy more services and added legroom space with Economy Smart\n\nKick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality\n\n• Please note that if the flight is operated by another airline then the onboard product or service may be different to that described above.",
+              "Duration" : "02h 15m",
+              "Group" : "1",
+              "Origin" : "BKK",
+              "Status" : "",
+              "Capacity" : 0,
+              "GDSPnr" : "",
+              "OperatedBy" : "",
+              "Cabin" : "Economy",
+              "FlightNumber" : "789",
+              "AircraftCode" : "SbxnmhBAAA\/B0+byCTAAAA==",
+              "NumberOfStops" : "0",
+              "Destination" : "KUL",
+              "CabinClasses" : [
+
+              ],
+              "AircraftType" : "738",
+              "ArrivalTerminal" : "M",
+              "FareBasisCode" : "",
+              "BaggageUnit" : "KG",
+              "LayoverAt" : "",
+              "BookSeat" : "",
+              "Sold" : 0,
+              "Amount" : 0,
+              "IsSeatOpen" : false,
+              "AirlineName" : "MH",
+              "BoundType" : "InBound",
+              "DepartureTime" : "14:15"
+            },
+            {
+              "DepartureTerminal" : "M",
+              "FlightDetailRefKey" : "SbxnmhBAAA\/B3+byCTAAAA==",
+              "ArrivalDate" : "Sat-26Jan2019",
+              "ArrivalTime" : "21:50",
+              "FlightDesignator" : "",
+              "CarrierCode" : "MH",
+              "AirlinePnr" : "",
+              "AvailableSeat" : "9",
+              "ProviderCode" : "1G!`333`3`9`KG`30`Economy``MH`M`1`False`0````S``05h 30m``L",
+              "LayoverDuration" : "",
+              "BaggageWeight" : "30",
+              "IsConnecting" : false,
+              "DepartureDate" : "Sat-26Jan2019",
+              "FareClassOfService" : "L",
+              "CurrencyCode" : "",
+              "SSRDetails" : [
+
+              ],
+              "Remarks" : "Enjoy more services and added legroom space with Economy Smart\n\nKick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality\n\n• Please note that if the flight is operated by another airline then the onboard product or service may be different to that described above.",
+              "Duration" : "05h 30m",
+              "Group" : "1",
+              "Origin" : "KUL",
+              "Status" : "",
+              "Capacity" : 0,
+              "GDSPnr" : "",
+              "OperatedBy" : "",
+              "Cabin" : "Economy",
+              "FlightNumber" : "190",
+              "AircraftCode" : "SbxnmhBAAA\/B2+byCTAAAA==",
+              "NumberOfStops" : "0",
+              "Destination" : "DEL",
+              "CabinClasses" : [
+
+              ],
+              "AircraftType" : "333",
+              "ArrivalTerminal" : "3",
+              "FareBasisCode" : "",
+              "BaggageUnit" : "KG",
+              "LayoverAt" : "",
+              "BookSeat" : "",
+              "Sold" : 0,
+              "Amount" : 0,
+              "IsSeatOpen" : false,
+              "AirlineName" : "MH",
+              "BoundType" : "InBound",
+              "DepartureTime" : "18:50"
+            }
+          ],
+          "addOnDetail" : [
+
+          ],
+          "JourneyTime" : "9h 5m",
+          "IsSSR" : false,
+          "SpecialServices" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "FlightAvailabilityRQ" : {
+    "SaveSessionStatus" : false,
+    "AirpricePosition" : "1",
+    "Version" : "iOS Version 3.3.13",
+    "DeviceId" : "E2607998-7FF7-4CDE-8006-CCF484535CC6",
+    "Authentication" : {
+       "PortalID": 26,
+      "IpAddress": "45.64.222.103",
+      "UserName": "xxx",
+      "Password": "xxx"
+    },
+    "TripType" : 1,
+    "MobileNumber" : "0",
+    "Childs" : 0,
+    "EngineID" : [
+      7
+    ],
+    "Cabin" : 0,
+    "CustomerId" : "pushpendra.rajput86@gmail.com",
+    "FlightSearchDetails" : [
+      {
+        "BeginDate" : "2019-01-25",
+        "Origin" : "DEL",
+        "Destination" : "BKK"
+      },
+      {
+        "BeginDate" : "2019-01-26",
+        "Origin" : "BKK",
+        "Destination" : "DEL"
+      }
+    ],
+    "Browser" : "IOS",
+    "IPAddress" : "45.64.222.103",
+    "TraceId" : "xkcQd6rIl8(IOS)2019-01-25_17-55-59",
+    "Infants" : 0,
+    "FaresIndicatior" : [
+      3
+    ],
+    "Adults" : 1
+  }
+}
+
+
+************************ Request End **************************
+************************ Response Data **************************
+
+{
+	"Errors": null,
+	"Insurance": null,
+	"Journeys": [
+		{
+			"JourneyDetail": null,
+			"Segments": [
+				{
+					"BondType": "OutBound",
+					"Bonds": [
+						{
+							"BoundType": "OutBound",
+							"IsBaggageFare": false,
+							"IsSSR": false,
+							"ItineraryKey": null,
+							"JourneyTime": "13h 30m",
+							"Legs": [
+								{
+									"AircraftCode": "yb0kmhBAAA/BTE5GATAAAA==",
+									"AircraftType": "333",
+									"AirlineName": "MH",
+									"AirlinePnr": null,
+									"ArrivalDate": "Sat-26Jan2019",
+									"ArrivalTerminal": "M",
+									"ArrivalTime": "07:00",
+									"AvailableSeat": null,
+									"BaggageUnit": "KG",
+									"BaggageWeight": "30",
+									"BookSeat": null,
+									"BoundType": "OutBound",
+									"Cabin": "Economy",
+									"CabinClasses": null,
+									"Capacity": 0,
+									"CarrierCode": "MH",
+									"CurrencyCode": null,
+									"DepartureDate": "Fri-25Jan2019",
+									"DepartureTerminal": "3",
+									"DepartureTime": "23:10",
+									"Destination": "KUL",
+									"Duration": "5h 20m",
+									"FareBasisCode": null,
+									"FareClassOfService": "L",
+									"FareRulesKey": "yb0kmhBAAA/BlE5GATAAAA==",
+									"FlightDesignator": null,
+									"FlightDetailRefKey": null,
+									"FlightName": "Malayasian Airways",
+									"FlightNumber": "191",
+									"GDSPnr": null,
+									"Group": "0",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"LayoverAt": null,
+									"LayoverDuration": null,
+									"NumberOfStops": "0",
+									"OperatedBy": "Malaysia Airlines Berhad",
+									"Origin": "DEL",
+									"ProviderCode": "1G!`333`M``KG`30`Economy``MH`3`0`False`0``Malaysia Airlines Berhad``S``5h 20m``L",
+									"Remarks": "MH",
+									"SSRDetails": null,
+									"Sold": 0,
+									"Status": null
+								},
+								{
+									"AircraftCode": "yb0kmhBAAA/BVE5GATAAAA==",
+									"AircraftType": "773",
+									"AirlineName": "MH",
+									"AirlinePnr": null,
+									"ArrivalDate": "Sat-26Jan2019",
+									"ArrivalTerminal": "",
+									"ArrivalTime": "14:10",
+									"AvailableSeat": null,
+									"BaggageUnit": null,
+									"BaggageWeight": null,
+									"BookSeat": null,
+									"BoundType": "OutBound",
+									"Cabin": "Economy",
+									"CabinClasses": null,
+									"Capacity": 0,
+									"CarrierCode": "MH",
+									"CurrencyCode": null,
+									"DepartureDate": "Sat-26Jan2019",
+									"DepartureTerminal": "M",
+									"DepartureTime": "13:05",
+									"Destination": "BKK",
+									"Duration": "2h 5m",
+									"FareBasisCode": null,
+									"FareClassOfService": "L",
+									"FareRulesKey": "yb0kmhBAAA/BlE5GATAAAA==",
+									"FlightDesignator": null,
+									"FlightDetailRefKey": null,
+									"FlightName": "Malayasian Airways",
+									"FlightNumber": "5860",
+									"GDSPnr": null,
+									"Group": "0",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"LayoverAt": null,
+									"LayoverDuration": null,
+									"NumberOfStops": "0",
+									"OperatedBy": "Thai Airways Intl Public CO Ltd",
+									"Origin": "KUL",
+									"ProviderCode": "1G!`773`````Economy``MH`M`0`False`0``Thai Airways Intl Public CO Ltd``S``2h 5m``L",
+									"Remarks": null,
+									"SSRDetails": null,
+									"Sold": 0,
+									"Status": null
+								}
+							],
+							"addOnDetail": null
+						},
+						{
+							"BoundType": "InBound",
+							"IsBaggageFare": false,
+							"IsSSR": false,
+							"ItineraryKey": null,
+							"JourneyTime": "9h 5m",
+							"Legs": [
+								{
+									"AircraftCode": "yb0kmhBAAA/BXE5GATAAAA==",
+									"AircraftType": "738",
+									"AirlineName": "MH",
+									"AirlinePnr": null,
+									"ArrivalDate": "Sat-26Jan2019",
+									"ArrivalTerminal": "M",
+									"ArrivalTime": "17:30",
+									"AvailableSeat": null,
+									"BaggageUnit": "KG",
+									"BaggageWeight": "30",
+									"BookSeat": null,
+									"BoundType": "InBound",
+									"Cabin": "Economy",
+									"CabinClasses": null,
+									"Capacity": 0,
+									"CarrierCode": "MH",
+									"CurrencyCode": null,
+									"DepartureDate": "Sat-26Jan2019",
+									"DepartureTerminal": "",
+									"DepartureTime": "14:15",
+									"Destination": "KUL",
+									"Duration": "2h 15m",
+									"FareBasisCode": null,
+									"FareClassOfService": "L",
+									"FareRulesKey": "yb0kmhBAAA/BxE5GATAAAA==",
+									"FlightDesignator": null,
+									"FlightDetailRefKey": null,
+									"FlightName": "Malayasian Airways",
+									"FlightNumber": "789",
+									"GDSPnr": null,
+									"Group": "1",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"LayoverAt": null,
+									"LayoverDuration": null,
+									"NumberOfStops": "0",
+									"OperatedBy": "Malaysia Airlines Berhad",
+									"Origin": "BKK",
+									"ProviderCode": "1G!`738`M``KG`30`Economy``MH``1`False`0``Malaysia Airlines Berhad``S``2h 15m``L",
+									"Remarks": null,
+									"SSRDetails": null,
+									"Sold": 0,
+									"Status": null
+								},
+								{
+									"AircraftCode": "yb0kmhBAAA/BZE5GATAAAA==",
+									"AircraftType": "333",
+									"AirlineName": "MH",
+									"AirlinePnr": null,
+									"ArrivalDate": "Sat-26Jan2019",
+									"ArrivalTerminal": "3",
+									"ArrivalTime": "21:50",
+									"AvailableSeat": null,
+									"BaggageUnit": null,
+									"BaggageWeight": null,
+									"BookSeat": null,
+									"BoundType": "InBound",
+									"Cabin": "Economy",
+									"CabinClasses": null,
+									"Capacity": 0,
+									"CarrierCode": "MH",
+									"CurrencyCode": null,
+									"DepartureDate": "Sat-26Jan2019",
+									"DepartureTerminal": "M",
+									"DepartureTime": "18:50",
+									"Destination": "DEL",
+									"Duration": "5h 30m",
+									"FareBasisCode": null,
+									"FareClassOfService": "L",
+									"FareRulesKey": "yb0kmhBAAA/BxE5GATAAAA==",
+									"FlightDesignator": null,
+									"FlightDetailRefKey": null,
+									"FlightName": "Malayasian Airways",
+									"FlightNumber": "190",
+									"GDSPnr": null,
+									"Group": "1",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"LayoverAt": null,
+									"LayoverDuration": null,
+									"NumberOfStops": "0",
+									"OperatedBy": "Malaysia Airlines Berhad",
+									"Origin": "KUL",
+									"ProviderCode": "1G!`333`3````Economy``MH`M`1`False`0``Malaysia Airlines Berhad``S``5h 30m``L",
+									"Remarks": null,
+									"SSRDetails": null,
+									"Sold": 0,
+									"Status": null
+								}
+							],
+							"addOnDetail": null
+						}
+					],
+					"CurrencyCode": null,
+					"Deeplink": "",
+					"EngineID": 7,
+					"Fare": {
+						"BasicFare": 29200,
+						"BrandKeys": null,
+						"ExchangeRate": 0,
+						"PaxFares": [
+							{
+								"AirlinePnr": null,
+								"BaggageUnit": "KG",
+								"BaggageWeight": "30",
+								"BaseTransactionAmount": 0,
+								"BasicFare": 29200,
+								"Branded": null,
+								"CancelPenalty": 0,
+								"Cashback": 0,
+								"ChangePenalty": 8850.0,
+								"Commission": 0,
+								"DFValue": "0",
+								"EquivCurrencyCode": null,
+								"Fare": [
+									{
+										"Amount": 1489,
+										"ChargeCode": "K3.",
+										"ChargeType": null
+									},
+									{
+										"Amount": 245,
+										"ChargeCode": "PSF",
+										"ChargeType": null
+									},
+									{
+										"Amount": 158,
+										"ChargeCode": "E7.",
+										"ChargeType": null
+									},
+									{
+										"Amount": 68,
+										"ChargeCode": "G8.",
+										"ChargeType": null
+									},
+									{
+										"Amount": 1573,
+										"ChargeCode": "TS.",
+										"ChargeType": null
+									},
+									{
+										"Amount": 570,
+										"ChargeCode": "YQ",
+										"ChargeType": null
+									}
+								],
+								"FareBasisCode": null,
+								"FareInfoKey": null,
+								"FareInfoValue": null,
+								"GDSPnr": null,
+								"IsZeroCancellation": false,
+								"MarkUP": 0,
+								"PaxType": 0,
+								"Refundable": false,
+								"STF": 0,
+								"ServiceFee": 0,
+								"TDS": 0,
+								"TotalFare": 33303,
+								"TotalTax": 4103,
+								"TransactionAmount": 0,
+								"TransactionFee": 0,
+								"ZeroCancellationCharge": 1000,
+								"ZeroCancellationValidity": "28"
+							}
+						],
+						"TotalFareWithOutMarkUp": 33303,
+						"TotalTaxWithOutMarkUp": 4103
+					},
+					"FareIndicator": 3,
+					"FareRule": "CAN-BEF 4_0:0|CHG-BEF 4_0:8850.0|EMTFee-500|CANCEL-BEF 4_0:NA|CHANGE-BEF 4_0:8850.0|Msg:As per airline rules.",
+					"Fares": null,
+					"IsBaggageFare": false,
+					"IsBranded": false,
+					"IsCache": false,
+					"IsHoldBooking": false,
+					"IsInternational": false,
+					"IsRoundTrip": true,
+					"IsSpecial": false,
+					"IsSpecialId": false,
+					"ItineraryKey": "84FBD4D50A0759CBF4C05F35E0C0CFA3",
+					"JourneyIndex": 0,
+					"MemoryCreationTime": "/Date(1548419324313+0530)/",
+					"NearByAirport": false,
+					"PaxSSRs": null,
+					"PromoCode": null,
+					"Remark": null,
+					"SSDetails": "Free Meals",
+					"SearchId": "260,ADT:BF=29200 Tax=4103,CHD:BF=0 Tax=0,INF:BF=0 Tax=0,DFValue=0,DFValue=0,APFV=33303`4103`29200`0`8850.0`0`0```KG`30`False`0`0`0`33303`,CPFV=,IPFV=,ATB=`K3.:1489`PSF:245`E7.:158`G8.:68`TS.:1573`YQ:570,CTB=,ITB=,TBA=29200,TTA=4103,TFA=33303",
+					"Sessionfilepath": "DELBKK2501201900000010260TravelPort21b4adc750b44c4399c3e9fd90ec8894EMTB2B25012019175844110",
+					"VisaInfo": null,
+					"description": null
+				}
+			]
+		}
+	],
+	"TraceId": "xkcQd6rIl8(IOS)2019-01-25_17-55-59"
+}

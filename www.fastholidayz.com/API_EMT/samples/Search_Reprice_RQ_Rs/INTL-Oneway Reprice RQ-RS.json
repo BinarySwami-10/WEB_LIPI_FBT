@@ -1,0 +1,392 @@
+************************ Request Start**************************
+{
+  "Segment" : [
+    {
+      "Deeplink" : "",
+      "EngineID" : 1,
+      "NearByAirport" : false,
+      "description" : "",
+      "Fare" : {
+        "TotalFareWithOutMarkUp" : 9287,
+        "TotalTaxWithOutMarkUp" : 829,
+        "ExchangeRate" : 0,
+        "PaxFares" : [
+          {
+            "IsZeroCancellation" : false,
+            "TDS" : 0,
+            "PaxType" : 0,
+            "Fare" : [
+              {
+                "ChargeCode" : "TRF",
+                "Amount" : 50,
+                "ChargeType" : "TravelFee"
+              },
+              {
+                "ChargeCode" : "PSF",
+                "Amount" : 244,
+                "ChargeType" : "TravelFee"
+              },
+              {
+                "ChargeCode" : "APPS",
+                "Amount" : 78,
+                "ChargeType" : "TravelFee"
+              },
+              {
+                "ChargeCode" : "CAAT",
+                "Amount" : 33,
+                "ChargeType" : "TravelFee"
+              },
+              {
+                "ChargeCode" : "CGST07",
+                "Amount" : 1,
+                "ChargeType" : "Tax"
+              },
+              {
+                "ChargeCode" : "CGST07",
+                "Amount" : 211,
+                "ChargeType" : "Tax"
+              },
+              {
+                "ChargeCode" : "SGST07",
+                "Amount" : 1,
+                "ChargeType" : "Tax"
+              },
+              {
+                "ChargeCode" : "SGST07",
+                "Amount" : 211,
+                "ChargeType" : "Tax"
+              }
+            ],
+            "Refundable" : true,
+            "CancelPenalty" : 4500,
+            "GDSPnr" : "",
+            "STF" : 0,
+            "Commission" : 0,
+            "ZeroCancellationValidity" : "28",
+            "FareBasicCode" : "BSAVER",
+            "TotalFare" : 9287,
+            "AirlinePnr" : "",
+            "BasicFare" : 8458,
+            "BaggageUnit" : "KG",
+            "BaseTransactionAmount" : 0,
+            "Cashback" : 0,
+            "EquivCurrencyCode" : "",
+            "TransactionAmount" : 0,
+            "FareInfoKey" : "0~B~ ~SG~BSAVER~3022~~0~3~~X",
+            "ServiceFee" : 0,
+            "ZeroCancellationCharge" : 100,
+            "BaggageWeight" : "20",
+            "ChangePenalty" : 3500,
+            "TotalTax" : 829,
+            "MarkUP" : 0,
+            "FareInfoValue" : "B",
+            "TransactionFee" : 0
+          }
+        ],
+        "BasicFare" : 8458
+      },
+      "MemoryCreationTime" : "\/Date(1548419006921+0530)\/",
+      "IsSpecialId" : false,
+      "SearchId" : "107,ADT:BF=8458.0000 Tax=829.00000,CHD:BF=0 Tax=0,INF:BF=0 Tax=0,DFValue=0,DFValue=0,APFV=9287.00000`829.00000`8458.0000`4500`3500`0`0`BSAVER``KG`20`True`0`0`0`0`,CPFV=,IPFV=,ATB=`TRF:50.0000`PSF:244.00000`APPS:78.00000`CAAT:33.00000`CGST07:1.00000`CGST07:211.00000`SGST07:1.00000`SGST07:211.00000,CTB=,ITB=,TBA=8458.0000,TTA=829.00000,TFA=9287.00000",
+      "IsRoundTrip" : false,
+      "Sessionfilepath" : "",
+      "FareIndicator" : 0,
+      "FareRule" : "CAN-BEF 4_0:4500|CHG-BEF 4_0:3500|EMTFee-250|CANCEL-BEF 4_0:4500|CHANGE-BEF 4_0:3500",
+      "BondType" : "OutBound",
+      "SSDetails" : "",
+      "IsSpecial" : false,
+      "CurrencyCode" : "",
+      "Remark" : "",
+      "IsBaggageFare" : false,
+      "IsInternational" : true,
+      "ItineraryKey" : "IY8Y5uF2M9EKQh3DWSNY08U3T2Q0ldkhoZOFysq8vPE=",
+      "IsCache" : false,
+      "IsHoldBooking" : false,
+      "JourneyIndex" : 1,
+      "PromoCode" : "",
+      "Bonds" : [
+        {
+          "BoundType" : "OutBound",
+          "ItineraryKey" : "IY8Y5uF2M9EKQh3DWSNY08U3T2Q0ldkhoZOFysq8vPE=",
+          "IsBaggageFare" : false,
+          "Legs" : [
+            {
+              "DepartureTerminal" : "3",
+              "FlightDetailRefKey" : "SG~  87~ ~~DEL~01\/25\/2019 21:10~BKK~01\/26\/2019 02:45~~",
+              "ArrivalDate" : "Sat-26Jan2019",
+              "ArrivalTime" : "02:45",
+              "FlightDesignator" : "",
+              "CarrierCode" : "SG",
+              "AirlinePnr" : "",
+              "AvailableSeat" : "",
+              "ProviderCode" : "SG`  87` ``DEL`01\/25\/2019 21:10`BKK`01\/26\/2019 02:45``!0`B` `SG`BSAVER`3022``0`3``X!!`737```KG`20`Economy``SG`3`0`False`0``````04h 05m`BSAVER`B",
+              "LayoverDuration" : "",
+              "BaggageWeight" : "20",
+              "IsConnecting" : false,
+              "DepartureDate" : "Fri-25Jan2019",
+              "FareClassOfService" : "B",
+              "CurrencyCode" : "",
+              "SSRDetails" : [
+
+              ],
+              "Remarks" : "",
+              "Duration" : "04h 05m",
+              "Group" : "0",
+              "Origin" : "DEL",
+              "Status" : "",
+              "Capacity" : 189,
+              "GDSPnr" : "",
+              "OperatedBy" : "",
+              "Cabin" : "Economy",
+              "FlightNumber" : "  87",
+              "AircraftCode" : "SG",
+              "NumberOfStops" : "0",
+              "Destination" : "BKK",
+              "CabinClasses" : [
+
+              ],
+              "AircraftType" : "737",
+              "ArrivalTerminal" : "",
+              "FareBasisCode" : "BSAVER",
+              "BaggageUnit" : "KG",
+              "LayoverAt" : "",
+              "BookSeat" : "",
+              "Sold" : 0,
+              "Amount" : 0,
+              "IsSeatOpen" : false,
+              "AirlineName" : "SG",
+              "BoundType" : "OutBound",
+              "DepartureTime" : "21:10"
+            }
+          ],
+          "addOnDetail" : [
+
+          ],
+          "JourneyTime" : "04h 05m",
+          "IsSSR" : false,
+          "SpecialServices" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "FlightAvailabilityRQ" : {
+    "SaveSessionStatus" : true,
+    "AirpricePosition" : "1",
+    "Version" : "iOS Version 3.3.13",
+    "DeviceId" : "E2607998-7FF7-4CDE-8006-CCF484535CC6",
+    "Authentication" : {
+      "PortalID": 26,
+      "IpAddress": "45.64.222.103",
+      "UserName": "xxx",
+      "Password": "xxx"
+    },
+    "TripType" : 0,
+    "MobileNumber" : "0",
+    "Childs" : 0,
+    "EngineID" : [
+      1
+    ],
+    "Cabin" : 0,
+    "CustomerId" : "pushpendra.rajput86@gmail.com",
+    "FlightSearchDetails" : [
+      {
+        "BeginDate" : "2019-01-25",
+        "Origin" : "DEL",
+        "Destination" : "BKK"
+      }
+    ],
+    "Browser" : "IOS",
+    "IPAddress" : "45.64.222.103",
+    "TraceId" : "Vc2foK6YHv(IOS)2019-01-25_17-53-23",
+    "Infants" : 0,
+    "FaresIndicatior" : [
+      0
+    ],
+    "Adults" : 1
+  }
+}
+************************ Request End **************************
+************************ Response Data **************************
+
+{
+	"Errors": null,
+	"Insurance": null,
+	"Journeys": [
+		{
+			"JourneyDetail": null,
+			"Segments": [
+				{
+					"BondType": "OutBound",
+					"Bonds": [
+						{
+							"BoundType": "OutBound",
+							"IsBaggageFare": false,
+							"IsSSR": false,
+							"ItineraryKey": "IY8Y5uF2M9EKQh3DWSNY08U3T2Q0ldkhoZOFysq8vPE=",
+							"JourneyTime": "04h 05m",
+							"Legs": [
+								{
+									"AircraftCode": "SG",
+									"AircraftType": "737",
+									"AirlineName": "SG",
+									"AirlinePnr": null,
+									"ArrivalDate": "Sat-26Jan2019",
+									"ArrivalTerminal": "",
+									"ArrivalTime": "02:45",
+									"AvailableSeat": null,
+									"BaggageUnit": "KG",
+									"BaggageWeight": "20",
+									"BookSeat": null,
+									"BoundType": "OutBound",
+									"Cabin": "Economy",
+									"CabinClasses": null,
+									"Capacity": 189,
+									"CarrierCode": "SG",
+									"CurrencyCode": "INR",
+									"DepartureDate": "Fri-25Jan2019",
+									"DepartureTerminal": "3",
+									"DepartureTime": "21:10",
+									"Destination": "BKK",
+									"Duration": "05h 35m",
+									"FareBasisCode": "BSAVER",
+									"FareClassOfService": "B",
+									"FareRulesKey": null,
+									"FlightDesignator": null,
+									"FlightDetailRefKey": "SG~  87~ ~~DEL~01/25/2019 21:10~BKK~01/26/2019 02:45~~",
+									"FlightName": "Spicejet",
+									"FlightNumber": "  87",
+									"GDSPnr": null,
+									"Group": "0",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"LayoverAt": null,
+									"LayoverDuration": null,
+									"NumberOfStops": "0",
+									"OperatedBy": null,
+									"Origin": "DEL",
+									"ProviderCode": "SG`  87` ``DEL`01/25/2019 21:10`BKK`01/26/2019 02:45``!0`B` `SG`BSAVER`3022``0`3``X!!`737```KG`20`Economy``SG`3`0`False`0``````05h 35m`BSAVER`B",
+									"Remarks": null,
+									"SSRDetails": null,
+									"Sold": 0,
+									"Status": null
+								}
+							],
+							"addOnDetail": null
+						}
+					],
+					"CurrencyCode": null,
+					"Deeplink": "",
+					"EngineID": 1,
+					"Fare": {
+						"BasicFare": 8458.0,
+						"BrandKeys": null,
+						"ExchangeRate": 0,
+						"PaxFares": [
+							{
+								"AirlinePnr": null,
+								"BaggageUnit": "KG",
+								"BaggageWeight": "20",
+								"BaseTransactionAmount": 0,
+								"BasicFare": 8458.0,
+								"Branded": null,
+								"CancelPenalty": 4500,
+								"Cashback": 0,
+								"ChangePenalty": 3500,
+								"Commission": 0,
+								"DFValue": "0",
+								"EquivCurrencyCode": null,
+								"Fare": [
+									{
+										"Amount": 50.0,
+										"ChargeCode": "TRF",
+										"ChargeType": "TravelFee"
+									},
+									{
+										"Amount": 244.0,
+										"ChargeCode": "PSF",
+										"ChargeType": "TravelFee"
+									},
+									{
+										"Amount": 78.0,
+										"ChargeCode": "APPS",
+										"ChargeType": "TravelFee"
+									},
+									{
+										"Amount": 33.0,
+										"ChargeCode": "CAAT",
+										"ChargeType": "TravelFee"
+									},
+									{
+										"Amount": 1.0,
+										"ChargeCode": "CGST07",
+										"ChargeType": "Tax"
+									},
+									{
+										"Amount": 211.0,
+										"ChargeCode": "CGST07",
+										"ChargeType": "Tax"
+									},
+									{
+										"Amount": 1.0,
+										"ChargeCode": "SGST07",
+										"ChargeType": "Tax"
+									},
+									{
+										"Amount": 211.0,
+										"ChargeCode": "SGST07",
+										"ChargeType": "Tax"
+									}
+								],
+								"FareBasisCode": "BSAVER",
+								"FareInfoKey": "0~B~ ~SG~BSAVER~3022~~0~3~~X",
+								"FareInfoValue": "B",
+								"GDSPnr": null,
+								"IsZeroCancellation": false,
+								"MarkUP": 0,
+								"PaxType": 0,
+								"Refundable": true,
+								"STF": 0,
+								"ServiceFee": 0,
+								"TDS": 0,
+								"TotalFare": 9287.0,
+								"TotalTax": 829.0,
+								"TransactionAmount": 0,
+								"TransactionFee": 0,
+								"ZeroCancellationCharge": 100,
+								"ZeroCancellationValidity": "28"
+							}
+						],
+						"TotalFareWithOutMarkUp": 9287.0,
+						"TotalTaxWithOutMarkUp": 829.0
+					},
+					"FareIndicator": 0,
+					"FareRule": "CAN-BEF 4_0:4500|CHG-BEF 4_0:3500|EMTFee-250|CANCEL-BEF 4_0:4500|CHANGE-BEF 4_0:3500",
+					"Fares": null,
+					"IsBaggageFare": false,
+					"IsBranded": false,
+					"IsCache": false,
+					"IsHoldBooking": false,
+					"IsInternational": true,
+					"IsRoundTrip": false,
+					"IsSpecial": false,
+					"IsSpecialId": false,
+					"ItineraryKey": "IY8Y5uF2M9EKQh3DWSNY08U3T2Q0ldkhoZOFysq8vPE=",
+					"JourneyIndex": 0,
+					"MemoryCreationTime": "/Date(1548419072829+0530)/",
+					"NearByAirport": false,
+					"PaxSSRs": null,
+					"PromoCode": null,
+					"Remark": "",
+					"SSDetails": null,
+					"SearchId": "107,ADT:BF=8458.0000 Tax=829.00000,CHD:BF=0 Tax=0,INF:BF=0 Tax=0,DFValue=0,DFValue=0,APFV=9287.00000`829.00000`8458.0000`4500`3500`0`0`BSAVER``KG`20`True`0`0`0`0`,CPFV=,IPFV=,ATB=`TRF:50.0000`PSF:244.00000`APPS:78.00000`CAAT:33.00000`CGST07:1.00000`CGST07:211.00000`SGST07:1.00000`SGST07:211.00000,CTB=,ITB=,TBA=8458.0000,TTA=829.00000,TFA=9287.00000",
+					"Sessionfilepath": "DELBKK2501201900000010Spicjet77104be56ecb4cccb28320e1403290c1EMTB2B25012019175431704",
+					"VisaInfo": null,
+					"description": null
+				}
+			]
+		}
+	],
+	"TraceId": "Vc2foK6YHv(IOS)2019-01-25_17-53-23"
+}

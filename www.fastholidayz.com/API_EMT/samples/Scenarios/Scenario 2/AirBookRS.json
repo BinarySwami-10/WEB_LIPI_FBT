@@ -1,0 +1,150 @@
+{
+    "BookingDetail": {
+        "CurrencyCode": "INR",
+        "PaymentAmount": 17388,
+        "PnrDetail": {
+            "Pnr": [
+                {
+                    "Destination": "BLR",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "TESTYL",
+                    "TYPE": 1
+                },
+                {
+                    "Destination": "BLR",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "TESTYL",
+                    "TYPE": 0
+                },
+                {
+                    "Destination": "BLR",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "",
+                    "TYPE": 5
+                },
+                {
+                    "Destination": "BLR",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "17388",
+                    "TYPE": 6
+                },
+                {
+                    "Destination": "DEL",
+                    "EngineID": 7,
+                    "Origin": "BLR",
+                    "PNR": "TESTEY",
+                    "TYPE": 1
+                },
+                {
+                    "Destination": "DEL",
+                    "EngineID": 7,
+                    "Origin": "BLR",
+                    "PNR": "TESTEY",
+                    "TYPE": 0
+                },
+                {
+                    "Destination": "DEL",
+                    "EngineID": 7,
+                    "Origin": "BLR",
+                    "PNR": "",
+                    "TYPE": 5
+                },
+                {
+                    "Destination": "DEL",
+                    "EngineID": 7,
+                    "Origin": "BLR",
+                    "PNR": "17388",
+                    "TYPE": 6
+                }
+            ],
+            "Tickets": [
+                {
+                    "Destination": "BLR",
+                    "EngineID": 7,
+                    "FirstName": "Amit",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 1,
+                    "PaxType": 0,
+                    "Prefix": "",
+                    "TicketNumber": "94371738-1"
+                },
+                {
+                    "Destination": "BLR",
+                    "EngineID": 7,
+                    "FirstName": "Sumit",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 2,
+                    "PaxType": 1,
+                    "Prefix": "",
+                    "TicketNumber": "94371739-2"
+                },
+                {
+                    "Destination": "BLR",
+                    "EngineID": 7,
+                    "FirstName": "Gurmit",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 3,
+                    "PaxType": 2,
+                    "Prefix": "",
+                    "TicketNumber": "94371740-3"
+                },
+                {
+                    "Destination": "DEL",
+                    "EngineID": 7,
+                    "FirstName": "Amit",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "BLR",
+                    "PassengerNumber": 1,
+                    "PaxType": 0,
+                    "Prefix": "",
+                    "TicketNumber": "25373522-1"
+                },
+                {
+                    "Destination": "DEL",
+                    "EngineID": 7,
+                    "FirstName": "Sumit",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "BLR",
+                    "PassengerNumber": 2,
+                    "PaxType": 1,
+                    "Prefix": "",
+                    "TicketNumber": "25373523-2"
+                },
+                {
+                    "Destination": "DEL",
+                    "EngineID": 7,
+                    "FirstName": "Gurmit",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "BLR",
+                    "PassengerNumber": 3,
+                    "PaxType": 2,
+                    "Prefix": "",
+                    "TicketNumber": "25373524-3"
+                }
+            ]
+        }
+    },
+    "BookingId": "",
+    "Errors": null,
+    "SearchDetails": null,
+    "TransactionId": "#EMT60030847"
+}

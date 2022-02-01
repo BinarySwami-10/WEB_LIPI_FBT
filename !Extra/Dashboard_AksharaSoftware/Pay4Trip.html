@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://d4demo.com/buytravel/Admin/ActiveMembers.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:scroll;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><title>
+	Pay4Trip
+</title><meta name="description" content="Pay4Trip"><meta name="keywords" content="Pay4Trip">
+    <!--<meta charset="utf-8" />-->
+    <meta name="generator" content="Pay4Trip"><link rel="icon" type="image/vnd.microsoft.icon" href="https://d4demo.com/buytravel/Admin/images/logobig.png"><link rel="shortcut icon" type="image/x-icon" href="https://d4demo.com/buytravel/Admin/images/logobig.png"><link href="./Pay4Trip_files/css" rel="stylesheet">
+     
+<!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="./Pay4Trip_files/vendors.css"><link rel="stylesheet" type="text/css" href="./Pay4Trip_files/sweetalert.css"><link rel="stylesheet" type="text/css" href="./Pay4Trip_files/pickadate.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN STACK CSS-->
+    <link rel="stylesheet" type="text/css" href="./Pay4Trip_files/app.css">
+    <!-- END STACK CSS-->
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="./Pay4Trip_files/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="./Pay4Trip_files/bootstrap-extended.min.css"><link rel="stylesheet" type="text/css" href="./Pay4Trip_files/colors.min.css"><link rel="stylesheet" type="text/css" href="./Pay4Trip_files/components.min.css">
+    <!-- END: Theme CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="./Pay4Trip_files/vertical-menu.css"><link rel="stylesheet" type="text/css" href="./Pay4Trip_files/palette-gradient.css">
+    <!-- END Page Level CSS-->
+
+    <!-- BEGIN Custom CSS-->
+    <script src="./Pay4Trip_files/jquery-1.11.1.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./Pay4Trip_files/style.min.css"><link rel="stylesheet" type="text/css" href="./Pay4Trip_files/font-awesome.min.css"><link rel="stylesheet" type="text/css" href="./Pay4Trip_files/style.min(1).css"><link rel="stylesheet" type="text/css" href="./Pay4Trip_files/style.min(2).css"><link href="./Pay4Trip_files/lodderstyle.css" rel="stylesheet"><link href="./Pay4Trip_files/style.css" rel="stylesheet"><link href="./Pay4Trip_files/customstyle.css" rel="stylesheet"><link href="./Pay4Trip_files/viewstyle.css" rel="stylesheet">
+    <!-- END Custom CSS-->
+
+    
+    <link href="./Pay4Trip_files/autocomplete.css" rel="stylesheet">
+    <link href="./Pay4Trip_files/lodderstyle.css" rel="stylesheet">
+    <script type="text/javascript">
+        var _pageSize = 100;
+        var MemberId = 0;
+        $(document).ready(function () {
+            $('#ContentPlaceHolder1_txtGoto2').change(function () {
+                var gotoPage = $('#ContentPlaceHolder1_txtGoto2').val();
+                var TotalPage = $('#ContentPlaceHolder1_hfTotalPage2').val();
+                if (parseInt(gotoPage) > parseInt(TotalPage)) {
+                    $('#ContentPlaceHolder1_txtGoto2').val($('#ContentPlaceHolder1_hfTotalPage2').val());
+                      $('#ContentPlaceHolder1_hfClickPage2').val($('#ContentPlaceHolder1_hfTotalPage2').val());
+                      DataBind2($('#ContentPlaceHolder1_hfTotalPage2').val());
+                  }
+                  else {
+                      $('#ContentPlaceHolder1_hfClickPage2').val($('#ContentPlaceHolder1_txtGoto2').val());
+                      DataBind2($('#ContentPlaceHolder1_txtGoto2').val());
+                  }
+            });
+            $('#ContentPlaceHolder1_txtItemSearch').val('');
+            $('#ContentPlaceHolder1_hfCustomerId1').val('0');
+            DataBind2(1);
+            getParentRole(0);
+           
+            $('#ContentPlaceHolder1_ddlParentRole').change(function () {
+                $('#ContentPlaceHolder1_txtItemSearch').val('');
+                $('#ContentPlaceHolder1_hfCustomerId1').val('0');
+                AutoCompleteList();
+            });
+            $('#ContentPlaceHolder1_txtItemSearch').click(function () {
+                $('#ContentPlaceHolder1_txtItemSearch').val('');
+                $('#ContentPlaceHolder1_hfCustomerId1').val('0');
+                DataBind2(1);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function OnError(xhr, errorType, exception) {
+            console.log('Error List');
+            var responseText;
+            try {
+                responseText = $.parseJSON(xhr.responseText);
+                console.log('errorType :' + exception);
+                console.log('ExceptionType :' + responseText.ExceptionType);
+                console.log('StackTrace :' + responseText.StackTrace);
+                console.log('Message :' + responseText.Message);
+            } catch (e) {
+                responseText = xhr.responseText;
+                console.log('catch :' + responseText);
+            }
+        };
+    </script>
+
+    <script type="text/javascript">
+        function getParentRole() {
+            $.ajax({
+                type: "POST",
+                url: "ActiveMembers.aspx/GetRole",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    $('#ContentPlaceHolder1_ddlParentRole').empty();
+                    for (var i = 0; i < data.d.length; i++) {
+                        if (i == 0) {
+                            $("#ContentPlaceHolder1_ddlParentRole").append("<option value='" + data.d[i].Id + "' selected='true'>" + data.d[i].Name + "</option>");
+                        }
+                        else {
+                            $("#ContentPlaceHolder1_ddlParentRole").append("<option value='" + data.d[i].Id + "'>" + data.d[i].Name + "</option>");
+                        }
+                    }
+                },
+                error: OnError
+            });
+        };
+        function AutoCompleteList() {
+            function autocomplete(inp, arr) {
+                /*the autocomplete function takes two arguments,    the text field element and an array of possible autocompleted values:*/
+                var currentFocus;
+                /*execute a function when someone writes in the text field:*/
+                inp.addEventListener("input", function (e) {
+                    var a, b, i, val = this.value;
+                    /*close any already open lists of autocompleted values*/
+                    closeAllLists();
+                    if (!val) { return false; }
+                    currentFocus = -1;
+                    /*create a DIV element that will contain the items (values):*/
+                    a = document.createElement("DIV");
+                    a.setAttribute("id", this.id + "autocomplete-list");
+                    a.setAttribute("class", "autocomplete-items");
+                    /*append the DIV element as a child of the autocomplete container:*/
+                    this.parentNode.appendChild(a);
+                    /*for each item in the array...*/
+                    for (i = 0; i < arr.length; i++) {
+                        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                            b = document.createElement("DIV");
+                            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                            var fields = (arr[i].substr(val.length)).split('-');  // console.log('seenuu val:' + val + ' i:' + arr[i] + ' list :' + fields[0]);
+                            b.innerHTML += fields[0]; //b.innerHTML += arr[i].substr(val.length);                            
+                            b.innerHTML += "<input type='hidden' value='" + arr[i].split('-')[0] + "' id='" + arr[i].split('-')[1] + "' >";
+                            b.addEventListener("click", function (e) {
+                                inp.value = this.getElementsByTagName("input")[0].value;
+                                $('#ContentPlaceHolder1_hfCustomerId1').val(this.getElementsByTagName("input")[0].id);
+                                // console.log('selected name1 is : ' + inp.value + ' Id : ' + this.getElementsByTagName("input")[0].id + ' hfCustomerId1 :' + $('#ContentPlaceHolder1_hfCustomerId1').val());
+                                var data = arr.filter(function (item) {
+                                    var itemname = item;
+                                    var idd = itemname.split('-')[1]
+                                    if (idd == $('#ContentPlaceHolder1_hfCustomerId1').val()) {
+                                        $('#ContentPlaceHolder1_hfItemId').val(itemname.split('-')[1]);
+                                        $('#ContentPlaceHolder1_hfItemName').val(itemname.split('-')[0]);
+                                        DataBind2(1);
+                                    }
+                                    return ("3");
+                                });
+                                closeAllLists();
+                            });
+                            a.appendChild(b);
+                        }
+                    }
+                });
+                /*execute a function presses a key on the keyboard:*/
+                inp.addEventListener("keydown", function (e) {
+                    var x = document.getElementById(this.id + "autocomplete-list");
+                    if (x) x = x.getElementsByTagName("div");
+                    if (e.keyCode == 40) {
+                        currentFocus++;
+                        addActive(x);
+                    } else if (e.keyCode == 38) {
+                        currentFocus--;
+                        addActive(x);
+                    } else if (e.keyCode == 13) {
+                        e.preventDefault();
+                        if (currentFocus > -1) {
+                            if (x) x[currentFocus].click();
+                        }
+                    }
+                });
+                function addActive(x) {
+                    /*a function to classify an item as "active":*/
+                    if (!x) return false;
+                    /*start by removing the "active" class on all items:*/
+                    removeActive(x);
+                    if (currentFocus >= x.length) currentFocus = 0;
+                    if (currentFocus < 0) currentFocus = (x.length - 1);
+                    /*add class "autocomplete-active":*/
+                    x[currentFocus].classList.add("autocomplete-active");
+                }
+                function removeActive(x) {
+                    /*a function to remove the "active" class from all autocomplete items:*/
+                    for (var i = 0; i < x.length; i++) {
+                        x[i].classList.remove("autocomplete-active");
+                    }
+                }
+                function closeAllLists(elmnt) {
+                    /*close all autocomplete lists in the document,
+                    except the one passed as an argument:*/
+                    var x = document.getElementsByClassName("autocomplete-items");
+                    for (var i = 0; i < x.length; i++) {
+                        if (elmnt != x[i] && elmnt != inp) {
+                            x[i].parentNode.removeChild(x[i]);
+                        }
+                    }
+                }
+                /*execute a function when someone clicks in the document:*/
+                document.addEventListener("click", function (e) {
+                    closeAllLists(e.target);
+                });
+            }
+            var GroupId = $('#ContentPlaceHolder1_ddlParentRole').val();
+            console.log('GroupId :' + GroupId + ':');
+            var dataToLog = { 'Filterstring': $('#ContentPlaceHolder1_txtItemSearch').val(), 'GroupId': GroupId };
+            //var dataToLog = { 'Filterstring': $('#ContentPlaceHolder1_txtItemSearch').val() };
+            console.log(' Auto : ' + JSON.stringify(dataToLog));
+            var countries = [];
+            $.ajax({
+                url: "ActiveMembers.aspx/AutoComplete",
+                data: JSON.stringify(dataToLog),
+                dataType: "json",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    console.log(' Item name : ' + data.d);
+                    for (var i = 0, l = data.d.length; i < l; ++i) {
+                        countries.push(data.d[i]);
+                    }
+                    DataBind2(1);
+                },
+                error: OnError,
+            });
+            autocomplete(document.getElementById("ContentPlaceHolder1_txtItemSearch"), countries);
+        }
+
+        function DataBind2(ClickPage) {
+            $('#ContentPlaceHolder1_hfClickPage2').val(ClickPage);
+            var hfColName = $('#ContentPlaceHolder1_hfColName2').val();
+            var hfOrderBy = $('#ContentPlaceHolder1_hfOrderBy2').val();
+            var RoleId = $('#ContentPlaceHolder1_ddlParentRole').val();
+            $('#ContentPlaceHolder1_hfRoleId').val(RoleId);
+             var Id = $('#ContentPlaceHolder1_hfCustomerId1').val();
+            var dataToLog = { 'PageIndex': ClickPage, 'ColName': hfColName, 'OrderBy': hfOrderBy, 'RoleId': RoleId, 'Id': Id };
+            $.ajax({
+                type: "POST",
+                url: "ActiveMembers.aspx/GetData2",
+                contentType: 'application/json; charset=UTF-8',
+                data: JSON.stringify(dataToLog),
+                dataType: "json",
+                success: function (response) {
+                    var input = response.d;
+                    var fields = input.split('~');
+                    var list = fields[0];
+                    var TotalRecord = parseInt(fields[1]);
+                    var TotalPage = parseInt(fields[2]);
+                    $('#ContentPlaceHolder1_hfTotalRecords2').val(TotalRecord);
+                    Setpagination2();
+                    $("#ContentPlaceHolder1_tblList").empty();
+                        $("#ContentPlaceHolder1_tblList").append(list);
+                    $('#ContentPlaceHolder1_txtGoto2').show();
+                },
+                beforeSend: function () {
+                    $('.loader').show()
+                },
+                complete: function () {
+                    $('.loader').hide();
+                },
+                error: OnError
+            });
+        };
+        function CallPrint2() {
+            var RoleId = $('#ContentPlaceHolder1_hfRoleId').val();
+            var Id = $('#ContentPlaceHolder1_hfCustomerId1').val();
+            var dataToLog = { 'RoleId': RoleId, 'Id': Id }
+                $.ajax({
+                    type: "POST",
+                    url: "ActiveMembers.aspx/PrintData2",
+                    data: JSON.stringify(dataToLog),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+                        w = window.open();
+                        w.document.write(response.d);
+                        w.print();
+                        w.close();
+                    },
+                    error: OnError
+                });
+            }
+            var pagination2 = {
+                code: '',
+                // converting initialize data
+                Extend: function (data) {
+                    data = data || {};
+                    pagination2.size = data.size || 0;
+                    pagination2.page = data.page || 1;
+                    pagination2.step = data.step || 2;
+                },
+
+                // add pages by number (from [s] to [f])
+                Add: function (s, f) {
+
+                    for (var i = s; i <= f; i++) {
+                        if (i <= 1) {
+                            pagination2.code = '<a>' + i + '</a>';
+                        }
+                        else {
+                            pagination2.code += '<a>' + i + '</a>';
+                        }
+                    }
+                },
+
+                // add last page with separator
+                Last: function () {
+                    pagination2.code += '<i>...</i><a>' + pagination2.size + '</a>';
+                },
+
+                // add first page with separator
+                First: function () {
+                    pagination2.code += '<a>1</a><i>...</i>';
+                },
+
+                // change page
+                Click: function () {
+                    $('#ContentPlaceHolder1_txtGoto2').val('');
+                pagination2.page = +this.innerHTML;
+                pagination2.Start();
+                $('#ContentPlaceHolder1_hfClickPage2').val(pagination2.page);
+                 DataBind2(pagination2.page);
+            },
+
+
+            // previous page
+            Prev: function () {
+                $('#ContentPlaceHolder1_txtGoto2').val('');
+                 pagination2.page--;
+                 if (pagination2.page < 1) {
+                     pagination2.page = 1;
+                 }
+                 pagination2.Start();
+                 $('#ContentPlaceHolder1_hfClickPage2').val(pagination2.page);
+                 //$('#ContentPlaceHolder1_hfClickPage2').val(pagination2.page);
+                 DataBind2(pagination2.page);
+
+             },
+
+            // next page
+            Next: function () {
+                $('#ContentPlaceHolder1_txtGoto2').val('');
+                 pagination2.page++;
+                 if (pagination2.page > pagination2.size) {
+                     pagination2.page = pagination2.size;
+                 }
+                 pagination2.Start();
+                 $('#ContentPlaceHolder1_hfClickPage2').val(pagination2.page);
+                DataBind2(pagination2.page);
+             },
+
+            // binding pages
+            Bind: function () {
+                var a = pagination2.e.getElementsByTagName('a');
+                for (var i = 0; i < a.length; i++) {
+                    if (+a[i].innerHTML === pagination2.page)
+                        a[i].className = 'current';
+                    a[i].addEventListener('click', pagination2.Click, false);
+                }
+
+            },
+
+            // write pagination
+            Finish: function () {
+                pagination2.e.innerHTML = pagination2.code;
+                pagination2.code = '';
+                pagination2.Bind();
+            },
+
+            // find pagination type
+            Start: function () {
+
+                if (pagination2.size < parseInt(pagination2.step * 1) + 3) {
+                    pagination2.Add(1, parseInt(pagination2.size) + 0);
+                }
+                else if (pagination2.page < parseInt(pagination2.step * 1) + 1) {
+                    pagination2.Add(1, parseInt(pagination2.step * 1) + 2);
+                    pagination2.Last();
+                }
+                else if (pagination2.page > pagination2.size - pagination2.step * 2) {
+                    pagination2.First();
+                    pagination2.Add(parseInt(pagination2.size) - parseInt(pagination2.step * 1) - 1, parseInt(pagination2.size));
+
+                }
+                else {
+                    pagination2.First();
+                    pagination2.Add(parseInt(pagination2.page) - parseInt(pagination2.step), parseInt(pagination2.page) - parseInt(pagination2.step) + 2);
+                    pagination2.Last();
+                }
+                pagination2.Finish();
+            },
+
+            // binding buttons
+            Buttons: function (e) {
+                var nav = e.getElementsByTagName('a');
+                // nav[0].addEventListener('click', pagination2.FsT, false);
+                nav[0].addEventListener('click', pagination2.Prev, false);
+                nav[1].addEventListener('click', pagination2.Next, false);
+                // nav[3].addEventListener('click', pagination2.Last1, false);
+            },
+            // create skeleton
+            Create: function (e) {
+                var html = [
+                    '<a style="color: #404E67;width:73px;font-size: 14px;padding: 5px;border-radius: 4px 0px 0px 4px;" > Previous</a>',
+                                '<span></span>',  // pagination container                  
+                                '<a style="color: #404E67;width:66px;font-size: 14px;padding: 5px;border-radius: 0px 4px 4px 0px;">Next</a>',
+                ];
+
+                e.innerHTML = html.join('');
+                pagination2.e = e.getElementsByTagName('span')[0];
+                pagination2.Buttons(e);
+
+            },
+
+            // init
+            Init: function (e, data) {
+                pagination2.Extend(data);
+                pagination2.Create(e);
+                pagination2.Start();
+            }
+        };
+
+        var init = function () {
+            //var Total = document.getElementById('ctl00_SeaShellContent_hfTotalPage2').value;
+            var Total = $('#ContentPlaceHolder1_hfTotalPage2').val();
+            pagination2.Init(document.getElementById('pagination2'), {
+                size: Total, // pages size 30
+                page: 1,  // selected page
+                step: 2  // pages before and after current
+            });
+        };
+        function Setpagination2() {
+            var OldTotalPage = parseInt($('#ContentPlaceHolder1_hfTotalPage2').val());
+            var OldClickPage = parseInt($('#ContentPlaceHolder1_hfClickPage2').val());
+            var start = 0;
+            var end = 0;
+
+            var TotalRecords = parseInt($('#ContentPlaceHolder1_hfTotalRecords2').val());
+            var DisplayInfo = '';
+            if (TotalRecords % _pageSize > 0) {
+                var Total = TotalRecords - (TotalRecords % _pageSize);
+                TotalPage = Total / _pageSize + 1;
+            }
+            else {
+                TotalPage = TotalRecords / _pageSize;
+            }
+            $('#ContentPlaceHolder1_hfTotalPage2').val(TotalPage);
+            var ClickPage = parseInt($('#ContentPlaceHolder1_hfClickPage2').val());
+            var DisplayInfo = '';
+            if (parseInt(TotalPage) > 0) {
+                if (parseInt(ClickPage) == 1) {
+                    start = 1;
+                    if (TotalRecords <= _pageSize)
+                        end = TotalRecords;
+                    else
+                        end = parseInt(ClickPage * _pageSize);
+                }
+                else if (parseInt(TotalPage) == parseInt(ClickPage)) {
+                    start = (ClickPage - 1) * _pageSize + 1;
+                    end = TotalRecords;
+                }
+                else if (parseInt(TotalPage) > parseInt(ClickPage)) {
+                    start = (ClickPage - 1) * _pageSize + 1;
+                    end = parseInt(ClickPage) * _pageSize;
+                }
+                DisplayInfo = "Showing" + " " + start + " " + " to" + " " + end + " " + " of  " + " " + TotalRecords + " " + "Entries ";
+            }
+            else
+                DisplayInfo = "NoRecords ";
+            $('#ContentPlaceHolder1_lblInfo2').html(DisplayInfo);
+            pagination2.Init(document.getElementById('pagination2'), {
+                size: TotalPage,
+                page: ClickPage,
+                step: 1
+            });
+        };
+    </script>
+
+
+    <script type="text/javascript">
+
+        var MemberId = 0;
+
+        $(document).ready(function () {
+
+            
+
+        });
+
+        function OnError(xhr, errorType, exception) {
+            console.log('Error List');
+            var responseText;
+            try {
+                responseText = $.parseJSON(xhr.responseText);
+                console.log('errorType :' + exception);
+                console.log('ExceptionType :' + responseText.ExceptionType);
+                console.log('StackTrace :' + responseText.StackTrace);
+                console.log('Message :' + responseText.Message);
+            } catch (e) {
+                responseText = xhr.responseText;
+                console.log('catch :' + responseText);
+            }
+        };
+
+        //function onclickaSchoolRpt1(obj) {
+        //    console.log('SchoolRpt1 :' + obj);
+        //    SetSessionValue(obj);
+        //};
+
+        //function SetSessionValue(SchoolRptId) {
+        //    var dataToLog = { 'SchoolRptId': SchoolRptId };
+        //    console.log('master SchoolRptId', SchoolRptId);
+        //    $.ajax({
+        //        type: "POST",
+        //       // url: "../WebServices/wsDropdownList.asmx/SetSchoolRptSessionValue",
+        //        url: "../App_Code/WSMember.asmx/SetSchoolRptSessionValue",
+        //        data: JSON.stringify(dataToLog),
+        //        contentType: "application/json; charset=utf-8",
+        //        dataType: "json",
+        //        success: function (data) {
+        //            // console.log('return session' + data.d);
+        //        },
+        //        error: OnError
+        //    });
+        //};
+
+
+        function OnEdit200(objButton) {
+            if (typeof objButton === "number") {
+                $('#hfActiveMenuId').val(objButton);
+            }
+            if (typeof objButton === "object") {
+                $('#hfActiveMenuId').val(objButton.value);
+            }   
+            var ActivemenuId = $('#hfActiveMenuId').val(); 
+            
+            var dataToLog = { 'ActivemenuId': ActivemenuId };
+            $.ajax({
+                type: "POST",
+                url: "../WebServiceImages.asmx/SetActivemenu",
+                data: JSON.stringify(dataToLog),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {                  
+                    //$('#lblAcademicname').text(data.d);
+                    //window.open('../Home/SADashboard.aspx', "_parent");                   
+                },
+                error: OnError
+            });
+           
+        };
+
+        function setSessionAcademic(AcademicId) {
+            var dataToLog = { 'AcademicId': AcademicId };
+            $.ajax({
+                type: "POST",
+                url: "../WebServices/wsDropdownList.asmx/SetSessionAcademicId",
+                data: JSON.stringify(dataToLog),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    // console.log('set Session School : ' + data.d);    Home/SADashboard.aspx
+                    $('#lblAcademicname').text(data.d);
+                    window.open('../Home/SADashboard.aspx', "_parent");
+                    //window.open('../School/Schoolsetting.aspx?Id=' + schoolId, "_blank");
+                    // getSchoolList(0, SchoolId);  //seenu
+                },
+                error: OnError
+            });
+        }
+
+    </script>
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+<body class="vertical-layout vertical-menu 2-columns fixed-navbar  menu-expanded pace-done" data-open="click" data-menu="vertical-menu" data-col="2-columns" aria-autocomplete="none" autocomplete="none"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+    <form method="post" action="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx" id="form1" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzMDQzNTkyMTVkZFt8rBVqnrRuDZYzHJ5USJoYrpiu0U9RmatReJ9VKEvc">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Pay4Trip_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Pay4Trip_files/ScriptResource.axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="./Pay4Trip_files/ScriptResource(1).axd" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8C5AAE76">
+</div>
+
+        <div class="pace  pace-inactive">
+            <div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+                <div class="pace-progress-inner"></div>
+            </div>
+            <div class="pace-activity"></div>
+        </div>
+        <!-- BEGIN: Header-->
+        <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-dark">
+            <div class="navbar-wrapper">
+                <div class="navbar-header" style="padding-left: 15px;">
+                    <ul class="nav navbar-nav flex-row">
+                        <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="feather icon-menu font-large-1"></i></a></li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="https://d4demo.com/buytravel/Admin/Admindashboard.aspx" style="padding: 5px 0px;">
+                                <img class="brand-logo" alt="Pay4Trip" src="./Pay4Trip_files/logobms.png" style="width:174px; height:47px;"> 
+                            </a>
+                        </li>
+                        <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content">
+                    <div class="collapse navbar-collapse" id="navbar-mobile">
+                        <ul class="nav navbar-nav mr-auto float-left">
+                            <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-bars"></i></a></li>
+                            <li class="nav-item d-none d-md-block"><a class="nav-link nav-link-expand" href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="ficon ft-maximize"></i></a></li>
+                            <li class="nav-item nav-search">
+                                <div class="search-input">
+                                    <input class="input" type="text" placeholder="Explore Stack..." tabindex="0" data-search="template-search">
+                                    <div class="search-input-close"><i class="icon-x"></i></div>
+                                    <ul class="search-list"></ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav float-right">
+                            <li class="dropdown dropdown-notification nav-item">
+                                <a class="nav-link nav-link-label" href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#" data-toggle="dropdown"><i class="fa fa-bell-o"></i><span class="badge badge-pill badge-danger badge-up">2</span></a>
+                                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                    <li class="dropdown-menu-header">
+                                        <h6 class="dropdown-header m-0" style="padding-left: 10px"><span class="grey darken-2">Notifications</span>
+                                            <span class="notification-tag badge badge-danger float-right m-0">2 New</span></h6>
+                                    </li>
+                                    <li class="scrollable-container media-list ps ps-container ps-theme-dark" data-ps-id="2b47680c-7d80-cc68-bc1f-94ea6e64578b">
+                                        <a href="javascript:void(0)"><div class="media" style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 0.1rem; padding-right: 0.3rem;"><div class="media-body"><h6 style="padding-left: 10px;" class="media-heading">Ganesh Chathurthi</h6><p class="notification-text font-small-3 text-muted" style="line-height: 20px;padding-left: 10px;">Ganesh Chaturthi, also known as Vinayaka Chaturthi, is a Hindu festival celebrat...</p><small style="padding-left: 10px;"><time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Thursday</time></small></div></div></a><a href="javascript:void(0)"><div class="media" style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 0.1rem; padding-right: 0.3rem;"><div class="media-body"><h6 style="padding-left: 10px;" class="media-heading">Independance Day</h6><p class="notification-text font-small-3 text-muted" style="line-height: 20px;padding-left: 10px;">xx xxx xxx</p><small style="padding-left: 10px;"><time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Tuesday</time></small></div></div></a>
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                        </div>
+                                    <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></li>
+                                    <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="https://d4demo.com/buytravel/Admin/News.aspx">Read all notifications</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-notification nav-item">
+                                <a class="nav-link nav-link-label" href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#" data-toggle="dropdown"><i class="fa fa-shopping-cart" style="font-size:19px;"></i><span class="badge badge-pill badge-warning badge-up">7</span></a>
+                                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                    <li class="dropdown-menu-header">
+                                        <h6 class="dropdown-header m-0" style="padding-left: 10px"><span class="grey darken-2">Orders</span><span class="notification-tag badge badge-warning float-right m-0">7 New</span></h6>
+                                    </li>
+                                    <li class="scrollable-container media-list ps ps-container ps-theme-dark ps-active-x" data-ps-id="d3e15587-e241-f7db-0301-3ef1d1b2fbc2">
+                                        <a href="javascript:void(0)">
+                                            <div class="media" style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 0.1rem; padding-right: 0.3rem;">
+                                                <div class="media-body">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="notification-text font-small-3 text-muted" style="line-height: 20px;padding-left: 10px;">Order ID:&nbsp;15</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="notification-text font-small-3 text-muted" style="line-height: 20px;">Date:&nbsp;21 September 2020</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                             <p class="notification-text font-small-3 text-muted" style="line-height: 20px;padding-left: 10px;">Username:&nbsp;RM1000</p>                                                             
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="notification-text font-small-3 text-muted" style="line-height: 20px;">Amount:&nbsp;₹125</p>                                                             
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <div class="media" style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 0.1rem; padding-right: 0.3rem;">
+                                                <div class="media-body">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="notification-text font-small-3 text-muted" style="line-height: 20px;padding-left: 10px;">Order ID:&nbsp;18</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="notification-text font-small-3 text-muted" style="line-height: 20px;">Date:&nbsp;08 October 2020</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                             <p class="notification-text font-small-3 text-muted" style="line-height: 20px;padding-left: 10px;">Username:&nbsp;RM1000</p>                                                             
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="notification-text font-small-3 text-muted" style="line-height: 20px;">Amount:&nbsp;₹28</p>                                                             
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a><a href="javascript:void(0)">
+                                            <div class="media" style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 0.1rem; padding-right: 0.3rem;">
+                                               <div class="media-body">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="notification-text font-small-3 text-muted" style="line-height: 20px;padding-left: 10px;">Order ID:&nbsp;5</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="notification-text font-small-3 text-muted" style="line-height: 20px;">Date:&nbsp;10 September 2020</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                             <p class="notification-text font-small-3 text-muted" style="line-height: 20px;padding-left: 10px;">Username:&nbsp;RM1000</p>                                                             
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="notification-text font-small-3 text-muted" style="line-height: 20px;">Amount:&nbsp;₹155</p>                                                             
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <div class="ps-scrollbar-x-rail" style="width: 334px; left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 323px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></li>
+                                    <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="https://d4demo.com/buytravel/Admin/ManageOrders.aspx">Read all messages</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-user nav-item">
+                                <a class="dropdown-toggle nav-link dropdown-user-link" href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#" data-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="./Pay4Trip_files/photoface.png">
+                                    </div>
+                                    <span class="user-name">admin</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="https://d4demo.com/buytravel/Default.aspx"><i class="ft-power"></i>Logout</a> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Header-->
+        <!-- BEGIN: Main Menu-->
+        <div class="main-menu menu-fixed menu-accordion menu-shadow menu-dark" data-scroll-to-active="true" style="touch-action: none; user-select: none;"><div class="main-menu-content ps ps--active-y ps-container ps-theme-light ps-active-y" style="height: 598px;" data-ps-id="66b075ea-3ba6-82a2-cc8d-56bc49ecaaad"><ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"><li class="nav-item has-sub open"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-unlock-alt"></i><span class="menu-item">Administration</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(1)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Admindashboard.aspx"><i class="fa fa-home" data-placement="right"></i><span>Dashboard Information</span> </a> </li><li class=""><a onclick="OnEdit200(6)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Activateusers.aspx"><i class="fa fa-user-circle-o" data-placement="right"></i><span>Activate Users Now</span> </a> </li><li class=""><a onclick="OnEdit200(7)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageAdmin.aspx"><i class="fa fa-users" data-placement="right"></i><span>Manage Admins</span> </a> </li><li class=""><a onclick="OnEdit200(11)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageCompany.aspx"><i class="fa fa-envelope" data-placement="right"></i><span>Manage Company</span> </a> </li><li class=""><a onclick="OnEdit200(1323)" class="menu-item" href="https://d4demo.com/buytravel/Admin/CompanyBanksDetails.aspx"><i class="fa fa-envelope" data-placement="right"></i><span>Company Banks Details</span> </a> </li><li class=""><a onclick="OnEdit200(1324)" class="menu-item" href="https://d4demo.com/buytravel/Admin/WhitelistIP.aspx"><i class="fa fa-envelope" data-placement="right"></i><span>Whitelist IP</span> </a> </li><li class=""><a onclick="OnEdit200(1325)" class="menu-item" href="https://d4demo.com/buytravel/Admin/MyLogin.aspx"><i class="fa fa-envelope" data-placement="right"></i><span>My Login Details</span> </a> </li><li class=""><a onclick="OnEdit200(1326)" class="menu-item" href="https://d4demo.com/buytravel/Admin/LowBalanceNotification.aspx"><i class="fa fa-envelope" data-placement="right"></i><span>Low Balance Notification</span> </a> </li><li class=""><a onclick="OnEdit200(1327)" class="menu-item" href="https://d4demo.com/buytravel/Admin/EditMyProfile.aspx"><i class="fa fa-envelope" data-placement="right"></i><span>Edit Company Profile</span> </a> </li><li class=""><a onclick="OnEdit200(31)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TodaysCustomerList.aspx"><i class="fa fa-male" data-placement="right"></i><span>Today Members List</span> </a> </li><li class="active"><a onclick="OnEdit200(32)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx"><i class="fa fa-female" data-placement="right"></i><span>Active Members List</span> </a> </li><li class=""><a onclick="OnEdit200(33)" class="menu-item" href="https://d4demo.com/buytravel/Admin/InActiveMembers.aspx"><i class="fa fa-user-times" data-placement="right"></i><span>InActive Members List</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-connectdevelop"></i><span class="menu-item">Website Contents</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(13)" class="menu-item" href="https://d4demo.com/buytravel/Admin/WebContent.aspx"><i class="fa fa-wordpress" data-placement="right"></i><span>Manage Web Content</span> </a> </li><li class=""><a onclick="OnEdit200(15)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Banner.aspx"><i class="fa fa-minus-square" data-placement="right"></i><span>Manage Banners</span> </a> </li><li class=""><a onclick="OnEdit200(16)" class="menu-item" href="https://d4demo.com/buytravel/Admin/News.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Manage News</span> </a> </li><li class=""><a onclick="OnEdit200(18)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageTopAchievers.aspx"><i class="fa fa-graduation-cap" data-placement="right"></i><span>Manage Top Achievers</span> </a> </li><li class=""><a onclick="OnEdit200(20)" class="menu-item" href="https://d4demo.com/buytravel/Admin/PhotoGallery.aspx"><i class="fa fa-picture-o" data-placement="right"></i><span>Manage Photo Gallery</span> </a> </li><li class=""><a onclick="OnEdit200(21)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageAdvertisement.aspx"><i class="fa fa-hacker-news" data-placement="right"></i><span>Manage Advertisement</span> </a> </li><li class=""><a onclick="OnEdit200(22)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TopTitleScroll.aspx"><i class="fa fa-scribd" data-placement="right"></i><span>Manage Top Title Scroll</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-users"></i><span class="menu-item">Accounts</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(1239)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageMasterDistributor.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Master Distributor</span> </a> </li><li class=""><a onclick="OnEdit200(1240)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageDistributor.aspx"><i class="fa fa fa-user" data-placement="right"></i><span>Distributor</span> </a> </li><li class=""><a onclick="OnEdit200(1241)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageReatailer.aspx"><i class="fa fa-user-circle-o" data-placement="right"></i><span>Retailer</span> </a> </li><li class=""><a onclick="OnEdit200(1242)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageReseller.aspx"><i class="fa fa-smile-o" data-placement="right"></i><span>Reseller</span> </a> </li><li class=""><a onclick="OnEdit200(1243)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Staffmanage.aspx"><i class="fa fa-picture-o" data-placement="right"></i><span>Staff</span> </a> </li><li class=""><a onclick="OnEdit200(1244)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageSellerRegistration.aspx"><i class="fa fa-male" data-placement="right"></i><span>Seller</span> </a> </li><li class=""><a onclick="OnEdit200(1245)" class="menu-item" href="https://d4demo.com/buytravel/Admin/NewDispatcher.aspx"><i class="fa fa-outdent" data-placement="right"></i><span>Dispatcher</span> </a> </li><li class=""><a onclick="OnEdit200(1246)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx"><i class="fa fa-twitter" data-placement="right"></i><span>Active Accounts</span> </a> </li><li class=""><a onclick="OnEdit200(1247)" class="menu-item" href="https://d4demo.com/buytravel/Admin/InActiveMembers.aspx"><i class="fa fa-stop" data-placement="right"></i><span>InActive Accounts</span> </a> </li><li class=""><a onclick="OnEdit200(1248)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TodaysCustomerList.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Today Account List</span> </a> </li><li class=""><a onclick="OnEdit200(1249)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ChangePassword.aspx"><i class="fa fa-key" data-placement="right"></i><span>Change Password</span> </a> </li><li class=""><a onclick="OnEdit200(1250)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ChangeTransactionPassword.aspx"><i class="fa fa-unlock-alt" data-placement="right"></i><span>Change Transaction Password</span> </a> </li><li class=""><a onclick="OnEdit200(1251)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Roles.aspx"><i class="fa fa-sign-in" data-placement="right"></i><span>Roles</span> </a> </li><li class=""><a onclick="OnEdit200(1252)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ChangeCustomerRole.aspx"><i class="fa fa-level-up" data-placement="right"></i><span>Change Role</span> </a> </li><li class=""><a onclick="OnEdit200(1253)" class="menu-item" href="https://d4demo.com/buytravel/Admin/BankAccounts.aspx"><i class="fa fa-shield" data-placement="right"></i><span>Bank Accounts</span> </a> </li><li class=""><a onclick="OnEdit200(1254)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageBank.aspx"><i class="fa fa-university" data-placement="right"></i><span>Manage Bank</span> </a> </li><li class=""><a onclick="OnEdit200(1255)" class="menu-item" href="https://d4demo.com/buytravel/Admin/BlockFeatures.aspx"><i class="fa fa-stop" data-placement="right"></i><span>Block Features</span> </a> </li><li class=""><a onclick="OnEdit200(1256)" class="menu-item" href="https://d4demo.com/buytravel/Admin/UnBlockFeatures.aspx"><i class="fa fa-unlock" data-placement="right"></i><span>UnBlock Features</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-modx"></i><span class="menu-item">KYC</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(26)" class="menu-item" href="https://d4demo.com/buytravel/Admin/KYCApplication.aspx"><i class="fa fa-pencil-square-o" data-placement="right"></i><span>KYC Application</span> </a> </li><li class=""><a onclick="OnEdit200(27)" class="menu-item" href="https://d4demo.com/buytravel/Admin/KYCList.aspx"><i class="fa fa-files-o" data-placement="right"></i><span>KYC List</span> </a> </li><li class=""><a onclick="OnEdit200(28)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ApprovedKYC.aspx"><i class="fa fa-smile-o" data-placement="right"></i><span>Approved KYC</span> </a> </li><li class=""><a onclick="OnEdit200(29)" class="menu-item" href="https://d4demo.com/buytravel/Admin/KYCStatus.aspx"><i class="fa fa-search" data-placement="right"></i><span>KYC Status</span> </a> </li><li class=""><a onclick="OnEdit200(53)" class="menu-item" href="https://d4demo.com/buytravel/Admin/AppointmentLetter.aspx"><i class="fa fa-calendar-plus-o" data-placement="right"></i><span>Welcome Letter</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-cog"></i><span class="menu-item">Master Settings</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(1273)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageAPI.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage API</span> </a> </li><li class=""><a onclick="OnEdit200(1274)" class="menu-item" href="https://d4demo.com/buytravel/Admin/SwitchAPI.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Switch API</span> </a> </li><li class=""><a onclick="OnEdit200(1275)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageServices.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Services</span> </a> </li><li class=""><a onclick="OnEdit200(1276)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageOperators.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Operators</span> </a> </li><li class=""><a onclick="OnEdit200(1277)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageSetCommission.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Set Commission</span> </a> </li><li class=""><a onclick="OnEdit200(1278)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageTripType.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage TripType</span> </a> </li><li class=""><a onclick="OnEdit200(1279)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageBookingStatus.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Booking Status</span> </a> </li><li class=""><a onclick="OnEdit200(1280)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageState.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage State</span> </a> </li><li class=""><a onclick="OnEdit200(1281)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Domestic.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Domestic</span> </a> </li><li class=""><a onclick="OnEdit200(1282)" class="menu-item" href="https://d4demo.com/buytravel/Admin/International.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage International</span> </a> </li><li class=""><a onclick="OnEdit200(1283)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageLocation.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Location</span> </a> </li><li class=""><a onclick="OnEdit200(1284)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageDepartment.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Department</span> </a> </li><li class=""><a onclick="OnEdit200(1285)" class="menu-item" href="https://d4demo.com/buytravel/Admin/AmenityCategory.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Cruise Amenity Category</span> </a> </li><li class=""><a onclick="OnEdit200(1286)" class="menu-item" href="https://d4demo.com/buytravel/Admin/AmenitySubCategory.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Cruise Amenity Sub Category</span> </a> </li><li class=""><a onclick="OnEdit200(1287)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Inclusions.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Cruise Inclusions</span> </a> </li><li class=""><a onclick="OnEdit200(75)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Package.aspx"><i class="fa fa-sliders" data-placement="right"></i><span>Joining Amount Setting</span> </a> </li><li class=""><a onclick="OnEdit200(1288)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Highlights.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Cruise Highlights</span> </a> </li><li class=""><a onclick="OnEdit200(1289)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RoomAmenity.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Cruise Room Amenity</span> </a> </li><li class=""><a onclick="OnEdit200(77)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Tdssetting.aspx"><i class="fa fa-cogs" data-placement="right"></i><span>TDS Setting</span> </a> </li><li class=""><a onclick="OnEdit200(78)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Adminchargessetting.aspx"><i class="fa fa-lock" data-placement="right"></i><span>Admin Charges Setting</span> </a> </li><li class=""><a onclick="OnEdit200(1290)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageStateroom.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Stateroom</span> </a> </li><li class=""><a onclick="OnEdit200(1291)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageCruiseOffer.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Cruise Offer</span> </a> </li><li class=""><a onclick="OnEdit200(79)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Withdrawsetting.aspx"><i class="fa fa-print" data-placement="right"></i><span>Withdraw Setting</span> </a> </li><li class=""><a onclick="OnEdit200(80)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Transactionfeesetting.aspx"><i class="fa fa-arrows-h" data-placement="right"></i><span>Transfer fee Setting</span> </a> </li><li class=""><a onclick="OnEdit200(83)" class="menu-item" href="https://d4demo.com/buytravel/Admin/FundSetting.aspx"><i class="fa fa-credit-card" data-placement="right"></i><span>Fund Transfer Setting</span> </a> </li><li class=""><a onclick="OnEdit200(84)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Directincomesetting.aspx"><i class="fa fa-arrow-right" data-placement="right"></i><span>Direct Income Setting</span> </a> </li><li class=""><a onclick="OnEdit200(85)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Levelcomesetting.aspx"><i class="fa fa-level-up" data-placement="right"></i><span>Level Income Setting</span> </a> </li><li class=""><a onclick="OnEdit200(1314)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageCity.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Flight City</span> </a> </li><li class=""><a onclick="OnEdit200(1315)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageAdult.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Flight Adult</span> </a> </li><li class=""><a onclick="OnEdit200(1316)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageChild.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Flight Child</span> </a> </li><li class=""><a onclick="OnEdit200(1317)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageInfant.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Flight Infant</span> </a> </li><li class=""><a onclick="OnEdit200(1335)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TravelClass.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Flight Travel Class</span> </a> </li><li class=""><a onclick="OnEdit200(1336)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Travelingfor.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Flight Traveling For</span> </a> </li><li class=""><a onclick="OnEdit200(1337)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TrainClass.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Train Class</span> </a> </li><li class=""><a onclick="OnEdit200(1338)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TrianQuota.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Trian Quota</span> </a> </li><li class=""><a onclick="OnEdit200(1339)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TrianDepartureTime.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Trian Departure Time</span> </a> </li><li class=""><a onclick="OnEdit200(1340)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TrianArrivalTime.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Trian Arrival Time</span> </a> </li><li class=""><a onclick="OnEdit200(1341)" class="menu-item" href="https://d4demo.com/buytravel/Admin/HolidayPackages.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Holiday Packages</span> </a> </li><li class=""><a onclick="OnEdit200(1342)" class="menu-item" href="https://d4demo.com/buytravel/Admin/HolidayThemes.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Holiday Themes</span> </a> </li><li class=""><a onclick="OnEdit200(1343)" class="menu-item" href="https://d4demo.com/buytravel/Admin/HolidaySuitable.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Holiday Suitable</span> </a> </li><li class=""><a onclick="OnEdit200(1344)" class="menu-item" href="https://d4demo.com/buytravel/Admin/HolidayTags.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Holiday Tags</span> </a> </li><li class=""><a onclick="OnEdit200(1345)" class="menu-item" href="https://d4demo.com/buytravel/Admin/BusClass.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Bus Class</span> </a> </li><li class=""><a onclick="OnEdit200(1346)" class="menu-item" href="https://d4demo.com/buytravel/Admin/BusType.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Bus Type</span> </a> </li><li class=""><a onclick="OnEdit200(1347)" class="menu-item" href="https://d4demo.com/buytravel/Admin/PickUpTime.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Bus PickUp Time</span> </a> </li><li class=""><a onclick="OnEdit200(1348)" class="menu-item" href="https://d4demo.com/buytravel/Admin/DropTime.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Bus Drop Time</span> </a> </li><li class=""><a onclick="OnEdit200(1349)" class="menu-item" href="https://d4demo.com/buytravel/Admin/HotelLocation.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Hotel Location</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-share"></i><span class="menu-item">Services</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(1258)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageFlights.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Flights</span> </a> </li><li class=""><a onclick="OnEdit200(1259)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageHotel.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Hotels</span> </a> </li><li class=""><a onclick="OnEdit200(1260)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageBus.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Buses</span> </a> </li><li class=""><a onclick="OnEdit200(1261)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageCab.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Cabs</span> </a> </li><li class=""><a onclick="OnEdit200(1262)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageTour.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Tours</span> </a> </li><li class=""><a onclick="OnEdit200(1263)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageCruise.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Cruises</span> </a> </li><li class=""><a onclick="OnEdit200(1264)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageVisa.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Visa</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-tasks"></i><span class="menu-item">Bookings</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(1265)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageFlightBooking.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Flight Booking</span> </a> </li><li class=""><a onclick="OnEdit200(1266)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageHotelBooking.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Hotel Booking</span> </a> </li><li class=""><a onclick="OnEdit200(1267)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageBusBooking.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Bus Booking</span> </a> </li><li class=""><a onclick="OnEdit200(1268)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageTrainBooking.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Train Booking</span> </a> </li><li class=""><a onclick="OnEdit200(1269)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageCabBooking.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Cab Booking</span> </a> </li><li class=""><a onclick="OnEdit200(1270)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageHolidayBooking.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Holiday Booking</span> </a> </li><li class=""><a onclick="OnEdit200(1271)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageCruiseBooking.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Cruise Booking</span> </a> </li><li class=""><a onclick="OnEdit200(1272)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageVisaBooking.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Visa Booking</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-envelope"></i><span class="menu-item">Notifications</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(56)" class="menu-item" href="https://d4demo.com/buytravel/Admin/SendMessage.aspx"><i class="fa fa-pencil-square-o" data-placement="right"></i><span>Send Message</span> </a> </li><li class=""><a onclick="OnEdit200(55)" class="menu-item" href="https://d4demo.com/buytravel/Admin/InboxMessage.aspx"><i class="fa fa-envelope-o" data-placement="right"></i><span>Inbox Message</span> </a> </li><li class=""><a onclick="OnEdit200(57)" class="menu-item" href="https://d4demo.com/buytravel/Admin/OutboxMessage.aspx"><i class="fa fa-share-square-o" data-placement="right"></i><span>Outbox Message</span> </a> </li><li class=""><a onclick="OnEdit200(58)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ReplyMessage.aspx"><i class="fa fa-reply-all" data-placement="right"></i><span>Reply Messages</span> </a> </li><li class=""><a onclick="OnEdit200(23)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Testimonial.aspx"><i class="fa fa-commenting" data-placement="right"></i><span>Manage Testimonial</span> </a> </li><li class=""><a onclick="OnEdit200(24)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ActivatedTestimonial.aspx"><i class="fa fa-comments" data-placement="right"></i><span>Activated Testimonial</span> </a> </li><li class=""><a onclick="OnEdit200(25)" class="menu-item" href="https://d4demo.com/buytravel/Admin/DeactivatedTestimonial.aspx"><i class="fa fa-comment-o" data-placement="right"></i><span>Deactivated Testimonial</span> </a> </li><li class=""><a onclick="OnEdit200(1257)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Notification.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Notifications</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-money"></i><span class="menu-item">Recharges</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(1190)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RCMobilePrepaid.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Mobile Prepaid</span> </a> </li><li class=""><a onclick="OnEdit200(1191)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RCMobilePostpaid.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Mobile Postpaid</span> </a> </li><li class=""><a onclick="OnEdit200(1192)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RCLandline.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Landline Phone</span> </a> </li><li class=""><a onclick="OnEdit200(1198)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RCBroadband.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Broadband</span> </a> </li><li class=""><a onclick="OnEdit200(1193)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RCDatacard.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Data Card</span> </a> </li><li class=""><a onclick="OnEdit200(1194)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RCDth.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>DTH</span> </a> </li><li class=""><a onclick="OnEdit200(1195)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RCElectricity.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Electricity</span> </a> </li><li class=""><a onclick="OnEdit200(1196)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RCGas.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Gas</span> </a> </li><li class=""><a onclick="OnEdit200(1197)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RCInsurance.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Life Insurance</span> </a> </li><li class=""><a onclick="OnEdit200(1199)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RptPendingRecharge.aspx"><i class="fa fa-user-times" data-placement="right"></i><span>Pending Recharge</span> </a> </li><li class=""><a onclick="OnEdit200(1200)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RptRechargeHistory.aspx"><i class="fa fa-check-circle" data-placement="right"></i><span>Recharge History</span> </a> </li><li class=""><a onclick="OnEdit200(1201)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RptCheckTransaction.aspx"><i class="fa fa-file-text" data-placement="right"></i><span>Check Transaction</span> </a> </li><li class=""><a onclick="OnEdit200(1321)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageCircleCode.aspx"><i class="fa fa-file-text" data-placement="right"></i><span>Manage Circle Code</span> </a> </li><li class=""><a onclick="OnEdit200(1322)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManagePaymentMethod.aspx"><i class="fa fa-file-text" data-placement="right"></i><span>Manage Payment Method</span> </a> </li><li class=""><a onclick="OnEdit200(1328)" class="menu-item" href="https://d4demo.com/buytravel/Admin/CallbackUrl.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Callback Url</span> </a> </li><li class=""><a onclick="OnEdit200(1329)" class="menu-item" href="https://d4demo.com/buytravel/Admin/AEPSmATMSettlement.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>AEPS/mATM Settlement Withdrawal</span> </a> </li><li class=""><a onclick="OnEdit200(1330)" class="menu-item" href="https://d4demo.com/buytravel/Admin/AEPSmATMSettlementReport.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>AEPS/mATM Settlement Report</span> </a> </li><li class=""><a onclick="OnEdit200(1331)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageUPIRegistration.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>Manage UPI Registration</span> </a> </li><li class=""><a onclick="OnEdit200(1332)" class="menu-item" href="https://d4demo.com/buytravel/Admin/UPITransaction.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>UPI ALL Transaction</span> </a> </li><li class=""><a onclick="OnEdit200(1333)" class="menu-item" href="https://d4demo.com/buytravel/Admin/UPIList.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>UPI List</span> </a> </li><li class=""><a onclick="OnEdit200(1334)" class="menu-item" href="https://d4demo.com/buytravel/Admin/UPIWalletHistory.aspx"><i class="fa fa-newspaper-o" data-placement="right"></i><span>UPI Wallet History</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-shopping-cart"></i><span class="menu-item">Orders</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(92)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageOrders.aspx"><i class="fa fa-line-chart" data-placement="right"></i><span>Manage Sales Orders</span> </a> </li><li class=""><a onclick="OnEdit200(93)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageInvoice.aspx"><i class="fa fa-file-text" data-placement="right"></i><span>Manage Invoice</span> </a> </li><li class=""><a onclick="OnEdit200(94)" class="menu-item" href="https://d4demo.com/buytravel/Admin/Delivery.aspx"><i class="fa fa-share" data-placement="right"></i><span>Delivery Methods</span> </a> </li><li class=""><a onclick="OnEdit200(95)" class="menu-item" href="https://d4demo.com/buytravel/Admin/PackageOrder.aspx"><i class="fa fa-get-pocket" data-placement="right"></i><span>Manage Packages</span> </a> </li><li class=""><a onclick="OnEdit200(96)" class="menu-item" href="https://d4demo.com/buytravel/Admin/DispatchOrders.aspx"><i class="fa fa-eject" data-placement="right"></i><span>Dispatch Order</span> </a> </li><li class=""><a onclick="OnEdit200(173)" class="menu-item" href="https://d4demo.com/buytravel/Admin/DeliveryOrder.aspx"><i class="fa fa-eject" data-placement="right"></i><span>Delivery Order</span> </a> </li><li class=""><a onclick="OnEdit200(97)" class="menu-item" href="https://d4demo.com/buytravel/Admin/InvoiceHistory.aspx"><i class="fa fa-file-text-o" data-placement="right"></i><span>Invoice History</span> </a> </li><li class=""><a onclick="OnEdit200(98)" class="menu-item" href="https://d4demo.com/buytravel/Admin/PackageHistory.aspx"><i class="fa fa-get-pocket" data-placement="right"></i><span>Package History</span> </a> </li><li class=""><a onclick="OnEdit200(99)" class="menu-item" href="https://d4demo.com/buytravel/Admin/OrdersCompHistory.aspx"><i class="fa fa-cart-plus" data-placement="right"></i><span>Orders Completed History</span> </a> </li><li class=""><a onclick="OnEdit200(174)" class="menu-item" href="https://d4demo.com/buytravel/Admin/DeliveredOrderHistory.aspx"><i class="fa fa-check-circle" data-placement="right"></i><span>Delivered Orders History</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-line-chart"></i><span class="menu-item">Reports</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(1292)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-user-circle" data-placement="right"></i><span>Commision Earnings</span> </a> </li><li class=""><a onclick="OnEdit200(1293)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RptPendingRecharge.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Pending Recharge Report</span> </a> </li><li class=""><a onclick="OnEdit200(1294)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RptRechargeHistory.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Recharge History Report</span> </a> </li><li class=""><a onclick="OnEdit200(1295)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RptCheckTransaction.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Check Transation Report</span> </a> </li><li class=""><a onclick="OnEdit200(1296)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RptAccount.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Account Report</span> </a> </li><li class=""><a onclick="OnEdit200(1297)" class="menu-item" href="https://d4demo.com/buytravel/Admin/BookingReport.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Booking Report</span> </a> </li><li class=""><a onclick="OnEdit200(1298)" class="menu-item" href="https://d4demo.com/buytravel/Admin/OverviewReport.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Overview Report</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-google-wallet"></i><span class="menu-item">EWallet</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(120)" class="menu-item" href="https://d4demo.com/buytravel/Admin/WithdrawFund.aspx"><i class="fa fa-google-wallet" data-placement="right"></i><span>WithDraw Fund</span> </a> </li><li class=""><a onclick="OnEdit200(121)" class="menu-item" href="https://d4demo.com/buytravel/Admin/WithdrawFundStatus.aspx"><i class="fa fa-credit-card-alt" data-placement="right"></i><span>WithDraw Process</span> </a> </li><li class=""><a onclick="OnEdit200(122)" class="menu-item" href="https://d4demo.com/buytravel/Admin/DebitUsersFund.aspx"><i class="fa fafa fa-credit-card-alt" data-placement="right"></i><span>Debit Users Fund</span> </a> </li><li class=""><a onclick="OnEdit200(123)" class="menu-item" href="https://d4demo.com/buytravel/Admin/FundTransfer.aspx"><i class="fa fa-arrows-h" data-placement="right"></i><span>Fund Transfer Users</span> </a> </li><li class=""><a onclick="OnEdit200(124)" class="menu-item" href="https://d4demo.com/buytravel/Admin/MemberAccntBalance.aspx"><i class="fa fa-user" data-placement="right"></i><span>Member A/C Balance</span> </a> </li><li class=""><a onclick="OnEdit200(125)" class="menu-item" href="https://d4demo.com/buytravel/Admin/PaymentHistory.aspx"><i class="fa fa-credit-card-alt" data-placement="right"></i><span>Payment History</span> </a> </li><li class=""><a onclick="OnEdit200(126)" class="menu-item" href="https://d4demo.com/buytravel/Admin/FundTransferHistory.aspx"><i class="fa fa-history" data-placement="right"></i><span>Fund Transfer History</span> </a> </li><li class=""><a onclick="OnEdit200(1350)" class="menu-item" href="https://d4demo.com/buytravel/Admin/FundRequest.aspx"><i class="fa fa-history" data-placement="right"></i><span>Fund Request</span> </a> </li><li class=""><a onclick="OnEdit200(1351)" class="menu-item" href="https://d4demo.com/buytravel/Admin/AllFundRequest.aspx"><i class="fa fa-history" data-placement="right"></i><span>All Fund Request</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-ticket"></i><span class="menu-item">Support</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(1299)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TicketDashboard.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Ticket Dashboard</span> </a> </li><li class=""><a onclick="OnEdit200(1300)" class="menu-item" href="https://d4demo.com/buytravel/Admin/CreateTicket.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Create Ticket</span> </a> </li><li class=""><a onclick="OnEdit200(1301)" class="menu-item" href="https://d4demo.com/buytravel/Admin/AssignTicket.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Assign Ticket</span> </a> </li><li class=""><a onclick="OnEdit200(1302)" class="menu-item" href="https://d4demo.com/buytravel/Admin/StaffTicket.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Staff Ticket</span> </a> </li><li class=""><a onclick="OnEdit200(1303)" class="menu-item" href="https://d4demo.com/buytravel/Admin/RptStaffTicket.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Staff Ticket Report</span> </a> </li><li class=""><a onclick="OnEdit200(1304)" class="menu-item" href="https://d4demo.com/buytravel/Admin/OpenTickets.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Open Status</span> </a> </li><li class=""><a onclick="OnEdit200(1305)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ResolvedTickets.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Resolved Status</span> </a> </li><li class=""><a onclick="OnEdit200(1306)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ClosedTickets.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Closed Status</span> </a> </li><li class=""><a onclick="OnEdit200(1307)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ArchivedTickets.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Archived Status</span> </a> </li><li class=""><a onclick="OnEdit200(1308)" class="menu-item" href="https://d4demo.com/buytravel/Admin/DeletedTickets.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Delete Status</span> </a> </li><li class=""><a onclick="OnEdit200(1309)" class="menu-item" href="https://d4demo.com/buytravel/Admin/UnverifiedTickets.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Unverified Status</span> </a> </li><li class=""><a onclick="OnEdit200(1310)" class="menu-item" href="https://d4demo.com/buytravel/Admin/OverdueTickets.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Overdue Status</span> </a> </li><li class=""><a onclick="OnEdit200(1311)" class="menu-item" href="https://d4demo.com/buytravel/Admin/TicketReport.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Ticket Report</span> </a> </li><li class=""><a onclick="OnEdit200(1312)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageSupport.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Support</span> </a> </li><li class=""><a onclick="OnEdit200(1313)" class="menu-item" href="https://d4demo.com/buytravel/Admin/SupportHistory.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Support History</span> </a> </li></ul></li><li class="nav-item has-sub"><a href="https://d4demo.com/buytravel/Admin/ActiveMembers.aspx#"><i class="fa fa-ticket"></i><span class="menu-item">Blogs</span><span class="badge badge badge-primary badge-pill float-right mr-2"></span></a><ul class="menu-content" style=""><li class=""><a onclick="OnEdit200(1318)" class="menu-item" href="https://d4demo.com/buytravel/Admin/ManageBlog.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Manage Blog</span> </a> </li><li class=""><a onclick="OnEdit200(1319)" class="menu-item" href="https://d4demo.com/buytravel/Admin/BlogCategories.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Blog Category</span> </a> </li><li class=""><a onclick="OnEdit200(1320)" class="menu-item" href="https://d4demo.com/buytravel/Admin/BlogSettings.aspx"><i class="fa fa-user-circle" data-placement="right"></i><span>Blog Settings</span> </a> </li></ul></li><li class=""><a class="menu-item" href="https://d4demo.com/buytravel/Admin/logout.aspx" data-i18n="Logout"><i class="ft-power"></i>Logout</a></li></ul><div class="ps__rail-y" style="top: 0px; height: 250px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 171px;"></div></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 598px; right: 3px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 300px;"></div></div></div></div> 
+        <!-- END: Main Menu-->
+        <!-- BEGIN: Content-->
+        <div>
+
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['tctl00$UpdatePanel1','UpdatePanel1'], [], ['ctl00$ContentPlaceHolder1$ancExcel1','ContentPlaceHolder1_ancExcel1','ctl00$ContentPlaceHolder1$ancPdf2','ContentPlaceHolder1_ancPdf2','ctl00$ContentPlaceHolder1$ancPrint2','ContentPlaceHolder1_ancPrint2'], 90, 'ctl00');
+//]]>
+</script>
+
+            <div class="table-responsive myautoscroll">
+                <div id="UpdatePanel1">
+	
+                        
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-12 col-12">
+                    <div class="row breadcrumbs-top">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb" style="margin-bottom: 10px;">
+                                <li class="breadcrumb-item"><a href="https://d4demo.com/buytravel/Admin/Admindashboard.aspx">Home</a> </li>
+                                <li class="breadcrumb-item active">Administration</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="row match-height">
+                    <div class="col-xl-12 col-lg-12" style="height: 100%">
+                        <div class="card">
+                            <div class="card-header hd1">
+                                <div class="row col-md-12 SpaceSolve">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <h4 class="card-title h41"><span id="ContentPlaceHolder1_spHead1">Active Members List</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="position-relative has-icon-left">
+                                                <select name="ctl00$ContentPlaceHolder1$ddlParentRole" id="ContentPlaceHolder1_ddlParentRole" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="" title=""><option value="0" selected="true">-- Select Parent Role --</option><option value="6">CUSTOMER</option><option value="3">DISTRIBUTOR</option><option value="2">MASTER DISTRIBUTOR</option><option value="4">REATAILER</option><option value="5">RESELLER</option></select>
+                                                <div class="form-control-position">
+                                                    <i class="fa fa-sort"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="position-relative has-icon-left">
+                                                <input name="ctl00$ContentPlaceHolder1$txtItemSearch" type="text" id="ContentPlaceHolder1_txtItemSearch" class="form-control" style="background-color: #FFF" placeholder="Search Name">
+                                                <div class="form-control-position">
+                                                    <i id="ContentPlaceHolder1_iconuser" class="fa fa-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li id="ContentPlaceHolder1_lbl28_Excel"><a id="ContentPlaceHolder1_ancExcel1" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$ancExcel1&#39;,&#39;&#39;)"><i class="fa fa-file-excel-o" style="color: green;"></i></a></li>
+                                        <li id="ContentPlaceHolder1_lbl28_Pdf"><a id="ContentPlaceHolder1_ancPdf2" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$ancPdf2&#39;,&#39;&#39;)"><i class="fa fa-file-pdf-o" style="color: red;"></i></a></li>
+                                        <li id="ContentPlaceHolder1_lbl28_Print"><a id="ContentPlaceHolder1_ancPrint2" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$ancPrint2&#39;,&#39;&#39;)"><i class="fa fa-print" style="color: darkblue;"></i></a></li>
+                                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="table-responsive">
+                                    <div class="row col-md-12 alg"></div>
+                                    <div class="col-md-12">
+                                        <div class="loader" style="display: none;">
+                                            <img class="loading-image" src="./Pay4Trip_files/spinner.gif" alt="loading.." style="width: 40px; height: 40px;">
+                                        </div>
+                                        <table id="Table3" class="tblCustomer table table-striped table-bordered table-hover table_list" style="width: 100%; margin-bottom: 0.41rem !important;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Role Name</th>
+                                                    <th>Name</th>
+                                                    <th>Date of Birth</th>
+                                                    <th>Email</th>
+                                                    <th>Phone</th>
+                                                    <th style="width: 5%;">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="ContentPlaceHolder1_tblList"><tr><td class="center td1">MASTER DISTRIBUTOR</td><td class="center td1">Mohammed K May</td><td class="center td1">20 December, 1970</td><td class="center td1">6fruzpely2v@meantinc.com</td><td class="center td1">070 1664 8300</td><td class="center td1"> <span class="Active"><span class="badge badge-default badge-success">Active</span></span></td></tr><tr><td class="center td1">REATAILER</td><td class="center td1">Steven A Santiago</td><td class="center td1">14 September, 1988</td><td class="center td1">vl7a20abafc@groupbuff.com</td><td class="center td1">9176055232</td><td class="center td1"> <span class="Active"><span class="badge badge-default badge-success">Active</span></span></td></tr><tr><td class="center td1">RESELLER</td><td class="center td1">Scarlett S Robinson</td><td class="center td1">7 November, 1990</td><td class="center td1">4lbgpvx4459@powerencry.com</td><td class="center td1">078 0242 0742</td><td class="center td1"> <span class="Active"><span class="badge badge-default badge-success">Active</span></span></td></tr><tr><td class="center td1">CUSTOMER</td><td class="center td1">Toprecharge</td><td class="center td1">26 March, 1975</td><td class="center td1">info@toprecharge.com</td><td class="center td1">070 1664 8300</td><td class="center td1"> <span class="Active"><span class="badge badge-default badge-success">Active</span></span></td></tr><tr><td class="center td1">DISTRIBUTOR</td><td class="center td1">Jhony</td><td class="center td1">17 September, 1997</td><td class="center td1">Jhony@gmail.com</td><td class="center td1">9087654567</td><td class="center td1"> <span class="Active"><span class="badge badge-default badge-success">Active</span></span></td></tr><tr><td class="center td1">REATAILER</td><td class="center td1">Jhanu</td><td class="center td1">12 June, 1996</td><td class="center td1">Jhanu@gmail.com</td><td class="center td1">9067453456</td><td class="center td1"> <span class="Active"><span class="badge badge-default badge-success">Active</span></span></td></tr><tr><td class="center td1">MASTER DISTRIBUTOR</td><td class="center td1">Charlie</td><td class="center td1">14 June, 1967</td><td class="center td1">Charlie@gmail.com</td><td class="center td1">8795674563</td><td class="center td1"> <span class="Active"><span class="badge badge-default badge-success">Active</span></span></td></tr></tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-4 newpaginationf">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div style="padding-top: 4px;">
+                                                            <span id="ContentPlaceHolder1_lblInfo2" class="fntlabel">Showing 1  to 7  of   7 Entries </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row" style="float: right">
+                                                    <div class="col-md-12 newpagination">
+                                                        <div id="pagination2" class="pagination"><a style="color: #404E67;width:73px;font-size: 14px;padding: 5px;border-radius: 4px 0px 0px 4px;"> Previous</a><span><a class="current">1</a></span><a style="color: #404E67;width:66px;font-size: 14px;padding: 5px;border-radius: 0px 4px 4px 0px;">Next</a></div>
+                                                        <div style="padding-top: 1px; float: right">
+                                                            <input name="ctl00$ContentPlaceHolder1$txtGoto2" type="text" id="ContentPlaceHolder1_txtGoto2" class="gotoclass" placeholder="Go To" style="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfItemId" id="ContentPlaceHolder1_hfItemId" value="0">
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfItemName" id="ContentPlaceHolder1_hfItemName">
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfClickPage2" id="ContentPlaceHolder1_hfClickPage2" value="1">
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfTotalPage2" id="ContentPlaceHolder1_hfTotalPage2" value="1">
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfTotalRecords2" id="ContentPlaceHolder1_hfTotalRecords2" value="7">
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfColName2" id="ContentPlaceHolder1_hfColName2" value="Id">
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfOrderBy2" id="ContentPlaceHolder1_hfOrderBy2" value="DESC">
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfCustomerId1" id="ContentPlaceHolder1_hfCustomerId1" value="0">
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfRoleId" id="ContentPlaceHolder1_hfRoleId" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                    
+</div>
+            </div>
+        </div>
+        <!-- END: Content-->
+        <!-- BEGIN: Customizer-->
+
+        <div>
+            <!-- BEGIN: Footer-->
+            <footer class="footer footer-static footer-light navbar-border fixed-bottom">
+                <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright  © 2020 <a class="text-bold-800 grey darken-2" href="http://pay4trip.com/" target="_blank">Pay4Trip 			</a></span></p>
+            </footer>
+            <!-- END: Footer-->
+        </div>
+        <!-- Back to top Link -->
+        <div id="to-top" class="main-bg"><span class="fa fa-chevron-up"></span></div>
+        <!-- End: Customizer-->
+        <!-- Buynow Button-->
+        <div class="sidenav-overlay"></div>
+        <div class="drag-target"></div>
+        <input type="hidden" name="ctl00$hfActiveMenuId" id="hfActiveMenuId" value="1"> 
+    </form>
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="./Pay4Trip_files/vendors.min.js.download" type="text/javascript"></script>
+
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="./Pay4Trip_files/sweetalert.min.js.download" type="text/javascript"></script>
+    <script src="./Pay4Trip_files/picker.js.download" type="text/javascript"></script>
+    <script src="./Pay4Trip_files/picker.date.js.download" type="text/javascript"></script>
+    <script src="./Pay4Trip_files/pick-a-datetime.js.download" type="text/javascript"></script>
+    <script src="./Pay4Trip_files/chart.min.js.download" type="text/javascript"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN STACK JS-->
+    <script src="./Pay4Trip_files/app-menu.js.download" type="text/javascript"></script>
+    <script src="./Pay4Trip_files/app.js.download" type="text/javascript"></script>
+    <script src="./Pay4Trip_files/customizer.js.download" type="text/javascript"></script>
+    <!-- END STACK JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="./Pay4Trip_files/column-stacked.js.download" type="text/javascript"></script>  
+
+
+</body></html>

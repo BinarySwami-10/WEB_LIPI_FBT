@@ -1,0 +1,1 @@
+submiturl="https://www.fastbooktrip.com/admin/security/white_list_ip"

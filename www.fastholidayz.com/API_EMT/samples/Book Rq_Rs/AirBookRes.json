@@ -1,0 +1,57 @@
+{
+    "BookingDetail": {
+        "CurrencyCode": "INR",
+        "PaymentAmount": 12445,
+        "PnrDetail": {
+            "Pnr": [
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "TESTST",
+                    "TYPE": 1
+                },
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "TESTST",
+                    "TYPE": 0
+                },
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "",
+                    "TYPE": 5
+                },
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "12445",
+                    "TYPE": 6
+                }
+            ],
+            "Tickets": [
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "FirstName": "Rahul",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 1,
+                    "PaxType": 0,
+                    "Prefix": "",
+                    "TicketNumber": "73714740-1"
+                }
+            ]
+        }
+    },
+    "BookingId": "",
+    "Errors": null,
+    "SearchDetails": null,
+    "TransactionId": "65765765#EMT44706618#EMT44706681"
+}

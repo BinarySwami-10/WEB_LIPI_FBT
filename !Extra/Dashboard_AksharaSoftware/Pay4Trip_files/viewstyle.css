@@ -1,0 +1,10 @@
+﻿body {
+}
+
+ .lineheight{line-height:30px;}
+  .linebold{font-weight:550;}
+  .wrapup{white-space:nowrap;}
+  .headingtitle{font-weight:450;}
+  .titlecenter{text-align:center;}
+  .newpagination{margin-top:10px; white-space:nowrap;}
+  .newpaginationf{ white-space:nowrap;}

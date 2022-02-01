@@ -1,0 +1,38 @@
+End Points:
+
+Search : https://stagingapi.easemytrip.com/Flight.svc/json/FlightSearch
+
+Reprice : https://stagingapi.easemytrip.com/Flight.svc/json/AirRePriceRQ
+
+Book : https://stagingapi.easemytrip.com/Flight.svc/json/AirBookRQ
+
+Get Booking : https://stagingapi.easemytrip.com/cancellationjson/api/flightbookingdetail
+
+
+credential  :
+
+UserName: EMTB2B
+Password: EMT@uytrFYTREt
+
+
+API Documents: 
+https://stagingapi.easemytrip.com/documentation/flight-json-api/index.htm
+
+***********************************************************************************************
+SSR :
+
+Search : https://stagingapi.easemytrip.com/Flight.svc/json/FlightSearch
+
+Reprice : https://stagingapi.easemytrip.com/Flight.svc/json/AirRePriceRQ
+
+Get Seat : https://stagingapi.easemytrip.com/Flight.svc/json/SeatAvailabilityV2
+
+Get MealBagge : https://stagingapi.easemytrip.com/Flight.svc/json/SSRAvailabilityV2
+
+Book : https://stagingapi.easemytrip.com/Flight.svc/json/AirBookRQ
+
+Get Booking : http://stagingapi.easemytrip.com/cancellationjson/api/flightbookingdetail
+
+SSR API Documents: 
+https://easemytrip.docs.apiary.io/
+

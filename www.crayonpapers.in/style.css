@@ -1,0 +1,235 @@
+
+html, body { 
+	overflow: overlay;
+	/*height: 100%;*/
+	background-color: #000;
+}
+
+body *{
+	font-family: Teko;
+
+}
+
+@media(min-width: 768px){
+	p {
+		font-size: 1.25em;
+	}
+}
+
+body > section{
+	margin-bottom: 3em  !important;
+}
+
+.rounded-section,.section-rounded{
+	border-radius: 3.5em;
+	margin-right: 0.5em !important;
+	margin-left: 0.5em !important;
+}
+@media(max-width: 768px){
+	.rounded-section,.section-rounded{
+	border-radius: 2em;
+	margin-right: 0.25em !important;
+	margin-left: 0.25em !important;
+}
+}
+.row{
+	margin: auto 0;
+}
+.f-0{
+	font-size: 0.75em;
+}
+.f-l{
+	font-size: 1em;
+}
+.f-2{
+	font-size: 1.5em;
+}
+.f-3{
+	font-size: 2em;
+}
+.f-4{
+	font-size: 3em;
+}
+.f-5{
+	font-size: 5em;
+}
+
+body::-webkit-scrollbar-track {
+  /*box-shadow: inset 0 0 30px rgba(0,0,0,0.2);*/
+  display: block;
+  background-color: #0002;
+}
+
+body::-webkit-scrollbar {
+  width: 1.5vw;
+  position: sticky;
+  /*background-color: #4446;*/
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  /*max-height: 10em !important;*/
+  /*height: 10em !important;*/
+  background-color: #d00;
+  background-image: url('./img/logo.webp');
+  background-size: cover;
+	/*height: 25px;*/
+  /*background-size: 200% 50%;*/
+}
+
+
+h1{
+	font-family: 'Black Ops One';
+}
+h2{
+	font-weight: 600;
+	font-size: 5em !important;	
+	font-family: "Teko"
+}
+@media(max-width: 768px){
+	h1{
+		font-family: 'Black Ops One';
+	}
+	h2{
+		font-weight: 600;
+		font-size: 3em !important;	
+		font-family: "Teko"
+	}
+}
+
+.bg-black{
+	background-color: #000;
+}
+.bg-black{
+	background-color: #000;
+}
+/*---------------------------*/
+
+/*---------------------------*/
+
+.greeting p{
+} 
+@media(max-width: 768px){
+	.greeting h1{
+		font-size: 6vw;
+	} 
+}
+
+.logo-holder img {
+	/*margin-left: -10vw;*/
+	width: 100%;
+	max-width: 33vw;
+	transition: 0.3s;
+	transition-timing-function: ease-out;
+	z-index: -1;
+}
+@media(max-width: 768px){
+	.logo-holder img{
+		max-width: 100vw;
+		width: 95%;
+		margin: 0.5em;
+
+	}
+}
+.logo-holder img:hover{
+	transform: scale(1.05);
+}
+marquee {
+	/*position: absolute;*/
+	color: #f00;
+	z-index: 100;
+}
+@media(max-width: 768px){
+	marquee{
+		position: relative;
+	}
+}
+
+/*---------------------------*/
+.swiper.hero-swiper .swiper-slide img{
+	height: 50vh;
+	width: 100%;
+}
+.swiper.hero-swiper{
+	height: 50vh;
+
+}
+.swiper.hero-swiper .swiper-slide{
+	background-size: cover;
+}
+
+
+
+
+
+
+/*---------------------------*/
+
+
+.card img{
+	max-width: 15vw;
+	max-height: auto;
+	margin: 0 auto;
+}
+@media(max-width: 768px){
+	.card img{
+		max-width: 100%;
+		max-height: auto;
+		margin: 0 auto;
+	}		
+}
+.card-body{
+}
+
+@media(max-width: 768px){
+	.card-body{
+		padding: 0.5em;
+		/*text-align: justify;*/
+	}		
+}
+
+
+descriptor p{
+	line-height: 1.1em;	
+	font-size: 1em;
+	text-align: center;
+}
+.card{
+	text-align: center;
+}
+.card img.one{
+	filter: hue-rotate(30deg);
+}		
+.card img.two{
+	/*filter: hue-rotate(60deg);*/
+}		
+.card img.three{
+	filter: hue-rotate(120deg);
+}		
+.card img.four{
+	filter: hue-rotate(180deg);
+}
+
+/*-------------------------------*/
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rainbow-text {
+  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  text-align: center;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+/*-------------------------------*/
+
+

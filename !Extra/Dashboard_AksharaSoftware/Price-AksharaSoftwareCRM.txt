@@ -1,0 +1,6 @@
+BASE PRICE= $7000 (INR 500,000)
+Developing=	$1500 (INR 100,000) + 2Lac
+Integrations
+	-	GDS,TBO,Gallelio, Flight, Hotel,Easemytrip 
+	-	Razorpay
+	-	SMS API

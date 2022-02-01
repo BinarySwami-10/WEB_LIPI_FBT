@@ -1,0 +1,476 @@
+@charset "utf-8";
+/* CSS Document valid on http://www.designmeena.com/ */
+
+body{
+	margin:0px;
+	padding:0px;
+}
+
+@font-face {
+    font-family: "gothicb";
+    src: url(../font/gothicb.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "gothic";
+    src: url(../font/gothic.ttf) format("truetype");
+}
+
+img{
+	border:none;
+}
+
+.clear_left{
+	clear:left;
+}
+
+.clear_both{
+	clear:both;
+}
+
+#header{
+	margin:0 auto;
+	padding:0 auto;
+	width:1100px;
+	height:110px;
+}
+
+#logo{
+	float:left;
+}
+
+#callus{
+	float:right;
+	margin-top:5px;
+	font-family: "gothic";
+    src: url(../font/gothic.ttf) format("truetype");
+	font-size:25px;
+	font-weight:normal;
+}
+
+#mailus{
+	float:right;
+	margin-top:5px;
+	font-family: "gothic";
+    src: url(../font/gothic.ttf) format("truetype");
+	font-size:25px;
+	margin-left:50px;
+	font-weight:normal;
+}
+
+.emil_icon{
+	float:left;
+	margin-top:-3px;
+	padding-right:8px;
+}
+
+.emil_icon1{
+	float:left;
+	margin-top:1px;
+	padding-right:8px;
+}
+
+
+#fullmenu{
+	background:url(../images/menu_bg.jpg) left top repeat-x;
+	width:100%;
+	height:54px;
+}
+
+#mainmenu{
+	margin:0 auto;
+	padding:0 auto;
+	width:1100px;	
+}
+
+#container{
+	margin:0 auto;
+	padding:0 auto;
+	width:1100px;	
+}
+
+#paperbox{
+	float:left;
+	width:351px;
+	padding:6px;
+}
+
+#box_head{
+	float:left;
+	width:353px;
+	height:50px;
+	background:#000000;
+	font-family: "gothicb";
+    src: url(../font/gothicb.ttf) format("truetype");
+	font-size:18px;
+	color:#FFFFFF;
+	margin:6px;
+	margin-top:0px;
+	text-align:center;
+}
+
+#row1{
+	float:left;
+	width:35%;
+	font-family: "gothicb";
+    src: url(../font/gothicb.ttf) format("truetype");
+	font-size:28px;
+}
+
+#row2{
+	float:right;
+	width:64%;
+}
+
+.content{
+	font-family: "gothic";
+    src: url(../font/gothic.ttf) format("truetype");
+	font-size:16px;
+	line-height:25px;
+	text-align:justify;
+	color:#333333;
+}
+
+#follfooter{
+	background:#008f8f;
+	width:100%;
+	height:330px;
+}
+
+#footer{
+	margin:0 auto;
+	padding:0 auto;
+	width:1100px;
+	background:url(../images/foot_bg.jpg) left top no-repeat;
+	height:370px;	
+}
+
+h2{
+	font-family: "gothicb";
+    src: url(../font/gothicb.ttf) format("truetype");
+	font-size:20px;
+	color:#000000;
+	line-height:60px;
+}
+
+#officeaddress{
+	float:left;
+	width:270px;
+	border:0px solid #000000;
+	color:#FFFFFF;
+	line-height:25px;
+	font-family: "gothicb";
+    src: url(../font/gothicb.ttf) format("truetype");
+}
+
+.ft_mnu{
+	font-family: "gothicb";
+    src: url(../font/gothicb.ttf) format("truetype");
+	line-height:30px;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-transform:uppercase;
+	display:block;
+}
+
+.ft_mnu:hover{
+	color:#000000;
+}
+
+#fullcopy{
+	background:#000000;
+	width:100%;
+	height:40px;
+	color:#FFFFFF;
+	text-align:center;
+	font-family: "gothic";
+    src: url(../font/gothic.ttf) format("truetype");
+	line-height:40px;
+}
+
+#fullcont_support{
+	background:url(../images/ph_whasp_no_bg.jpg) left top repeat-x;
+	width:100%;
+	height:100px;
+}
+
+#cont_sport{
+	margin:0 auto;
+	padding:0 auto;
+	width:1100px;
+}
+
+#cont_lady{
+	float:left;
+	margin-left:60px;
+}
+
+#pho_whatsapp{
+	float:left;
+	margin-left:20px;
+}
+
+h1{
+	font-size:40px;
+	color:#FFFFFF;
+	font-family: "gothic";
+    src: url(../font/gothic.ttf) format("truetype");
+	text-align:center;
+}
+
+h3{
+	font-size:30px;
+	color:#FFFF00;
+	font-family: "gothic";
+    src: url(../font/gothic.ttf) format("truetype");
+}
+
+#fullbanner{
+	background:url(../images/banner6.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner1{
+	background:url(../images/banner3.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner2{
+	background:url(../images/banner4.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner3{
+	background:url(../images/about_us_ban.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner4{
+	background:url(../images/banner5.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner5{
+	background:url(../images/banner2.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner6{
+	background:url(../images/banner1.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner7{
+	background:url(../images/contact-us.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner8{
+	background:url(../images/banner7.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner_potatoes{
+	background:url(../images/potatoes.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner_onion{
+	background:url(../images/onion.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner_garlic{
+	background:url(../images/garlic.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner_cotton-bales{
+	background:url(../images/cotton-bales.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner_cotton-seed{
+	background:url(../images/cotton-seed.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner_rice{
+	background:url(../images/rice.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner_peanuts{
+	background:url(../images/peanuts.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#fullbanner_CottonCake{
+	background:url(../images/CottonSeedOilCake.jpg) center top no-repeat;
+	background-size:cover;
+	width:100%;
+	height:340px;
+}
+
+#logo_scroll{
+	margin:0 auto;
+	padding:0 auto;
+	width:1100px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#product_box{
+	float:left;
+	border:1px solid #000000;
+	width:250px;
+	height:auto;
+	margin:8px;
+}
+
+.prdct_name{
+	text-align:center;
+	font-family: "gothicb";
+    src: url(../font/gothicb.ttf) format("truetype");
+	color:#2d2767;
+	padding-top:5px;
+	padding-bottom:5px;	
+	text-transform:capitalize;
+}
+
+a.fullinquiry_btn {
+	width:100%;
+	margin-left:0;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+	display:block;
+	text-align:center;
+	background:#00a3e2;
+	text-decoration:none;
+	color:#FFFFFF;
+	font-family: "gothic";
+    src: url(../font/gothic.ttf) format("truetype");
+	text-transform:uppercase;
+	line-height:40px;
+	margin-bottom:5px;
+	font-size:18px;
+}
+
+a.fullinquiry_btn:hover {
+	text-align:center;
+	background:#0375a1;
+	text-decoration:none;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+a.fullproduct_dtls {
+	width:100%;
+	margin-left:0;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+	display:block;
+	text-align:center;
+	background:#0d2c70;
+	text-decoration:none;
+	color:#FFFFFF;
+	font-family: "gothic";
+    src: url(../font/gothic.ttf) format("truetype");
+	text-transform:uppercase;
+	line-height:40px;
+	font-size:18px;
+}
+
+a.fullproduct_dtls:hover {
+	text-align:center;
+	background:#083eb4;
+	text-decoration:none;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+.sub_heading{
+	font-family: "gothicb";
+    src: url(../font/gothicb.ttf) format("truetype");
+	font-size:18px;
+	font-weight:normal;
+	color:#008f8f;
+	margin-bottom:10px;
+	line-height:40px;
+}
+
+.photogal{
+	padding:7px;
+	border:1px solid #CCCCCC;
+	border-radius:5px;
+	background:#FFFFFF;
+	margin-bottom:10px;
+}
+
+.textfield{
+	width:100%;
+	height:40px;
+	border-radius:2px;
+	border:1px solid #CCCCCC;
+}
+
+.selct_textfield{
+	width:500px;
+	height:40px;
+	border-radius:2px;
+	border:1px solid #CCCCCC;
+}
+
+.textarea{
+	width:100%;
+	height:150px;
+	border-radius:2px;
+	border:1px solid #CCCCCC;
+}
+
+.sbmt_btn{
+	width:100%;
+	height:40px;
+	color:#FFFFFF;
+	border:none;
+	background:#008e8f;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:16px;
+	font-family: "gothicb";
+    src: url(../font/gothicb.ttf) format("truetype");
+}

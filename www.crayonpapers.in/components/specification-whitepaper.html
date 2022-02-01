@@ -1,0 +1,109 @@
+
+<style type="text/css">
+	.features-section{
+		background-color: #fff;
+		background-image:url('./img/bg0.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	  font-size: 1.25em;
+	}
+	.features-section h1{
+		font-family: Teko;
+		font-size: 3.5em;
+		font-weight: 600;
+	}
+	.features-section .material-icons{
+		margin-left: -1em;
+		vertical-align: middle;
+	}
+
+	.features-section ul li{
+		  list-style-type: none;
+		  text-transform: capitalize;
+		  line-height: 1em;
+		  /*font-family: "Roboto Condensed";*/
+		  text-shadow: 0 0 4px #0004 ;
+	}
+	.features-section table thead{
+		border-radius: 1em !important;
+	}
+</style>
+
+<div class="col-lg-3 ">
+	<h1 class="text-center"> Specifications</h1>
+	<table id="PRODUCT_DETAILS" class="table table-bordered">
+		<caption class="text-dark">This is why Our Paper is the most trusted brand</caption>
+		<thead class="thead">
+			<tr class="font-weight-bold"> <th>Feature</th> <th>Attribute</th> </tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		DATA_PRODUCT_DETAILS={
+			"Brand":"Crayon",
+			"Substance":"80gsm",
+			"Brightness":"90-104% above",
+			"Thickness":"110um",
+			"Size":"A4 (210mm x 297mm)",
+			"Grade":"All purpose Premium Paper",
+			"Roughness":"140ml/Min",
+			"Ream box":"5 Ream",
+			"Color":"white",
+			"Sheet in Ream":"500",
+			"Quality":"Very High",
+			"Whiteness":"CIE167",
+			"Roughness":"140ml/Min",
+			"Opacity":"95%",
+		}
+		for (d in DATA_PRODUCT_DETAILS) {
+			$('#PRODUCT_DETAILS tbody').append(`
+				<tr>
+				<td class="py-1 px-2">
+				<span class="material-icons text-success ml-0">done</span>${d}
+				</td>
+				<td class="py-1 px-2">${DATA_PRODUCT_DETAILS[d]}</td>
+				</tr>
+				`)
+		}
+	</script>
+</div>
+
+<div class="col-lg-3">
+	<h1 class="text-center"> Performance</h1>
+	<ul class="">
+		<li>no jam in photocopy machines</li>
+		<li>leave no dust in the copy machine</li>
+		<li>best result in photocopy machines</li>
+		<li>no double feed, white and clean, smooth and bulky</li>
+		<li>laser printers, inkjet printer, fax, etc. stay flat after copying (even in laser)</li>
+		<li>no see through pring in both side</li>
+	</ul>
+</div>
+<div class="col-lg-3">
+	<h1 class="text-center">Packaging</h1>
+	<ul>
+		<li>500 sheets per ream </li>
+		<li>5 / 10 reams per box</li>
+		<li>1560 boxes per 20ft container (with pallet) </li>
+		<li>1600 boxes per 20ft container (without pallet). </li>
+		<li>7800 reams total in one 20fcl (with pallet).</li>
+		<li>8000 reams total in one 20fcl (without pallet).</li>
+	</ul>
+</div>
+<div class="col-lg-3">
+	<h1 class="text-center">Benefits</h1>
+	<ul>
+		<li>moisture control - makes the sheets stay flat in the copier and enchances runability.&nbsp;</li>
+		<li>low dust content - minimizing your copier runing cost.</li>
+		<li>good opacity - double sided copying of the best quality</li>
+		<li>smoothness - improving printing quality.</li>
+		<li>bulky sheet - enhancing smooth runnability</li>
+	</ul>
+</div>
+<!-- --------------- -->
+<script type="text/javascript">
+	featurelistitem=$('.features-section li')
+	featurelistitem.prepend('<span class="material-icons text-success">verified</span>')
+	featurelistitem.addClass('py-lg-3')
+</script>

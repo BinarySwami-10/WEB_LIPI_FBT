@@ -1,0 +1,143 @@
+<head>
+  <style> body { margin: 0; } </style>
+
+  <script src="//unpkg.com/three"></script>
+  <script src="//unpkg.com/three/examples/js/controls/TrackballControls.js"></script>
+  <script src="//unpkg.com/three-globe"></script>
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js'></script>
+  <!--<script src="../../dist/three-globe.js"></script>-->
+</head>
+
+<body>
+  <div id="globeViz"></div>
+
+  <script>
+
+
+    const N = 1;
+    const colorInterpolator = t => `rgba(0,255,0,${Math.sqrt(1-t)})`; 
+
+    var journey={
+      start:{
+        lat:17.385044,
+        lng:78.486671
+      },
+      end:{
+        lat:28.5561624,
+        lng:77.0999578,
+      }
+    };
+
+    const arcsData = [...Array(N).keys()].map(() => ({
+      startLat: journey.start.lat  /*Math.random()*0.5*/,
+      startLng: journey.start.lng  /*Math.random()*0.5*/,
+      endLat: journey.end.lat  /*Math.random()*0.5*/,
+      endLng: journey.end.lng  /*Math.random()*0.5*/,
+      color: ['red', 'white', 'blue', 'green'][1]
+    }));
+
+    const gData = [{
+      lat: 17.385044,
+      lng: 78.486671,
+      maxR: 1.5,
+      propagationSpeed: 0.33,
+      repeatPeriod: 1000,
+      ringColor: t => `rgba(0,255,0,${Math.sqrt(1-t)})`,
+    },
+    {
+      lat: 28.5561624,
+      lng: 77.0999578,
+      maxR: 1.5,
+      propagationSpeed: -0.33,
+      repeatPeriod: 1000,
+      ringColor: t=> `rgba(255,255,0,${Math.sqrt(t)})`
+    }];
+
+    const lData=[{
+      labelText:'Hyderabad',
+      lat:journey.start.lat,
+      lng:journey.start.lng,
+      color:'#fff',
+      size: 1,
+
+    },
+    {
+      labelText:'Delhi',
+      lat:journey.end.lat,
+      lng:journey.end.lng,
+      color:'#fff',
+      size: 1,
+
+    }]
+
+    const Globe = new ThreeGlobe()
+    .globeImageUrl('https://unpkg.com/three-globe@2.21.3/example/img/earth-blue-marble.jpg')
+    .labelsData(lData)
+    .labelText('labelText')
+    .labelSize('size')
+    .labelColor('color')
+
+    .arcsData(arcsData)
+    .arcColor('color')
+    .arcDashLength(0.1)
+    .arcDashGap(0.05)
+    .arcDashInitialGap(() => Math.random() * 1)
+    .arcDashAnimateTime(4000)
+
+    .ringsData(gData)
+    .ringColor('ringColor')
+    .ringMaxRadius('maxR')
+    .ringPropagationSpeed('propagationSpeed')
+    .ringRepeatPeriod('repeatPeriod')
+    ;
+      // Globe.rotation.x+=(gData[0].lat/360)*2*Math.PI;
+      // Globe.rotation.y-=(gData[0].lng/360)*2*Math.PI;
+
+
+    // Setup renderer
+    const renderer = new THREE.WebGLRenderer({antialias:true});
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('globeViz').appendChild(renderer.domElement);
+
+    // Setup scene
+    const scene = new THREE.Scene();
+    scene.add(Globe);
+    scene.add(new THREE.AmbientLight('#efe',1));
+    scene.add(new THREE.DirectionalLight('#ff6', 1.5));
+
+    // Setup camera
+    const camera = new THREE.PerspectiveCamera();
+    camera.aspect = window.innerWidth/window.innerHeight;
+    camera.updateProjectionMatrix();
+    camera.position.z = 150;
+
+    // Add camera controls
+    const tbControls = new THREE.TrackballControls(camera, renderer.domElement);
+    tbControls.minDistance = 101;
+    tbControls.rotateSpeed = 2;
+    tbControls.zoomSpeed = 0.33;
+
+    var rotation = { x : Globe.rotation.x, y: Globe.rotation.y };
+    var target = { x : (gData[0].lat/360)*2*Math.PI, y: -(gData[0].lng/360)*2*Math.PI };
+    var tween = new TWEEN.Tween(rotation).to(target, 3000);
+    // tween.easing(TWEEN.Easing.Back.InOut)
+    tween.easing(TWEEN.Easing.Elastic.Out)
+
+    tween.onUpdate(function(){
+      Globe.rotation.x = rotation.x;
+      Globe.rotation.y = rotation.y;
+    });
+    tween.start();
+
+
+
+    // Kick-off renderer
+    (function animate() { // IIFE
+      // Frame cycle
+      tbControls.update();
+      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+      TWEEN.update();
+    })();
+  </script>
+</body>

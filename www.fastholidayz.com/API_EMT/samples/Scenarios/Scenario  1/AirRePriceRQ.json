@@ -1,0 +1,245 @@
+{
+    "FlightAvailabilityRQ": {
+        "Adults": 1,
+        "Authentication": {
+            "IpAddress": "13.126.21.116",
+            "Password": "EMT@uytrFYTREt",
+            "PortalID": "26",
+            "UserName": "EMTB2B"
+        },
+        "Cabin": 0,
+        "Childs": 1,
+        "EngineID": [
+            7
+        ],
+        "TraceId": "",
+        "FlightSearchDetails": [
+            {
+                "BeginDate": "2019-07-31",
+                "Origin": "DEL",
+                "Destination": "BLR"
+            }
+        ],
+        "Infants": 1,
+        "TripType": 0
+    },
+    "Segment": [
+        {
+            "BondType": "OutBound",
+            "Bonds": [
+                {
+                    "BoundType": "OutBound",
+                    "IsBaggageFare": false,
+                    "IsSSR": false,
+                    "ItineraryKey": null,
+                    "JourneyTime": "02h 10m",
+                    "Legs": [
+                        {
+                            "AircraftCode": "EGrwzuBAAA/BbI/7zEAAAA==",
+                            "AircraftType": null,
+                            "AirlineName": "AI",
+                            "ArrivalDate": "Wed-31Jul2019",
+                            "ArrivalTerminal": "2",
+                            "ArrivalTime": "23:10",
+                            "AvailableSeat": "9",
+                            "BaggageUnit": "KG",
+                            "BaggageWeight": "10",
+                            "BookSeat": null,
+                            "BoundType": "OutBound",
+                            "Cabin": "Economy",
+                            "CabinClasses": null,
+                            "Capacity": 0,
+                            "CarrierCode": "AI",
+                            "CurrencyCode": null,
+                            "DepartureDate": "Wed-31Jul2019",
+                            "DepartureTerminal": "3",
+                            "DepartureTime": "21:00",
+                            "Destination": "BOM",
+                            "Duration": "02h 10m",
+                            "FareBasisCode": null,
+                            "FareClassOfService": "T",
+                            "FlightDesignator": null,
+                            "FlightDetailRefKey": "EGrwzuBAAA/BcI/7zEAAAA==",
+                            "FlightName": "AirIndia",
+                            "FlightNumber": "191",
+                            "Group": "0",
+                            "IsConnecting": false,
+                            "IsSeatOpen": false,
+                            "LayoverAt": null,
+                            "LayoverDuration": null,
+                            "NumberOfStops": "0",
+                            "OperatedBy": null,
+                            "Origin": "DEL",
+                            "ProviderCode": "1G",
+                            "Remarks": null,
+                            "SSRDetails": null,
+                            "Sold": 0,
+                            "Status": null
+                        }
+                    ],
+                    "addOnDetail": null
+                }
+            ],
+            "CurrencyCode": null,
+            "Deeplink": "",
+            "EngineID": 7,
+            "Fare": {
+                "BasicFare": 6200,
+                "ExchangeRate": 0,
+                "PaxFares": [
+                    {
+                        "BaggageUnit": "KG",
+                        "BaggageWeight": "25",
+                        "BaseTransactionAmount": 0,
+                        "BasicFare": 2600,
+                        "CancelPenalty": 2650,
+                        "Cashback": 0,
+                        "ChangePenalty": 2650,
+                        "Commission": 0,
+                        "DFValue": "0",
+                        "EquivCurrencyCode": null,
+                        "Fare": [
+                            {
+                                "Amount": 139,
+                                "ChargeCode": "K3",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 268,
+                                "ChargeCode": "PSF",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 170,
+                                "ChargeCode": "YR",
+                                "ChargeType": null
+                            }
+                        ],
+                        "FareBasisCode": "Economy",
+                        "FareInfoKey": "EGrwzuBAAA/BIH/7zEAAAA==",
+                        "FareInfoValue": "gws-eJxNTkEOwjAMe8zku1Mqttxatk5UgoKmXXbh/88gbYdEpMROHDkJITiKcqQP/zHgM8SMXDaggJa31xPuSkKsOUBxCXt8i0c3uNR5aVpHqVucZVYDrFx9l2rgaHVJD9PYbA0F9SwqtQF+JN2NlrjsMdOTk6pOfjtFjrA/vxFiKtI=",
+                        "IsZeroCancellation": false,
+                        "MarkUP": 0,
+                        "PaxType": 0,
+                        "Refundable": true,
+                        "STF": 0,
+                        "ServiceFee": 0,
+                        "TDS": 0,
+                        "TotalFare": 3177,
+                        "TotalTax": 577,
+                        "TransactionAmount": 0,
+                        "TransactionFee": 0,
+                        "ZeroCancellationCharge": 100,
+                        "ZeroCancellationValidity": "28"
+                    },
+                    {
+                        "BaggageUnit": "KG",
+                        "BaggageWeight": "25",
+                        "BaseTransactionAmount": 0,
+                        "BasicFare": 2600,
+                        "CancelPenalty": 2650,
+                        "Cashback": 0,
+                        "ChangePenalty": 2650,
+                        "Commission": 0,
+                        "DFValue": "0",
+                        "EquivCurrencyCode": null,
+                        "Fare": [
+                            {
+                                "Amount": 139,
+                                "ChargeCode": "K3",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 268,
+                                "ChargeCode": "PSF",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 170,
+                                "ChargeCode": "YR",
+                                "ChargeType": null
+                            }
+                        ],
+                        "FareBasisCode": "Economy",
+                        "FareInfoKey": "EGrwzuBAAA/BWH/7zEAAAA==",
+                        "FareInfoValue": "gws-eJxNTkEOwjAMe8zku1sqtt5auk5UgoAmLrvw/2eQtCARKbETR05SSp4ucmZI/zHhPeWGJjsgoOblcYc/k3DaHKDzFa/8dAHD4GRz6dpAb1ssrkQFbNzCkCxw9LrWm2rstoawszCqA/xIvSqVIpIbA7nEGJewf0XO0D8/Ergq2g==",
+                        "IsZeroCancellation": false,
+                        "MarkUP": 0,
+                        "PaxType": 1,
+                        "Refundable": true,
+                        "STF": 0,
+                        "ServiceFee": 0,
+                        "TDS": 0,
+                        "TotalFare": 3177,
+                        "TotalTax": 577,
+                        "TransactionAmount": 0,
+                        "TransactionFee": 0,
+                        "ZeroCancellationCharge": 100,
+                        "ZeroCancellationValidity": "28"
+                    },
+                    {
+                        "BaggageUnit": "KG",
+                        "BaggageWeight": "10",
+                        "BaseTransactionAmount": 0,
+                        "BasicFare": 1000,
+                        "CancelPenalty": 2650,
+                        "Cashback": 0,
+                        "ChangePenalty": 2650,
+                        "Commission": 0,
+                        "DFValue": "0",
+                        "EquivCurrencyCode": null,
+                        "Fare": [
+                            {
+                                "Amount": 59,
+                                "ChargeCode": "K3",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 170,
+                                "ChargeCode": "YR",
+                                "ChargeType": null
+                            }
+                        ],
+                        "FareBasisCode": "Economy",
+                        "FareInfoKey": "EGrwzuBAAA/BgH/7zEAAAA==",
+                        "FareInfoValue": "gws-eJxNTkEKwzAMe0zRXW4CbW7JuoQFNm+UXXrZ/58xJ+lgAtmyZWzHGGdK4EIf/zHhM6WKqjugoPHyfEBIQqw4QJkz3uklHmOBa33t3siuTXGTLVhCYfHDasDR4zXfzWNfa3RoZ9GkNfAT+WZSq5ZU6ck1hLD6/TS5wP78Ag1DKsw=",
+                        "IsZeroCancellation": false,
+                        "MarkUP": 0,
+                        "PaxType": 2,
+                        "Refundable": true,
+                        "STF": 0,
+                        "ServiceFee": 0,
+                        "TDS": 0,
+                        "TotalFare": 1229,
+                        "TotalTax": 229,
+                        "TransactionAmount": 0,
+                        "TransactionFee": 0,
+                        "ZeroCancellationCharge": 0,
+                        "ZeroCancellationValidity": null
+                    }
+                ],
+                "TotalFareWithOutMarkUp": 7583,
+                "TotalTaxWithOutMarkUp": 1383
+            },
+            "FareIndicator": 0,
+            "FareRule": "CAN-BEF 28_0:2650|CHG-BEF 28_0:2650|EMTFee-250|CANCEL-BEF 28_0:2650|CHANGE-BEF 28_0:2650",
+            "IsBaggageFare": false,
+            "IsCache": false,
+            "IsHoldBooking": false,
+            "IsInternational": false,
+            "IsRoundTrip": false,
+            "IsSpecial": false,
+            "IsSpecialId": false,
+            "ItineraryKey": "BB6A390B0A07425D29AE3151D064F4E4",
+            "JourneyIndex": 0,
+            "MemoryCreationTime": "/Date(1562217466350+0530)/",
+            "NearByAirport": false,
+            "PromoCode": null,
+            "Remark": null,
+            "SSDetails": "Free Meals",
+            "SearchId": "114,ADT:BF=2600 Tax=577,CHD:BF=2600 Tax=577,INF:BF=1000 Tax=229",
+            "Sessionfilepath": null,
+            "description": null
+        }
+    ]
+}

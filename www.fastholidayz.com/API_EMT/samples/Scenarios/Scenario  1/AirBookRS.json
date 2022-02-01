@@ -1,0 +1,83 @@
+{
+    "BookingDetail": {
+        "CurrencyCode": "INR",
+        "PaymentAmount": 7583,
+        "PnrDetail": {
+            "Pnr": [
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "TESTUP",
+                    "TYPE": 1
+                },
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "TESTUP",
+                    "TYPE": 0
+                },
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "",
+                    "TYPE": 5
+                },
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "7583",
+                    "TYPE": 6
+                }
+            ],
+            "Tickets": [
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "FirstName": "Alok",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 1,
+                    "PaxType": 0,
+                    "Prefix": "",
+                    "TicketNumber": "80075979-1"
+                },
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "FirstName": "vishank",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 2,
+                    "PaxType": 1,
+                    "Prefix": "",
+                    "TicketNumber": "80075980-2"
+                },
+                {
+                    "Destination": "BOM",
+                    "EngineID": 7,
+                    "FirstName": "sandeep",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 3,
+                    "PaxType": 2,
+                    "Prefix": "",
+                    "TicketNumber": "80075981-3"
+                }
+            ]
+        }
+    },
+    "BookingId": "",
+    "Errors": null,
+    "SearchDetails": null,
+    "TransactionId": "#EMT60032008"
+}

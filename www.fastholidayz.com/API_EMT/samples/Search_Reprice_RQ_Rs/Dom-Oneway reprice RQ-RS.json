@@ -1,0 +1,197 @@
+{
+	"Segment": [
+		{
+			"Deeplink": "",
+			"EngineID": 5,
+			"NearByAirport": false,
+			"description": "",
+			"Fare": {
+				"TotalFareWithOutMarkUp": 8976,
+				"TotalTaxWithOutMarkUp": 1221,
+				"ExchangeRate": 0,
+				"PaxFares": [
+					{
+						"IsZeroCancellation": false,
+						"TDS": 0,
+						"PaxType": 0,
+						"Fare": [
+							{
+								"ChargeCode": "PHF",
+								"Amount": 61,
+								"ChargeType": "TravelFee"
+							},
+							{
+								"ChargeCode": "RCS",
+								"Amount": 100,
+								"ChargeType": "TravelFee"
+							},
+							{
+								"ChargeCode": "YQ",
+								"Amount": 400,
+								"ChargeType": "TravelFee"
+							},
+							{
+								"ChargeCode": "PSF",
+								"Amount": 244,
+								"ChargeType": "TravelFee"
+							},
+							{
+								"ChargeCode": "CT07",
+								"Amount": 194,
+								"ChargeType": "Tax"
+							},
+							{
+								"ChargeCode": "CT07",
+								"Amount": 14,
+								"ChargeType": "Tax"
+							},
+							{
+								"ChargeCode": "ST07",
+								"Amount": 194,
+								"ChargeType": "Tax"
+							},
+							{
+								"ChargeCode": "ST07",
+								"Amount": 14,
+								"ChargeType": "Tax"
+							}
+						],
+						"Refundable": true,
+						"CancelPenalty": 3000,
+						"GDSPnr": "",
+						"STF": 0,
+						"Commission": 0,
+						"ZeroCancellationValidity": "28",
+						"FareBasicCode": "BO9RBINX",
+						"TotalFare": 8976,
+						"AirlinePnr": "",
+						"BasicFare": 7755,
+						"BaggageUnit": "KG",
+						"BaseTransactionAmount": 0,
+						"Cashback": 0,
+						"EquivCurrencyCode": "",
+						"TransactionAmount": 0,
+						"FareInfoKey": "0~B~ ~G8~BO9RBINX~0001~~0~65~~X",
+						"ServiceFee": 0,
+						"ZeroCancellationCharge": 100,
+						"BaggageWeight": "15",
+						"ChangePenalty": 2250,
+						"TotalTax": 1221,
+						"MarkUP": 0,
+						"FareInfoValue": "B",
+						"TransactionFee": 0
+					}
+				],
+				"BasicFare": 7755
+			},
+			"MemoryCreationTime": "/Date(1548418250187+0530)/",
+			"IsSpecialId": false,
+			"SearchId": "110,ADT:BF=7755.0000 Tax=1221.00000,CHD:BF=0 Tax=0,INF:BF=0 Tax=0,DFValue=0,DFValue=0,APFV=8976.00000`1221.00000`7755.0000`3000`2250`0`0`BO9RBINX``KG`15`True`0`0`0`0`,CPFV=,IPFV=,ATB=`PHF:61.00000`RCS:100.000`YQ:400.000`PSF:244.00000`CT07:194.00000`CT07:14.00000`ST07:194.00000`ST07:14.00000,CTB=,ITB=,TBA=7755.0000,TTA=1221.00000,TFA=8976.00000",
+			"IsRoundTrip": false,
+			"Sessionfilepath": "",
+			"FareIndicator": 0,
+			"FareRule": "CAN-BEF 4_0:3000|CHG-BEF 4_0:2250|EMTFee-250|CANCEL-BEF 4_0:3000|CHANGE-BEF 4_0:2250",
+			"BondType": "OutBound",
+			"SSDetails": "",
+			"IsSpecial": false,
+			"CurrencyCode": "",
+			"Remark": "",
+			"IsBaggageFare": false,
+			"IsInternational": false,
+			"ItineraryKey": "g4QgYpLlUGz6eKZ1a7tY6XD50uTLBonaRNrSj6fmn/k=",
+			"IsCache": true,
+			"IsHoldBooking": false,
+			"JourneyIndex": 5,
+			"PromoCode": "",
+			"Bonds": [
+				{
+					"BoundType": "OutBound",
+					"ItineraryKey": "g4QgYpLlUGz6eKZ1a7tY6XD50uTLBonaRNrSj6fmn/k=",
+					"IsBaggageFare": false,
+					"Legs": [
+						{
+							"DepartureTerminal": "2",
+							"FlightDetailRefKey": "G8~ 428~ ~~DEL~01/25/2019 21:35~BOM~01/25/2019 23:55~~",
+							"ArrivalDate": "Fri-25Jan2019",
+							"ArrivalTime": "23:55",
+							"FlightDesignator": "",
+							"CarrierCode": "G8",
+							"AirlinePnr": "",
+							"AvailableSeat": "",
+							"ProviderCode": "G8` 428` ``DEL`01/25/2019 21:35`BOM`01/25/2019 23:55``!0`B` `G8`BO9RBINX`0001``0`65``X!!G8``1``KG`15`Economy``G8`2`0`False`0``````02h 20m`BO9RBINX`B",
+							"LayoverDuration": "",
+							"BaggageWeight": "15",
+							"IsConnecting": false,
+							"DepartureDate": "Fri-25Jan2019",
+							"FareClassOfService": "B",
+							"CurrencyCode": "",
+							"SSRDetails": [],
+							"Remarks": "",
+							"Duration": "02h 20m",
+							"Group": "0",
+							"Origin": "DEL",
+							"Status": "",
+							"Capacity": 0,
+							"GDSPnr": "",
+							"OperatedBy": "",
+							"Cabin": "Economy",
+							"FlightNumber": " 428",
+							"AircraftCode": "G8",
+							"NumberOfStops": "0",
+							"Destination": "BOM",
+							"CabinClasses": [],
+							"AircraftType": "",
+							"ArrivalTerminal": "1",
+							"FareBasisCode": "BO9RBINX",
+							"BaggageUnit": "KG",
+							"LayoverAt": "",
+							"BookSeat": "",
+							"Sold": 0,
+							"Amount": 0,
+							"IsSeatOpen": false,
+							"AirlineName": "G8",
+							"BoundType": "OutBound",
+							"DepartureTime": "21:35"
+						}
+					],
+					"addOnDetail": [],
+					"JourneyTime": "02h 20m",
+					"IsSSR": false,
+					"SpecialServices": []
+				}
+			]
+		}
+	],
+	"FlightAvailabilityRQ": {
+		"AirpricePosition": "1",
+		"Version": "iOS Version 3.3.13",
+		"DeviceId": "E2607998-7FF7-4CDE-8006-CCF484535CC6",
+		"Authentication": {
+			"PortalID": 26,
+			"IpAddress": "45.64.222.103",
+			"UserName": "xxxx",
+			"Password": "xxxxx"
+		},
+		"TripType": 0,
+		"MobileNumber": "0",
+		"Childs": 0,
+		"EngineID": [
+			5
+		],
+		"Cabin": 0,
+		"CustomerId": "pushpendra.rajput86@gmail.com",
+		"FlightSearchDetails": [
+			{
+				"BeginDate": "2019-01-25",
+				"Origin": "DEL",
+				"Destination": "BOM"
+			}
+		],
+		"Browser": "IOS",
+		"IPAddress": "45.64.222.103",
+		"TraceId": "WjN7YfqwWv(IOS)2019-01-25_17-40-49",
+		"Infants": 0,
+		"SaveSessionStatus": false,
+		"Adults": 1
+	}
+}

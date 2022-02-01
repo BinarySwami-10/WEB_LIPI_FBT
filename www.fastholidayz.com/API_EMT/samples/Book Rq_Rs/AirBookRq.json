@@ -1,0 +1,252 @@
+{
+    "Authentication": {
+        "Password": "EMT@uytrFYTREt",
+        "PortalID": 26,
+        "UserName": "EMTB2B",
+        "UserType": 0
+    },
+    "BookSegment": [
+        {
+            "BondType": "OutBound",
+            "Bonds": [
+                {
+                    "BoundType": null,
+                    "IsBaggageFare": false,
+                    "IsSSR": false,
+                    "ItineraryKey": null,
+                    "JourneyTime": null,
+                    "Legs": [
+                        {
+                            "AircraftCode": "vgBoMMBAAA/BcYnaBEAAAA==",
+                            "AircraftType": null,
+                            "AirlineName": "AI",
+                            "ArrivalDate": "Thu-17May2018",
+                            "ArrivalTerminal": null,
+                            "ArrivalTime": "09:10",
+                            "AvailableSeat": null,
+                            "BaggageUnit": null,
+                            "BaggageWeight": null,
+                            "BookSeat": null,
+                            "BoundType": "InBound",
+                            "Cabin": "Economy",
+                            "CabinClasses": null,
+                            "Capacity": 0,
+                            "CarrierCode": "AI",
+                            "CurrencyCode": null,
+                            "DepartureDate": "Thu-17May2018",
+                            "DepartureTerminal": null,
+                            "DepartureTime": "07:00",
+                            "Destination": "DEL",
+                            "Duration": "02h 10m",
+                            "FareBasisCode": null,
+                            "FareClassOfService": "S",
+                            "FlightDesignator": null,
+                            "FlightDetailRefKey": null,
+                            "FlightName": "AirIndia",
+                            "FlightNumber": "887",
+                            "Group": "0",
+                            "IsConnecting": false,
+                            "IsSeatOpen": false,
+                            "LayoverAt": null,
+                            "LayoverDuration": null,
+                            "NumberOfStops": "0",
+                            "OperatedBy": null,
+                            "Origin": "BOM",
+                            "ProviderCode": "1G",
+                            "Remarks": "AI",
+                            "SSRDetails": null,
+                            "Sold": 0,
+                            "Status": null
+                        }
+                    ],
+                    "addOnDetail": null
+                },
+                {
+                    "BoundType": null,
+                    "IsBaggageFare": false,
+                    "IsSSR": false,
+                    "ItineraryKey": null,
+                    "JourneyTime": null,
+                    "Legs": [
+                        {
+                            "AircraftCode": "vgBoMMBAAA/BeYnaBEAAAA==",
+                            "AircraftType": null,
+                            "AirlineName": "AI",
+                            "ArrivalDate": "Fri-18May2018",
+                            "ArrivalTerminal": null,
+                            "ArrivalTime": "07:55",
+                            "AvailableSeat": null,
+                            "BaggageUnit": null,
+                            "BaggageWeight": null,
+                            "BookSeat": null,
+                            "BoundType": "InBound",
+                            "Cabin": "Economy",
+                            "CabinClasses": null,
+                            "Capacity": 0,
+                            "CarrierCode": "AI",
+                            "CurrencyCode": null,
+                            "DepartureDate": "Fri-18May2018",
+                            "DepartureTerminal": null,
+                            "DepartureTime": "06:15",
+                            "Destination": "BOM",
+                            "Duration": "01h 40m",
+                            "FareBasisCode": null,
+                            "FareClassOfService": "L",
+                            "FlightDesignator": null,
+                            "FlightDetailRefKey": null,
+                            "FlightName": "AirIndia",
+                            "FlightNumber": "603",
+                            "Group": "1",
+                            "IsConnecting": false,
+                            "IsSeatOpen": false,
+                            "LayoverAt": null,
+                            "LayoverDuration": null,
+                            "NumberOfStops": "0",
+                            "OperatedBy": null,
+                            "Origin": "DEL",
+                            "ProviderCode": "1G",
+                            "Remarks": null,
+                            "SSRDetails": null,
+                            "Sold": 0,
+                            "Status": null
+                        }
+                    ],
+                    "addOnDetail": null
+                },
+            ],
+            "CurrencyCode": null,
+            "Deeplink": "",
+            "EngineID": 7,
+            "Fare": {
+                "BasicFare": 9728,
+                "ExchangeRate": 0,
+                "PaxFares": [
+                    {
+                        "AirlinePnr": null,
+                        "BaggageUnit": "KG",
+                        "BaggageWeight": "25",
+                        "BaseTransactionAmount": 0,
+                        "BasicFare": 9728,
+                        "CancelPenalty": 0,
+                        "Cashback": 0,
+                        "ChangePenalty": 0,
+                        "Commission": 0,
+                        "DFValue": "0",
+                        "EquivCurrencyCode": null,
+                        "Fare": [
+                            {
+                                "Amount": 374,
+                                "ChargeCode": "UDF",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 503,
+                                "ChargeCode": "K3",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 308,
+                                "ChargeCode": "PSF",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 210,
+                                "ChargeCode": "YR",
+                                "ChargeType": null
+                            }
+                        ],
+                        "FareBasisCode": null,
+                        "FareInfoKey": null,
+                        "FareInfoValue": null,
+                        "GDSPnr": null,
+                        "IsZeroCancellation": false,
+                        "MarkUP": 0,
+                        "PaxType": 0,
+                        "Refundable": true,
+                        "STF": 0,
+                        "ServiceFee": 0,
+                        "TDS": 0,
+                        "TotalFare": 11123,
+                        "TotalTax": 1395,
+                        "TransactionAmount": 0,
+                        "TransactionFee": 0,
+                        "ZeroCancellationCharge": 1000,
+                        "ZeroCancellationValidity": "28"
+                    }
+                ],
+                "TotalFareWithOutMarkUp": 11123,
+                "TotalTaxWithOutMarkUp": 1395
+            },
+            "FareIndicator": 8,
+            "FareRule": "CAN-BEF 24_0:0|CHG-BEF 24_0:0|EMTFee-500|CANCEL-BEF 24_0:NA|CHANGE-BEF 24_0:NA|Msg:As per airline rules.",
+            "IsBaggageFare": false,
+            "IsCache": false,
+            "IsHoldBooking": false,
+            "IsInternational": false,
+            "IsRoundTrip": false,
+            "IsSpecial": false,
+            "IsSpecialId": false,
+            "ItineraryKey": "169C51DD0A0759BBA16D3943DC5FE9E0",
+            "JourneyIndex": 0,
+            "MemoryCreationTime": "/Date(1525092733867+0530)/",
+            "NearByAirport": false,
+            "PromoCode": null,
+            "Remark": null,
+            "SSDetails": "Free Meals",
+            "SearchId": "114,ADT:BF=9728 Tax=1395,CHD:BF=0 Tax=0,INF:BF=0 Tax=0",
+            "Sessionfilepath": "DELBOM1705201800000010114TravelPort29dd76b116f343b2ac23c26db82ae38aEMTAndroidV130042018182213789",
+            "description": null
+        }
+    ],
+    "Cabin": 0,
+    "ConvenienceFee": 0,
+    "CouponAmt": 0,
+    "FlightSearchDetails": [
+        {
+            "BeginDate": "2018-05-17",
+            "CurrencyCode": "INR",
+            "Origin": "BOM",
+            "Destination": "DEL"
+        },
+        {
+            "BeginDate": "2018-05-18",
+            "CurrencyCode": "INR",
+            "Origin": "DEL",
+            "Destination": "BOM"
+        }
+    ],
+    "PaymentDetails": {
+        "BookingAmount": 12445,
+        "BookingCurrencyCode": "INR"
+    },
+    "TraceId": "7867",
+    "TransactionId": "65765765",
+    "GSTDetail": {
+        "Address": "",
+        "CompanyName": null,
+        "Email": "",
+        "GSTNumber": null,
+        "Phone": ""
+    },
+    "Traveller": {
+        "AdultTraveller": [
+            {
+                "CountryCode": "IN",
+                "DOB": "1970-01-01",
+                "EmailAddress": "rahulradhakrishnan.provab@gmail.com",
+                "FirstName": "Rahul",
+                "FrequentFlierNumber": "",
+                "Gender": 0,
+                "LastName": "Nair",
+                "MiddleName": "",
+                "MobileNumber": "918123992558",
+                "Nationality": "India",
+                "PassportExpiryDate": "1970-01-01",
+                "PassportNo": null,
+                "ResidentCountry": "India",
+                "Title": "Mr"
+            }
+        ]
+    },
+    "TripType": 2
+}

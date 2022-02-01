@@ -1,0 +1,83 @@
+{
+    "BookingDetail": {
+        "CurrencyCode": "INR",
+        "PaymentAmount": 7583,
+        "PnrDetail": {
+            "Pnr": [
+                {
+                    "Destination": "BKK",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "TESTIQ",
+                    "TYPE": 1
+                },
+                {
+                    "Destination": "BKK",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "TESTIQ",
+                    "TYPE": 0
+                },
+                {
+                    "Destination": "BKK",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "",
+                    "TYPE": 5
+                },
+                {
+                    "Destination": "BKK",
+                    "EngineID": 7,
+                    "Origin": "DEL",
+                    "PNR": "7583",
+                    "TYPE": 6
+                }
+            ],
+            "Tickets": [
+                {
+                    "Destination": "BKK",
+                    "EngineID": 7,
+                    "FirstName": "Suman",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 1,
+                    "PaxType": 0,
+                    "Prefix": "",
+                    "TicketNumber": "39502401-1"
+                },
+                {
+                    "Destination": "BKK",
+                    "EngineID": 7,
+                    "FirstName": "Sumit",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 2,
+                    "PaxType": 1,
+                    "Prefix": "",
+                    "TicketNumber": "39502402-2"
+                },
+                {
+                    "Destination": "BKK",
+                    "EngineID": 7,
+                    "FirstName": "Bhavesh",
+                    "IsBaggBooked": false,
+                    "IsMealBooked": false,
+                    "LastName": "",
+                    "Origin": "DEL",
+                    "PassengerNumber": 3,
+                    "PaxType": 2,
+                    "Prefix": "",
+                    "TicketNumber": "39502403-3"
+                }
+            ]
+        }
+    },
+    "BookingId": "",
+    "Errors": null,
+    "SearchDetails": null,
+    "TransactionId": "#EMT60032841"
+}

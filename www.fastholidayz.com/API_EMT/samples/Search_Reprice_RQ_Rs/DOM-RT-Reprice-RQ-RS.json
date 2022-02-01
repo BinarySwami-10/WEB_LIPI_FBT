@@ -1,0 +1,609 @@
+************************ Request Start**************************
+{
+	"FlightAvailabilityRQ": {
+		"Authentication": {
+			"PortalID": 26,
+			"IpAddress": "45.64.222.103",
+			"UserName": "xxxx",
+			"Password": "xxxxxx"
+		},
+		"Adults": 1,
+		"Cabin": 0,
+		"Childs": 0,
+		"TraceId": "",
+		"EngineID": [
+			7,
+			7
+		],
+		"FlightSearchDetails": [
+			{
+				"BeginDate": "2019-01-27",
+				"Destination": "DEL",
+				"Origin": "BOM"
+			},
+			{
+				"BeginDate": "2019-01-30",
+				"Destination": "BOM",
+				"Origin": "DEL"
+			}
+		],
+		"Infants": 0,
+		"TripType": 1
+	},
+	"Segment": [
+		{
+			"BondType": "OutBound",
+			"Bonds": [
+				{
+					"BoundType": "OutBound",
+					"IsBaggageFare": false,
+					"IsSSR": false,
+					"ItineraryKey": null,
+					"JourneyTime": "02h 30m",
+					"Legs": [
+						{
+							"AircraftCode": "",
+							"AircraftType": "",
+							"AirlineName": "AirIndia",
+							"ArrivalDate": "Sun-27Jan2019",
+							"ArrivalTerminal": "3",
+							"ArrivalTime": "00:25",
+							"AvailableSeat": "9",
+							"BaggageUnit": "KG",
+							"BaggageWeight": "15",
+							"BookSeat": null,
+							"BoundType": "Outound",
+							"Cabin": "Economy",
+							"CabinClasses": null,
+							"Capacity": 0,
+							"CarrierCode": "AI",
+							"CurrencyCode": null,
+							"DepartureDate": "Sun-27Jan2019",
+							"DepartureTerminal": "2",
+							"DepartureTime": "21:55",
+							"Destination": "DEL",
+							"Duration": "02h 30m",
+							"FareBasisCode": null,
+							"FareClassOfService": "V",
+							"FlightDesignator": null,
+							"FlightDetailRefKey": "CC9nmhBAAA/B9GgtOTAAAA==",
+							"FlightName": "AirIndia",
+							"FlightNumber": "950",
+							"Group": "0",
+							"IsConnecting": false,
+							"IsSeatOpen": false,
+							"LayoverAt": null,
+							"LayoverDuration": null,
+							"NumberOfStops": "0",
+							"OperatedBy": null,
+							"Origin": "BOM",
+							"ProviderCode": "1G",
+							"Remarks": null,
+							"SSRDetails": null,
+							"Sold": 0,
+							"Status": null
+						}
+					],
+					"addOnDetail": null
+				}
+			],
+			"CurrencyCode": null,
+			"Deeplink": "",
+			"EngineID": 7,
+			"Fare": {
+				"BasicFare": 7400,
+				"ExchangeRate": 0,
+				"PaxFares": [
+					{
+						"BaggageUnit": "KG",
+						"BaggageWeight": "15",
+						"BaseTransactionAmount": 0,
+						"BasicFare": 7400,
+						"CancelPenalty": 3000,
+						"Cashback": 0,
+						"ChangePenalty": 2500,
+						"Commission": 0,
+						"DFValue": "0",
+						"EquivCurrencyCode": null,
+						"Fare": [
+							{
+								"Amount": 379,
+								"ChargeCode": "K3",
+								"ChargeType": null
+							},
+							{
+								"Amount": 154,
+								"ChargeCode": "PSF",
+								"ChargeType": null
+							},
+							{
+								"Amount": 142,
+								"ChargeCode": "ADF",
+								"ChargeType": null
+							},
+							{
+								"Amount": 186,
+								"ChargeCode": "YR",
+								"ChargeType": null
+							}
+						],
+						"FareBasisCode": null,
+						"FareInfoKey": "SbxnmhBAAA/Bv05caSAAAA==",
+						"FareInfoValue": "gws-eJxNTkkOwjAMfEw1dzuilN4CJFUrwCAWoVz6/2cwTkDCkj1jj7cYYxAdRUMf/63D2r1OWOwOGISe8hnDRgTKpIATGe9Zb+WB74YtBatiQ/U2OY6pJ2DSSZrkhlLj4XqhJnUvUeF34ZQF/EieSW2fnosp812Q1u5xAN/8ABbtKuY=",
+						"IsZeroCancellation": false,
+						"MarkUP": 0,
+						"PaxType": 0,
+						"Refundable": true,
+						"STF": 0,
+						"ServiceFee": 0,
+						"TDS": 0,
+						"TotalFare": 8261,
+						"TotalTax": 861,
+						"TransactionAmount": 0,
+						"TransactionFee": 0
+					}
+				],
+				"TotalFareWithOutMarkUp": 8261,
+				"TotalTaxWithOutMarkUp": 861
+			},
+			"FareIndicator": 0,
+			"FareRule": "Refundable",
+			"IsBaggageFare": false,
+			"IsCache": true,
+			"IsHoldBooking": false,
+			"IsInternational": false,
+			"IsRoundTrip": true,
+			"IsSpecial": false,
+			"IsSpecialId": false,
+			"ItineraryKey": "841904F20A074256CCD367B55A6472C7",
+			"JourneyIndex": 0,
+			"NearByAirport": false,
+			"PromoCode": null,
+			"Remark": null,
+			"SSDetails": "Free Meals",
+			"SearchId": "114,ADT:BF=7400 Tax=861,CHD:BF=0 Tax=0,INF:BF=0 Tax=0",
+			"Sessionfilepath": null,
+			"description": null
+		},
+		{
+			"BondType": "InBound",
+			"Bonds": [
+				{
+					"BoundType": "InBound",
+					"IsBaggageFare": false,
+					"IsSSR": false,
+					"ItineraryKey": null,
+					"JourneyTime": "02h 25m",
+					"Legs": [
+						{
+							"AirlineName": null,
+							"ArrivalDate": "Thu-31Jan2019",
+							"ArrivalTerminal": "2",
+							"ArrivalTime": "01:25",
+							"AvailableSeat": "9",
+							"BaggageUnit": "KG",
+							"BaggageWeight": "25",
+							"BookSeat": null,
+							"BoundType": "Inbound",
+							"Cabin": "Economy",
+							"CabinClasses": null,
+							"Capacity": 0,
+							"CarrierCode": "UK",
+							"CurrencyCode": null,
+							"DepartureDate": "Wed-30Jan2019",
+							"DepartureTerminal": "3",
+							"DepartureTime": "23:00",
+							"Destination": "BOM",
+							"Duration": "02h 25m",
+							"FareBasisCode": null,
+							"FareClassOfService": "V",
+							"FlightDesignator": null,
+							"FlightDetailRefKey": "xBAomhBAAA/BjDy4OTAAAA==",
+							"FlightName": "Vistara",
+							"FlightNumber": "950",
+							"Group": "0",
+							"IsConnecting": false,
+							"IsSeatOpen": false,
+							"LayoverAt": null,
+							"LayoverDuration": null,
+							"NumberOfStops": "0",
+							"OperatedBy": null,
+							"Origin": "DEL",
+							"ProviderCode": "1G",
+							"Remarks": null,
+							"SSRDetails": null,
+							"Sold": 0,
+							"Status": null
+						}
+					],
+					"addOnDetail": null
+				}
+			],
+			"CurrencyCode": null,
+			"Deeplink": "",
+			"EngineID": 7,
+			"Fare": {
+				"BasicFare": 7700,
+				"ExchangeRate": 0,
+				"PaxFares": [
+					{
+						"BaggageUnit": "KG",
+						"BaggageWeight": "25",
+						"BaseTransactionAmount": 0,
+						"BasicFare": 7700,
+						"CancelPenalty": 2650,
+						"Cashback": 0,
+						"ChangePenalty": 2650,
+						"Commission": 0,
+						"DFValue": "0",
+						"EquivCurrencyCode": null,
+						"Fare": [
+							{
+								"Amount": 389,
+								"ChargeCode": "K3",
+								"ChargeType": null
+							},
+							{
+								"Amount": 245,
+								"ChargeCode": "PSF",
+								"ChargeType": null
+							},
+							{
+								"Amount": 70,
+								"ChargeCode": "YR",
+								"ChargeType": null
+							}
+						],
+						"FareBasisCode": "Economy",
+						"FareInfoKey": "Ui+nmhBAAA/BaUmWVSAAAA==",
+						"FareInfoValue": "gws-eJxNTl0LwjAM/DHj3i8B6fLWyVosbFVUlL34/3+GaTfBQHKXXL5ijEoxip7ivw34DFNBqXeggu7n64oQSIgnG3wi4VVu+YFjgXm9dm1HaV3MzOqArFl2qRm2Hue0uMa+1lHQzqJRL+BH0sVpneYnVYUczWyU9yEywP/8AjATKvA=",
+						"IsZeroCancellation": false,
+						"MarkUP": 0,
+						"PaxType": 0,
+						"Refundable": true,
+						"STF": 0,
+						"ServiceFee": 0,
+						"TDS": 0,
+						"TotalFare": 8404,
+						"TotalTax": 704,
+						"TransactionAmount": 0,
+						"TransactionFee": 0
+					}
+				],
+				"TotalFareWithOutMarkUp": 8404,
+				"TotalTaxWithOutMarkUp": 704
+			},
+			"FareIndicator": 0,
+			"FareRule": "CAN-BEF 4_0:2650|CHG-BEF 4_0:2650|EMTFee-250|CANCEL-BEF 4_0:2650|CHANGE-BEF 4_0:2650",
+			"IsBaggageFare": false,
+			"IsCache": true,
+			"IsHoldBooking": false,
+			"IsInternational": false,
+			"IsRoundTrip": true,
+			"IsSpecial": false,
+			"IsSpecialId": false,
+			"ItineraryKey": "841904D50A07425E86ED9D4E19B0EE19",
+			"JourneyIndex": 0,
+			"NearByAirport": false,
+			"PromoCode": null,
+			"Remark": null,
+			"SSDetails": "Free Meals",
+			"SearchId": "114,ADT:BF=7700 Tax=704,CHD:BF=0 Tax=0,INF:BF=0 Tax=0",
+			"Sessionfilepath": null,
+			"description": null
+		}
+	]
+}
+************************ Request End **************************
+************************ Response Data **************************
+
+{
+	"Errors": null,
+	"Insurance": null,
+	"Journeys": [
+		{
+			"JourneyDetail": null,
+			"Segments": [
+				{
+					"BondType": "OutBound",
+					"Bonds": [
+						{
+							"BoundType": "OutBound",
+							"IsBaggageFare": false,
+							"IsSSR": false,
+							"ItineraryKey": null,
+							"JourneyTime": "2h 15m",
+							"Legs": [
+								{
+									"AircraftCode": "dXzhmhBAAA/BZwqQPTAAAA==",
+									"AircraftType": "32B",
+									"AirlineName": "AI",
+									"AirlinePnr": null,
+									"ArrivalDate": "Sun-27Jan2019",
+									"ArrivalTerminal": "2",
+									"ArrivalTime": "20:15",
+									"AvailableSeat": null,
+									"BaggageUnit": "KG",
+									"BaggageWeight": "25",
+									"BookSeat": null,
+									"BoundType": "OutBound",
+									"Cabin": "Economy",
+									"CabinClasses": null,
+									"Capacity": 0,
+									"CarrierCode": "AI",
+									"CurrencyCode": null,
+									"DepartureDate": "Sun-27Jan2019",
+									"DepartureTerminal": "3",
+									"DepartureTime": "18:00",
+									"Destination": "BOM",
+									"Duration": "2h 15m",
+									"FareBasisCode": null,
+									"FareClassOfService": "S",
+									"FareRulesKey": "dXzhmhBAAA/BhwqQPTAAAA==",
+									"FlightDesignator": null,
+									"FlightDetailRefKey": null,
+									"FlightName": "AirIndia",
+									"FlightNumber": "24",
+									"GDSPnr": null,
+									"Group": "0",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"LayoverAt": null,
+									"LayoverDuration": null,
+									"NumberOfStops": "0",
+									"OperatedBy": "Air India",
+									"Origin": "DEL",
+									"ProviderCode": "1G!dXzhmhBAAA/BZwqQPTAAAA==`32B`2``KG`25`Economy``AI`3`0`False`0`AI`Air India``S``2h 15m``S",
+									"Remarks": "AI",
+									"SSRDetails": null,
+									"Sold": 0,
+									"Status": null
+								}
+							],
+							"addOnDetail": null
+						}
+					],
+					"CurrencyCode": null,
+					"Deeplink": "",
+					"EngineID": 7,
+					"Fare": {
+						"BasicFare": 7650,
+						"BrandKeys": null,
+						"ExchangeRate": 0,
+						"PaxFares": [
+							{
+								"AirlinePnr": null,
+								"BaggageUnit": "KG",
+								"BaggageWeight": "25",
+								"BaseTransactionAmount": 0,
+								"BasicFare": 7650,
+								"Branded": null,
+								"CancelPenalty": 2650,
+								"Cashback": 0,
+								"ChangePenalty": 2650,
+								"Commission": 0,
+								"DFValue": "0",
+								"EquivCurrencyCode": null,
+								"Fare": [
+									{
+										"Amount": 386,
+										"ChargeCode": "K3.",
+										"ChargeType": null
+									},
+									{
+										"Amount": 245,
+										"ChargeCode": "PSF",
+										"ChargeType": null
+									},
+									{
+										"Amount": 70,
+										"ChargeCode": "YR",
+										"ChargeType": null
+									}
+								],
+								"FareBasisCode": null,
+								"FareInfoKey": null,
+								"FareInfoValue": null,
+								"GDSPnr": null,
+								"IsZeroCancellation": false,
+								"MarkUP": 0,
+								"PaxType": 0,
+								"Refundable": true,
+								"STF": 0,
+								"ServiceFee": 0,
+								"TDS": 0,
+								"TotalFare": 8351,
+								"TotalTax": 701,
+								"TransactionAmount": 0,
+								"TransactionFee": 0,
+								"ZeroCancellationCharge": 100,
+								"ZeroCancellationValidity": "28"
+							}
+						],
+						"SeatCharge": 0,
+						"TotalFareWithOutMarkUp": 8351,
+						"TotalTaxWithOutMarkUp": 701
+					},
+					"FareIndicator": 0,
+					"FareRule": "CAN-BEF 28_0:2650|CHG-BEF 28_0:2650|EMTFee-250|CANCEL-BEF 28_0:2650|CHANGE-BEF 28_0:2650",
+					"Fares": null,
+					"IsBaggageFare": false,
+					"IsBranded": false,
+					"IsCache": false,
+					"IsHoldBooking": false,
+					"IsInternational": false,
+					"IsRoundTrip": false,
+					"IsSpecial": false,
+					"IsSpecialId": false,
+					"ItineraryKey": "8556336F0A0759C659D3E9E181CD352D",
+					"JourneyIndex": 0,
+					"MemoryCreationTime": "/Date(1548425249346+0530)/",
+					"NearByAirport": false,
+					"PaxSSRs": null,
+					"PromoCode": null,
+					"Remark": null,
+					"SSDetails": "Free Meals",
+					"SearchId": "114,ADT:BF=7650 Tax=701,CHD:BF=0 Tax=0,INF:BF=0 Tax=0,DFValue=0,DFValue=0,APFV=8351`701`7650`2650`2650`0`0```KG`25`True`0`0`0`8351`,CPFV=,IPFV=,ATB=`K3.:386`PSF:245`YR:70,CTB=,ITB=,TBA=7650,TTA=701,TFA=8351",
+					"Sessionfilepath": "DELBOM2701201900000010114TravelPort7dbccab0f5c94c929d9c511be92ff606EMTCORPORATEIN25012019193729338",
+					"VisaInfo": null,
+					"description": null
+				}
+			]
+		},
+		{
+			"JourneyDetail": null,
+			"Segments": [
+				{
+					"BondType": "InBound",
+					"Bonds": [
+						{
+							"BoundType": "InBound",
+							"IsBaggageFare": false,
+							"IsSSR": false,
+							"ItineraryKey": null,
+							"JourneyTime": "2h 30m",
+							"Legs": [
+								{
+									"AircraftCode": "ICzkmhBAAA/B18CJQTAAAA==",
+									"AircraftType": "320",
+									"AirlineName": "UK",
+									"AirlinePnr": null,
+									"ArrivalDate": "Thu-31Jan2019",
+									"ArrivalTerminal": "3",
+									"ArrivalTime": "00:25",
+									"AvailableSeat": null,
+									"BaggageUnit": "KG",
+									"BaggageWeight": "15",
+									"BookSeat": null,
+									"BoundType": "InBound",
+									"Cabin": "Economy",
+									"CabinClasses": null,
+									"Capacity": 0,
+									"CarrierCode": "UK",
+									"CurrencyCode": null,
+									"DepartureDate": "Wed-30Jan2019",
+									"DepartureTerminal": "2",
+									"DepartureTime": "21:55",
+									"Destination": "DEL",
+									"Duration": "2h 30m",
+									"FareBasisCode": null,
+									"FareClassOfService": "W",
+									"FareRulesKey": "ICzkmhBAAA/BY9CJQTAAAA==",
+									"FlightDesignator": null,
+									"FlightDetailRefKey": null,
+									"FlightName": "Vistara",
+									"FlightNumber": "950",
+									"GDSPnr": null,
+									"Group": "0",
+									"IsConnecting": false,
+									"IsSeatOpen": false,
+									"LayoverAt": null,
+									"LayoverDuration": null,
+									"NumberOfStops": "0",
+									"OperatedBy": "VISTARA",
+									"Origin": "BOM",
+									"ProviderCode": "1G!ICzkmhBAAA/B18CJQTAAAA==`320`3``KG`15`Economy``UK`2`0`False`0`UK`VISTARA``A``2h 30m``W",
+									"Remarks": "UK",
+									"SSRDetails": null,
+									"Sold": 0,
+									"Status": null
+								}
+							],
+							"addOnDetail": null
+						}
+					],
+					"CurrencyCode": null,
+					"Deeplink": "",
+					"EngineID": 7,
+					"Fare": {
+						"BasicFare": 7400,
+						"BrandKeys": null,
+						"ExchangeRate": 0,
+						"PaxFares": [
+							{
+								"AirlinePnr": null,
+								"BaggageUnit": "KG",
+								"BaggageWeight": "15",
+								"BaseTransactionAmount": 0,
+								"BasicFare": 7400,
+								"Branded": null,
+								"CancelPenalty": 3180,
+								"Cashback": 0,
+								"ChangePenalty": 2650,
+								"Commission": 0,
+								"DFValue": "0",
+								"EquivCurrencyCode": null,
+								"Fare": [
+									{
+										"Amount": 379,
+										"ChargeCode": "K3.",
+										"ChargeType": null
+									},
+									{
+										"Amount": 154,
+										"ChargeCode": "PSF",
+										"ChargeType": null
+									},
+									{
+										"Amount": 142,
+										"ChargeCode": "ADF",
+										"ChargeType": null
+									},
+									{
+										"Amount": 186,
+										"ChargeCode": "YR",
+										"ChargeType": null
+									}
+								],
+								"FareBasisCode": null,
+								"FareInfoKey": null,
+								"FareInfoValue": null,
+								"GDSPnr": null,
+								"IsZeroCancellation": false,
+								"MarkUP": 0,
+								"PaxType": 0,
+								"Refundable": true,
+								"STF": 0,
+								"ServiceFee": 0,
+								"TDS": 0,
+								"TotalFare": 8261,
+								"TotalTax": 861,
+								"TransactionAmount": 0,
+								"TransactionFee": 0,
+								"ZeroCancellationCharge": 100,
+								"ZeroCancellationValidity": "28"
+							}
+						],
+						"SeatCharge": 0,
+						"TotalFareWithOutMarkUp": 8261,
+						"TotalTaxWithOutMarkUp": 861
+					},
+					"FareIndicator": 0,
+					"FareRule": "CAN-BEF 4_0:3180|CHG-BEF 4_0:2650|EMTFee-250|CANCEL-BEF 4_0:3180|CHANGE-BEF 4_0:2650",
+					"Fares": null,
+					"IsBaggageFare": false,
+					"IsBranded": false,
+					"IsCache": false,
+					"IsHoldBooking": false,
+					"IsInternational": false,
+					"IsRoundTrip": false,
+					"IsSpecial": false,
+					"IsSpecialId": false,
+					"ItineraryKey": "855633A10A0759D519B9202D0D3C756E",
+					"JourneyIndex": 0,
+					"MemoryCreationTime": "/Date(1548425249346+0530)/",
+					"NearByAirport": false,
+					"PaxSSRs": null,
+					"PromoCode": null,
+					"Remark": null,
+					"SSDetails": "Free Meals",
+					"SearchId": "114,ADT:BF=7400 Tax=861,CHD:BF=0 Tax=0,INF:BF=0 Tax=0,DFValue=0,DFValue=0,APFV=8261`861`7400`3180`2650`0`0```KG`15`True`0`0`0`8261`,CPFV=,IPFV=,ATB=`K3.:379`PSF:154`ADF:142`YR:186,CTB=,ITB=,TBA=7400,TTA=861,TFA=8261",
+					"Sessionfilepath": "BOMDEL3001201900000010114TravelPortde9db9ff91f44470b8084b68be7910b6EMTCORPORATEIN25012019193729226",
+					"VisaInfo": null,
+					"description": null
+				}
+			]
+		}
+	],
+	"TraceId": "B2B25Jan20191929026d3513764b454a2d9d2ddd962746fa63"
+}

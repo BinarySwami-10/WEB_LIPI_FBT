@@ -1,0 +1,135 @@
+<style type="text/css">
+	#our-products img{
+		/*max-width: 25vw;*/
+		border-radius: 2em 2em 0 0;
+		height: 15em;
+		min-width: 100%;
+	}
+	@media(max-width: 768px){
+		#our-products img{
+			max-width: 100%;
+		}
+	}
+	#our-products h2{
+		text-shadow: 0 0 0.5em #0606;
+		color: #6f4;
+	}
+	#our-products .card{
+		background-color: #0008;
+		border-radius: 2em;
+		backdrop-filter: blur(5px);
+	}
+	#our-products .card  *{
+		color: #fff;
+	}
+	#our-products .card .btn{
+		border-radius: 10em;
+	}
+</style>
+<!--  -->
+
+<div id="our-products" class=" text-white rounded-section py-lg-5">
+	<div class="row col-lg-10 mx-auto text-center ">
+
+		<h2 class="col-12 text-center">OUR PRODUCTS</h2>
+
+		<div class="card col-lg-3 col-12 p-0 my-3 mx-auto text-dark">
+			<img class="card-img-top" src="./img/paper-img.webp" alt="Card image cap">
+			<div class="card-body text-justify">
+				<h3>A4 Copier Paper</h3>
+				<p class="card-text text-white">
+					We manufacture 65 GSM, 70 GSM, 75 GSM, 80 GSM, papers which covers all your requirements. impress your teacher / boss by producing high quality reports and presentations. Know More About our paper, and Order in bulk at amazingly low rates!
+				</p>
+				<a class="btn btn-primary" href="./page-product-a4papers.html"> Know More</a>
+			</div>
+		</div>
+
+		<div class="card col-lg-3 col-12 p-0 my-3 mx-auto text-dark">
+			<img id="VARIABLE-BOOK-FLASHER" src="./img/main-products/books/b3.webp" class="card-img-top" data-iter-max-index="5" src-template="./img/main-products/books/b{}.webp" alt="Card image cap">
+			<div class="card-body text-justify">
+				<h3>Notebook & Reels</h3>
+				<p class="card-text text-white">
+					did you know quality of notebook paper can determine how you write, and feel?
+					thats why never compromise on your notebook quality. know more about how you can avail best quality notebooks from our brand, Order in bulk at amazingly low rates!
+				</p>
+				<a class="btn btn-primary" href="./page-product-notebooks.html"> Know More</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		bookImgIterator=0;
+		setInterval(()=>{
+			bookImgIterator+=1
+			var el=$('#VARIABLE-BOOK-FLASHER')
+			// console.log($('#VARIABLE-BOOK-FLASHER').attr('src-template'))
+			el.attr('src', el.attr('src-template').replace("{}",bookImgIterator % Number( el.attr('data-iter-max-index')) +1) );
+
+		},1500)
+	</script>
+	<script type="text/javascript">
+		// #our-products
+		function apply_our_product_bg_effect(){
+			$('#our-products').prepend(`<style type="text/css">
+				#our-products {
+					height: 100%;
+					background-color: #08e;
+					background-image:
+					url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+					url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+					url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+					url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+					background-repeat: repeat-x;
+					background-position: 
+					0 20%,
+					0 100%,
+					0 50%,
+					0 100%,
+					0 0;
+					background-size: 
+					2500px,
+					800px,
+					500px 200px,
+					1000px,
+					400px 260px;
+					animation: 90s para infinite linear;
+				}
+
+				@keyframes para {
+					100% {
+						background-position: 
+						-5000px 20%,
+						-800px 95%,
+						500px 50%,
+						1000px 100%,
+						400px 0;
+					}
+				}
+				</style>`)
+		}
+		function lazyload_jquery(selector,fn,eventdata=""){
+			lazyLoadHasEventCompletedQuery={
+				"selector":false,
+			}
+			var el=$(selector)
+			var elementTop=el.offset().top;
+			lazyLoadHasEventCompletedQuery[selector]=false;
+
+			lazytimer=setInterval(tempfun= arg =>{
+				if (lazyLoadHasEventCompletedQuery[selector]==false){
+					if( elementTop <= $(document).scrollTop()+screen.height){
+						fn()
+						lazyLoadHasEventCompletedQuery[selector]=true;
+						clearInterval(lazytimer)
+						console.log("moving Background Lazy Load Triggered!")
+					}
+				}	
+			},1000)
+
+		}
+		$(document).ready(function() {
+			lazyload_jquery("#our-products",apply_our_product_bg_effect)
+			
+		});
+
+	</script>		
+</div>

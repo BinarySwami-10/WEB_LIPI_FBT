@@ -1,0 +1,375 @@
+{
+    "Authentication": {
+        "Password": "EMT@uytrFYTREt",
+        "PortalID": 26,
+        "UserName": "EMTB2B",
+        "UserType": 0
+    },
+    "BookSegment": [
+        {
+            "BondType": "OutBound",
+            "Bonds": [
+                {
+                    "BoundType": "OutBound",
+                    "IsBaggageFare": false,
+                    "IsSSR": false,
+                    "ItineraryKey": null,
+                    "JourneyTime": "15h 50m",
+                    "Legs": [
+                        {
+                            "AircraftCode": "he+rzuBAAA/Bv0Cj7EAAAA==",
+                            "AircraftType": null,
+                            "AirlineName": "MH",
+                            "ArrivalDate": "Thu-01Aug2019",
+                            "ArrivalTerminal": "M",
+                            "ArrivalTime": "06:55",
+                            "AvailableSeat": "9",
+                            "BaggageUnit": "KG",
+                            "BaggageWeight": "10",
+                            "BookSeat": null,
+                            "BoundType": "OutBound",
+                            "Cabin": "Economy",
+                            "CabinClasses": null,
+                            "Capacity": 0,
+                            "CarrierCode": "MH",
+                            "CurrencyCode": null,
+                            "DepartureDate": "Wed-31Jul2019",
+                            "DepartureTerminal": "3",
+                            "DepartureTime": "23:00",
+                            "Destination": "KUL",
+                            "Duration": "05h 25m",
+                            "FareBasisCode": null,
+                            "FareClassOfService": "N",
+                            "FlightDesignator": null,
+                            "FlightDetailRefKey": "he+rzuBAAA/Bw0Cj7EAAAA==",
+                            "FlightName": "Malayasian Airways",
+                            "FlightNumber": "191",
+                            "Group": "0",
+                            "IsConnecting": false,
+                            "IsSeatOpen": false,
+                            "LayoverAt": null,
+                            "LayoverDuration": null,
+                            "NumberOfStops": "0",
+                            "OperatedBy": null,
+                            "Origin": "DEL",
+                            "ProviderCode": "1G",
+                            "Remarks": "Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality\n\n• Please note that if the flight is operated by another airline then the onboard product or service may be different to that described above.",
+                            "SSRDetails": null,
+                            "Sold": 0,
+                            "Status": null
+                        },
+                        {
+                            "AircraftCode": "he+rzuBAAA/Bq1Cj7EAAAA==",
+                            "AircraftType": null,
+                            "AirlineName": "MH",
+                            "ArrivalDate": "Thu-01Aug2019",
+                            "ArrivalTerminal": "",
+                            "ArrivalTime": "16:20",
+                            "AvailableSeat": "9",
+                            "BaggageUnit": "KG",
+                            "BaggageWeight": "10",
+                            "BookSeat": null,
+                            "BoundType": "OutBound",
+                            "Cabin": "Economy",
+                            "CabinClasses": null,
+                            "Capacity": 0,
+                            "CarrierCode": "MH",
+                            "CurrencyCode": null,
+                            "DepartureDate": "Thu-01Aug2019",
+                            "DepartureTerminal": "M",
+                            "DepartureTime": "15:05",
+                            "Destination": "BKK",
+                            "Duration": "02h 15m",
+                            "FareBasisCode": null,
+                            "FareClassOfService": "N",
+                            "FlightDesignator": null,
+                            "FlightDetailRefKey": "he+rzuBAAA/Br1Cj7EAAAA==",
+                            "FlightName": "Malayasian Airways",
+                            "FlightNumber": "782",
+                            "Group": "0",
+                            "IsConnecting": false,
+                            "IsSeatOpen": false,
+                            "LayoverAt": null,
+                            "LayoverDuration": null,
+                            "NumberOfStops": "0",
+                            "OperatedBy": null,
+                            "Origin": "KUL",
+                            "ProviderCode": "1G",
+                            "Remarks": "Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality\n\n• Please note that if the flight is operated by another airline then the onboard product or service may be different to that described above.",
+                            "SSRDetails": null,
+                            "Sold": 0,
+                            "Status": null
+                        }
+                    ],
+                    "addOnDetail": null
+                }
+            ],
+            "CurrencyCode": null,
+            "Deeplink": "",
+            "EngineID": 7,
+            "Fare": {
+                "BasicFare": 24225,
+                "ExchangeRate": 0,
+                "PaxFares": [
+                    {
+                        "BaggageUnit": "KG",
+                        "BaggageWeight": "25",
+                        "BaseTransactionAmount": 0,
+                        "BasicFare": 12420,
+                        "CancelPenalty": 0,
+                        "Cashback": 0,
+                        "ChangePenalty": 6000,
+                        "Commission": 0,
+                        "DFValue": "0",
+                        "EquivCurrencyCode": null,
+                        "Fare": [
+                            {
+                                "Amount": 635,
+                                "ChargeCode": "K3",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 552,
+                                "ChargeCode": "PSF",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 79,
+                                "ChargeCode": "E7",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 34,
+                                "ChargeCode": "G8",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 276,
+                                "ChargeCode": "YQ",
+                                "ChargeType": null
+                            }
+                        ],
+                        "FareBasisCode": "Economy",
+                        "FareInfoKey": "he+rzuBAAA/B60Cj7EAAAA==",
+                        "FareInfoValue": "gws-eJxNjksOwjAMRA9TzX4cPiG70CRVq4LZgFBZcP9j4CQgYcn2WC8ZO8boKIGe+/gfA97DdYY+EqBwluO6QnwQQmzaQPIEHdPtubzQPXaVaKO9S3uXQj5Yw+QmdlQDW6u5XIx1Y7MU1M2o0n7gJ8psUs/5vqiri/2RdOUL6WGnfgDH+ivQ",
+                        "IsZeroCancellation": false,
+                        "MarkUP": 0,
+                        "PaxType": 0,
+                        "Refundable": false,
+                        "STF": 0,
+                        "ServiceFee": 0,
+                        "TDS": 0,
+                        "TotalFare": 13996,
+                        "TotalTax": 1576,
+                        "TransactionAmount": 0,
+                        "TransactionFee": 0,
+                        "ZeroCancellationCharge": 1000,
+                        "ZeroCancellationValidity": "28"
+                    },
+                    {
+                        "BaggageUnit": "KG",
+                        "BaggageWeight": "25",
+                        "BaseTransactionAmount": 0,
+                        "BasicFare": 10560,
+                        "CancelPenalty": 0,
+                        "Cashback": 0,
+                        "ChangePenalty": 6000,
+                        "Commission": 0,
+                        "DFValue": "0",
+                        "EquivCurrencyCode": null,
+                        "Fare": [
+                            {
+                                "Amount": 542,
+                                "ChargeCode": "K3",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 552,
+                                "ChargeCode": "PSF",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 79,
+                                "ChargeCode": "E7",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 34,
+                                "ChargeCode": "G8",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 276,
+                                "ChargeCode": "YQ",
+                                "ChargeType": null
+                            }
+                        ],
+                        "FareBasisCode": "Economy",
+                        "FareInfoKey": "he+rzuBAAA/BP1Cj7EAAAA==",
+                        "FareInfoValue": "gws-eJxNjkEOwjAMBB9T7d0xLaG3qGmqVgVzQqgc+P8zWCcgYcnxRmOvnVJSCaNE6dN/dHh3txX2yIBBmdO+IwyqPQJ/B0TkApvy/bm90DxOTqzSVrX25XEeWLDoIg154KjvXK5kzZiWCt8Ml5zAT5SV0rLZZuqL45mt5Qslgqd+AMXOK9A=",
+                        "IsZeroCancellation": false,
+                        "MarkUP": 0,
+                        "PaxType": 1,
+                        "Refundable": false,
+                        "STF": 0,
+                        "ServiceFee": 0,
+                        "TDS": 0,
+                        "TotalFare": 12043,
+                        "TotalTax": 1483,
+                        "TransactionAmount": 0,
+                        "TransactionFee": 0,
+                        "ZeroCancellationCharge": 1000,
+                        "ZeroCancellationValidity": "28"
+                    },
+                    {
+                        "BaggageUnit": "KG",
+                        "BaggageWeight": "10",
+                        "BaseTransactionAmount": 0,
+                        "BasicFare": 1245,
+                        "CancelPenalty": 0,
+                        "Cashback": 0,
+                        "ChangePenalty": 6000,
+                        "Commission": 0,
+                        "DFValue": "0",
+                        "EquivCurrencyCode": null,
+                        "Fare": [
+                            {
+                                "Amount": 63,
+                                "ChargeCode": "K3",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 79,
+                                "ChargeCode": "E7",
+                                "ChargeType": null
+                            },
+                            {
+                                "Amount": 34,
+                                "ChargeCode": "G8",
+                                "ChargeType": null
+                            }
+                        ],
+                        "FareBasisCode": "Economy",
+                        "FareInfoKey": "he+rzuBAAA/Bg1Cj7EAAAA==",
+                        "FareInfoValue": "gws-eJxNTkEOAjEIfMxm7pS61t6a7bbZZhVPxqwH//8ModVEEpghAwMpJSYXKdAp/ceE93TbII8MCFhz2Xe4EB2cNgeI6AJZ8v3ZXhgW3hTp6kDf53JcZwVUrjQkCxy9ruVqVt1Y0cMOw6hu4EfKplSa1CZsh8OZiMtXpAD99AOh4yuo",
+                        "IsZeroCancellation": false,
+                        "MarkUP": 0,
+                        "PaxType": 2,
+                        "Refundable": false,
+                        "STF": 0,
+                        "ServiceFee": 0,
+                        "TDS": 0,
+                        "TotalFare": 1421,
+                        "TotalTax": 176,
+                        "TransactionAmount": 0,
+                        "TransactionFee": 0,
+                        "ZeroCancellationCharge": 0,
+                        "ZeroCancellationValidity": null
+                    }
+                ],
+                "TotalFareWithOutMarkUp": 27460,
+                "TotalTaxWithOutMarkUp": 3235
+            },
+            "FareIndicator": 0,
+            "FareRule": "CAN-BEF 4_0:0|CHG-BEF 4_0:6000.0|EMTFee-500|CANCEL-BEF 4_0:NA|CHANGE-BEF 4_0:6000.0|Msg:As per airline rules.",
+            "IsBaggageFare": false,
+            "IsCache": true,
+            "IsHoldBooking": false,
+            "IsInternational": false,
+            "IsRoundTrip": false,
+            "IsSpecial": false,
+            "IsSpecialId": false,
+            "ItineraryKey": "BB7F59FE0A0759D629EEAC49AE07B731",
+            "JourneyIndex": 0,
+            "MemoryCreationTime": "/Date(1562218954945+0530)/",
+            "NearByAirport": false,
+            "PromoCode": null,
+            "Remark": null,
+            "SSDetails": "Free Meals",
+            "SearchId": "114,ADT:BF=12420 Tax=1576,CHD:BF=10560 Tax=1483,INF:BF=1245 Tax=176",
+            "Sessionfilepath": null,
+            "description": null
+        }
+    ],
+    "Cabin": 0,
+    "ConvenienceFee": 0,
+    "CouponAmt": 0,
+    "FlightSearchDetails": [
+        {
+            "BeginDate": "2019-07-31",
+            "CurrencyCode": "INR",
+            "Origin": "DEL",
+            "Destination": "BKK"
+        }
+    ],
+    "PaymentDetails": {
+        "BookingAmount": 7583,
+        "BookingCurrencyCode": "INR"
+    },
+    "TraceId": null,
+    "TransactionId": null,
+    "GSTDetail": {
+        "Address": "",
+        "CompanyName": null,
+        "Email": "",
+        "GSTNumber": null,
+        "Phone": ""
+    },
+    "Traveller": {
+        "AdultTraveller": [
+            {
+                "CountryCode": "IN",
+                "DOB": "1970-01-01",
+                "EmailAddress": "alok13292130042@yahoo.com",
+                "FirstName": "Suman",
+                "FrequentFlierNumber": "",
+                "Gender": 0,
+                "LastName": "Bhagat",
+                "MiddleName": "",
+                "MobileNumber": "917417826266",
+                "Nationality": "India",
+                "PassportExpiryDate": "1970-01-01",
+                "PassportNo": null,
+                "ResidentCountry": "India",
+                "Title": "Mr"
+            }
+        ],
+        "ChildTraveller": [
+            {
+                "CountryCode": "IN",
+                "DOB": "2016-01-01",
+                "EmailAddress": "alok13292130042@yahoo.com",
+                "FirstName": "Sumit",
+                "FrequentFlierNumber": "",
+                "Gender": 0,
+                "LastName": "Bhagat",
+                "MiddleName": "",
+                "MobileNumber": "917417826266",
+                "Nationality": "India",
+                "PassportExpiryDate": "1970-01-01",
+                "PassportNo": null,
+                "ResidentCountry": "India",
+                "Title": "Mr"
+            }
+        ],
+        "InfantTraveller": [
+            {
+                "CountryCode": "IN",
+                "DOB": "2019-05-01",
+                "EmailAddress": "alok13292130042@yahoo.com",
+                "FirstName": "Bhavesh",
+                "FrequentFlierNumber": "",
+                "Gender": 0,
+                "LastName": "Bhagat",
+                "MiddleName": "",
+                "MobileNumber": "917417826266",
+                "Nationality": "India",
+                "PassportExpiryDate": "1970-01-01",
+                "PassportNo": null,
+                "ResidentCountry": "India",
+                "Title": "Mr"
+            }
+        ]
+    },
+    "TripType": 0
+}
