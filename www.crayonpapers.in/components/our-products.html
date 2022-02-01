@@ -1,7 +1,7 @@
 <style type="text/css">
 	#our-products img{
 		/*max-width: 25vw;*/
-		border-radius: 2em 2em 0 0;
+		border-radius: 1em ;
 		height: 15em;
 		min-width: 100%;
 	}
@@ -14,45 +14,54 @@
 		text-shadow: 0 0 0.5em #0606;
 		color: #6f4;
 	}
+	
 	#our-products .card{
 		background-color: #0008;
-		border-radius: 2em;
-		backdrop-filter: blur(5px);
+		border-radius: 1em;
+		backdrop-filter: blur(3px);
+		box-shadow: 0.5em 0.5em 1em #000a;
 	}
+	@media(min-width: 768px){
+		#our-products .card{
+			font-size: 1.25vw;
+		}
+
+	}
+
+
 	#our-products .card  *{
 		color: #fff;
 	}
 	#our-products .card .btn{
-		border-radius: 10em;
+		border-radius: 0.25em;
 	}
 </style>
 <!--  -->
 
-<div id="our-products" class=" text-white rounded-section py-lg-5">
-	<div class="row col-lg-10 mx-auto text-center ">
+<div id="our-products" class=" text-white rounded-section py-lg-3 f-2">
+	<h2 class="col-12 text-center">OUR PRODUCTS</h2>
 
-		<h2 class="col-12 text-center">OUR PRODUCTS</h2>
-
-		<div class="card col-lg-3 col-12 p-0 my-3 mx-auto text-dark">
+	<div class="row col-lg-10 mx-auto p-0 text-center ">
+		<div class="card col-lg-4 mx-auto col-12 p-0 my-3 text-dark">
 			<img class="card-img-top" src="./img/paper-img.webp" alt="Card image cap">
 			<div class="card-body text-justify">
-				<h3>A4 Copier Paper</h3>
+				<h3 class="text-success f-3">A4 Copier Paper</h3>
 				<p class="card-text text-white">
-					We manufacture 65 GSM, 70 GSM, 75 GSM, 80 GSM, papers which covers all your requirements. impress your teacher / boss by producing high quality reports and presentations. Know More About our paper, and Order in bulk at amazingly low rates!
+					We manufacture 65 GSM, 70 GSM, 75 GSM, 80 GSM, papers which covers all your requirements. impress your teacher - boss by producing high quality reports and presentations. Know More About our paper, and Order in bulk at amazingly low rates!
 				</p>
-				<a class="btn btn-primary" href="./page-product-a4papers.html"> Know More</a>
+				<a class="btn btn-success f-2 mx-auto" href="./page-product-a4papers.html"> Know More</a>
 			</div>
 		</div>
 
-		<div class="card col-lg-3 col-12 p-0 my-3 mx-auto text-dark">
+		<div class="card col-lg-4 mx-auto col-12 p-0 my-3 text-dark">
 			<img id="VARIABLE-BOOK-FLASHER" src="./img/main-products/books/b3.webp" class="card-img-top" data-iter-max-index="5" src-template="./img/main-products/books/b{}.webp" alt="Card image cap">
 			<div class="card-body text-justify">
-				<h3>Notebook & Reels</h3>
+				<h3 class="text-success f-3">Notebook & Reels</h3>
 				<p class="card-text text-white">
 					did you know quality of notebook paper can determine how you write, and feel?
 					thats why never compromise on your notebook quality. know more about how you can avail best quality notebooks from our brand, Order in bulk at amazingly low rates!
 				</p>
-				<a class="btn btn-primary" href="./page-product-notebooks.html"> Know More</a>
+				<a class="btn btn-success f-2 mx-auto" href="./page-product-notebooks.html"> Know More</a>
 			</div>
 		</div>
 	</div>
@@ -80,18 +89,18 @@
 					url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
 					background-repeat: repeat-x;
 					background-position: 
+					0 30%,
+					0 100%,
 					0 20%,
-					0 100%,
-					0 50%,
-					0 100%,
+					0 120%,
 					0 0;
 					background-size: 
 					2500px,
 					800px,
-					500px 200px,
+					800px 600px,
 					1000px,
 					400px 260px;
-					animation: 90s para infinite linear;
+					animation: 120s para infinite linear;
 				}
 
 				@keyframes para {
@@ -99,7 +108,7 @@
 						background-position: 
 						-5000px 20%,
 						-800px 95%,
-						500px 50%,
+						500px 20%,
 						1000px 100%,
 						400px 0;
 					}

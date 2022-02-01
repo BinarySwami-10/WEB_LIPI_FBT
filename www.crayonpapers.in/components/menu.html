@@ -150,7 +150,7 @@
 		align-self: center;
 		vertical-align: bottom;
 	}
-	.nav-link ..nav-link-span{
+	.nav-link .nav-link-span{
 		transform: skew(20deg) !important;
 
 	}
@@ -177,6 +177,10 @@
 		transition: 0;
 		position: relative;
 		transition: 0.1s;
+	}
+
+	enquiry *{
+		font-size: 1.33vw;
 	}
 
 </style>
@@ -236,63 +240,69 @@
 				</span> 
 			</a>
 
-		
 			<!-- <a class="progress-meter nav-link active gradient"></a> -->
-
 		</div> 
 	</nav>
-	<!-- <div class="dropdown">
-	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	    Dropdown button
-	  </button>
-	  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-	    <a class="dropdown-item" href="#">Action</a>
-	    <a class="dropdown-item" href="#">Another action</a>
-	    <a class="dropdown-item" href="#">Something else here</a>
-	  </div>
-	</div> -->	
 </div>
 
 
-<div class="pt-5 mx-0 bg-black text-white">
-	<!-- <img class="col-12 " width="100%" src="./img/headline_bg.jpg" style="height:0.4em; position: relative; margin: 0; padding: 0; display: flex;"> -->
-	<enquiry class="row py-0 mt-5 col-lg-10 mx-auto">
-		<div class="col-lg-4 col-12 row px-0 mx-0" >
-			<span class=" material-icons col-1 my-auto md-36 pr-3 mr-3" style="font-size: 2em;"> room </span>
-			<p class="col-10 px-0 my-auto text-capitalize" >
+<div class="pt-5 pb-2 mx-0 bg-black text-white">
+
+	<enquiry class="row px-5  mt-5 col-lg-12 mx-auto text-center ">
+
+		<div class="col-lg col-12 p-0 mx-0 row   text-warning" >
+				<span class=" material-icons"> room </span>
 				Bldg No. 253, 3rd Floor, Opp Govindam Sweets, Shahpur jat, New delhi-110049 
-				<!-- <a class="btn btn-success p-0" href="https://www.google.com/maps/place/Lipi+Exports+Private+Limited/@28.5484834,77.2113612,19.25z/data=!4m9!1m2!2m1!1slipi+exports!3m5!1s0x390ce21403eac9ed:0xace7a4a6d86ff075!8m2!3d28.5486856!4d77.2113677!15sCgxsaXBpIGV4cG9ydHOSARBjb3Jwb3JhdGVfb2ZmaWNl">Show Map</a> -->
-			</p>
+				<!-- <a class="btn btn-success p-0" href="https://www.google.com/maps/place/Lipi+Exports+Private+Limited/@28.5484834,77.2113612,19.25z/data=!4m9!1m2!2m1!1slipi+exports!3m5!1s0x390ce21403eac9ed:0xace7a4a6d86ff075!8m2!3d28.5486856!4d77.2113677!15sCgxsaXBpIGV4cG9ydHOSARBjb3Jwb3JhdGVfb2ZmaWNl">Show Map</a> -->	
 		</div>
 
-		<div class="col-lg-4 col-12 row px-0 mx-0 py-3" >
-			<span class=" material-icons col-1 my-auto md-36 pr-3 mr-3" style="font-size: 2em;"> phone </span>
-			<p id="phones" class="col-10 px-0 my-auto" >	
-				+91 11-4125-3117, +91 9881046309
-				<a class="text-success" href="https://wa.me/+919904539555?text=I'm%20interested%20in%20buying%20crayon papers, please tell more details.">
-					<img src="./icons/whatsapp.png" style="max-width:1.75em;border-radius: 0.25em;margin-left: 1.5em;">
-					+91-9904539555	
-				</a>
+		<div class="col-lg col-12 p-0 mx-0 row   text-primary " >
+			<p id="phones" class="row px-0  " >	
+				<div class="col-lg">
+					<span class=" material-icons"> phone </span>
+					+91 11-4125-3117 , 
+					+91 98810-46309
+					<a class="text-success" href="https://wa.me/+919904539555?text=I'm%20interested%20in%20buying%20crayon papers, please tell more details.">
+					<img src="./icons/whatsapp.png" style="max-width:1.5em;border-radius: 0.25em;margin-left: 1em;">
+					+91 99045-39555
+					</a>
+				</div>
 			</p>
+
 		</div>
 
-		<style type="text/css">
-			#cta-menu > *{
-				box-shadow: 0 0 2.25em #fff6;
-				border-radius: 0.25em;
-				z-index: 999;
-			}
-		</style>
-		<div id="cta-menu" class="col-lg-4 col-12 my-auto text-center ">
-			<button class="enquire-now mx-lg-2 btn btn-danger f-2 blink" onclick="alert('CALL +91 11412-53117, +91 99045-39555, +91 98810-46309')">
+
+		
+		<div id="cta-menu" class="col-lg col-12 p-0 mx-0">
+			<style type="text/css">
+				#cta-menu > *{
+					box-shadow: 0 0 2.25em #fff6;
+					border-radius: 0.25em;
+					z-index: 999;
+				}
+				.enquire-now *{
+					/*vertical-align: baseline;*/
+					display: inline-block;
+					vertical-align: middle;
+				}
+			</style>
+			<a class="enquire-now py-1 mr-lg-2 f-1 btn btn-danger  blink" onclick="alert('CALL +91 11412-53117, +91 99045-39555, +91 98810-46309')">
+				<span class="material-icons ">
+				touch_app
+				</span>
 				Enquire Now!
-			</button>
-			<a class="enquire-now mx-lg-2 btn btn-primary f-2 blink" href="https://www.indiamart.com/lipi-exports/" target="_blank">
-				Open IndiaMart
+			</a>
+			<a class="enquire-now py-1 mr-lg-2 f-1 btn btn-primary  blink" href="https://www.indiamart.com/lipi-exports/" target="_blank">
+				<span class="material-icons ">
+				ads_click
+				</span>
+				IndiaMart
 			</a>
 		</div>
 	</enquiry>
 </div>
+
+
 <!--  -->
 <widget id="floating-whatsapp">
 	<style type="text/css">

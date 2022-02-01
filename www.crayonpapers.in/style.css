@@ -38,7 +38,7 @@ body > section{
 .f-0{
 	font-size: 0.75em;
 }
-.f-l{
+.f-1{
 	font-size: 1em;
 }
 .f-2{
@@ -52,6 +52,19 @@ body > section{
 }
 .f-5{
 	font-size: 5em;
+}
+
+.overflow-visible{
+	overflow: visible;
+}
+
+.overflow-text{
+	white-space: nowrap;
+}
+
+.text-vcenter *{
+	display: inline-block;
+	vertical-align: middle;
 }
 
 body::-webkit-scrollbar-track {
