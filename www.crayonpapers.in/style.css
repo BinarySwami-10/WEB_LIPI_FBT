@@ -5,14 +5,15 @@ html, body {
 	background-color: #000;
 }
 
-body *{
+body{
 	font-family: Teko;
+	font-size: 1vw;
 
 }
 
-@media(min-width: 768px){
-	p {
-		font-size: 1.25em;
+@media(max-width: 768px){
+	body {
+		font-size: 4vw;
 	}
 }
 
@@ -202,11 +203,7 @@ marquee {
 }
 
 
-descriptor p{
-	line-height: 1.1em;	
-	font-size: 1em;
-	text-align: center;
-}
+
 .card{
 	text-align: center;
 }
