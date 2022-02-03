@@ -71,9 +71,14 @@
 			bookImgIterator+=1
 			var el=$('#VARIABLE-BOOK-FLASHER')
 			// console.log($('#VARIABLE-BOOK-FLASHER').attr('src-template'))
-			el.attr('src', el.attr('src-template').replace("{}",bookImgIterator % Number( el.attr('data-iter-max-index')) +1) );
 
-		},1500)
+			el.animate({opacity:0},100,function (){
+				el.attr('src', el.attr('src-template').replace("{}",bookImgIterator % Number( el.attr('data-iter-max-index')) +1) );
+				el.animate({opacity:1},100)
+			});
+			// el.fadeOut('1000');
+
+		},2000)
 	</script>
 	<script type="text/javascript">
 		// #our-products
@@ -95,18 +100,18 @@
 					0 120%,
 					0 0;
 					background-size: 
-					1000px 100%,
+					2000px 100%,
 					800px,
 					800px 600px,
 					1000px,
-					400px 260px;
+					400px 10%;
 					animation: 150s para infinite linear;
 				}
 
 				@keyframes para {
 					100% {
 						background-position: 
-						-2000px 20%,
+						-2000px 30%,
 						-800px 95%,
 						500px 40%,
 						1000px 100%,
