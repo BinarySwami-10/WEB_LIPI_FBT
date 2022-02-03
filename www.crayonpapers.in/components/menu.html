@@ -143,7 +143,7 @@
 
 	.nav-link-span {
 		flex-direction: row;
-		align-content: center !important	;
+		align-content: center !important;
 		justify-content: center;
 		height: 100%;
 		align-self: center;
@@ -180,6 +180,20 @@
 
 	enquiry{
 		font-size: 1.33em;
+	}
+
+	#cta-menu  .btn{
+		box-shadow: 0 0 1.25em #fff4;
+		border-radius: 25vw;
+		z-index: 999;
+		font-size: 2vw;
+		
+	}
+	@media(max-width: 768px){
+		#cta-menu  .btn{
+			font-size: 4vw;
+			
+		}
 	}
 
 </style>
@@ -245,49 +259,37 @@
 </div>
 
 
-<div class="pt-5 my-3  mx-0 bg-black text-white">
+<div class="pt-5 my-3 mx-0 bg-black ">
 
-	<enquiry class="row col-lg-12 mt-lg-5 pt-lg-3 mt-5  text-center ">
+	<enquiry class="row col-lg-12 mt-lg-5 pt-lg-3 mt-5  text-left ">
 
-		<div class="col-lg text-warning d-flex" >
-				<span class=" material-icons f-3"> room </span>
-				Bldg No. 253, 3rd Floor, Opp Govindam Sweets, Shahpur jat, New delhi-110049 
+		<div class="col-auto px-0 text-warning d-flex" >
+			<span class=" material-icons f-2"> room </span>
+			Bldg No. 253, 3rd Floor, Opp Govindam Sweets, Shahpur jat, New delhi-110049 
 		</div>
 
-		<div class="col-lg text-primary d-flex" >
+		<div class="col-lg-auto px-0 pl-lg-2 text-primary " >
 			<p id="phones" class="row px-0  " >	
-				<div class="d-flex">
-					<span class=" material-icons f-3"> phone </span>
+				<div class="d-flex ">
+					<span class=" material-icons f-2"> phone </span>
 					+91 11-4125-3117
 					+91 98810-46309
-					<a class="text-success" href="https://wa.me/+919904539555?text=I'm%20interested%20in%20buying%20crayon papers, please tell more details.">
-						<img src="./icons/whatsapp.png" style="max-width:1.25em;border-radius: 0.25em;margin-left: 1em;">
+					<a class="text-success pl-2 col-md-auto " href="https://wa.me/+919904539555?text=I'm%20interested%20in%20buying%20crayon papers, please tell more details.">
+						<img src="./icons/whatsapp.png" style="max-width:1.25em;border-radius: 0.25em;">
 						+91 99045-39555
 					</a>
 				</div>
 			</p>
 		</div>
 
-		<div id="cta-menu" class="col-lg d-flex f-3">
-			<style type="text/css">
-				#cta-menu > *{
-					box-shadow: 0 0 2.25em #fff6;
-					border-radius: 0.25em;
-					z-index: 999;
-				}
-				.enquire-now {
-					/*vertical-align: baseline;*/
-					display: inline-block;
-					vertical-align: middle;
-				}
-			</style>
-			<a class="enquire-now mx-lg-2 d-flex align-content-center btn btn-danger  blink" onclick="alert('CALL +91 11412-53117, +91 99045-39555, +91 98810-46309')">
+		<div id="cta-menu" class=" col row text-center px-0  ">
+			<a class="enquire-now col-6 px-0 py-0 mx-auto  btn btn-danger  blink" onclick="alert('CALL +91 11412-53117, +91 99045-39555, +91 98810-46309')">
 				<span class="material-icons ">
 				touch_app
 				</span>
-				Enquire Now!
+				Enquire Now
 			</a>
-			<a class="enquire-now mx-lg-2 d-flex align-content-center btn btn-primary  blink" href="https://www.indiamart.com/lipi-exports/" target="_blank">
+			<a class="enquire-now col-6 px-0 py-0 mx-auto  btn btn-primary  blink" href="https://www.indiamart.com/lipi-exports/" target="_blank">
 				<span class="material-icons ">
 				ads_click
 				</span>
@@ -322,7 +324,7 @@
 	</style>
 	<a class=" " href="https://wa.me/+919904539555?text=I'm%20interested%20in%20buying%20crayon papers, please tell more details.">
 		<img src="./icons/whatsapp.png" style="max-width:3em">
-		whatsapp	
+		
 	</a>
 </widget>
 
