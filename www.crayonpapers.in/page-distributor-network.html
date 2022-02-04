@@ -32,6 +32,16 @@
 			transition: 0.5s;
 			/*border-radius: 100em;*/
 		}
+		@media(max-width: 768px){
+			.display-1{
+				font-size: 3em;
+				margin-bottom: 3em;
+			}
+			body{
+				/*width: 100vw;*/	
+				overflow: hidden;
+			}
+		}
 /*		#chumchum div:nth-child(odd){
 			text-align: right;
 		}*/
@@ -46,6 +56,14 @@
 			width: 50%;
 
 		}
+		@media(max-width: 768px){
+			#map{
+				text-align: center;
+				transform: scale(2.0);
+				/*margin: 5em 0;*/
+			}
+		}
+
 		.imgbox{
 			position: relative;
 		}
@@ -148,7 +166,7 @@
 			$el.addClass(classes1).html(`
 				<h3 class="display-4 rainbow-text text-left">${k}</h3>
 				<br>
-				<h4 class="text-white w-50">${DISTRIBUTORS[k]}</h4>
+				<h4 class="text-white ">${DISTRIBUTORS[k]}</h4>
 				`)
 			$el.appendTo('#chumchum')
 			// console.log(k,DISTRIBUTORS[k])
