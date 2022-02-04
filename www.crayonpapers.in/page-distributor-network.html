@@ -14,9 +14,45 @@
 
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<style type="text/css">
+		#chumchum{
+		}
+		#chumchum div > *{
+			opacity: 0.10;
+
+		}
 		#chumchum div{
-			opacity: 0.20;
+			opacity: 0.10;
 			transition: 1s;
+			/*border-radius: 100em;*/
+		}
+/*		#chumchum div:nth-child(odd){
+			text-align: right;
+		}*/
+
+		#map{
+			text-align: center;
+
+		}
+		#india-outline{
+			filter:   invert(100%) brightness(150%) ;
+			width: 50vw;
+
+		}
+		.imgbox{
+			position: relative;
+		}
+		.pin{
+			position: absolute;
+			/*left: 10%;*/
+			/*top: ;*/
+		}
+		span.pin img{
+			max-height: 2vw;
+			/*box-shadow: 0 0 2em #f00 inset;*/
+			border-radius: 1em;
+		}
+		.pin .material-icons{
+			font-size: 5vw;
 		}
 	</style>
 </head>
@@ -27,91 +63,73 @@
 	<header class="" data-load="./components/menu.html">
 	</header>
 
-	<h2 class="text-center text-white text-uppercase"> Distribution Network</h2>
+	<h3 class="pt-5 text-center text-danger text-uppercase display-1"> Distribution Network</h3>
 
-	<div id="chumchum" class="  px-lg-3 ">
-		
-		<div class="col-lg-4 col-6 rounded py-3 mt-lg-2 px-2 bg-danger mx-auto">
-			<h3>
-				1	YASHVI ENTERPRISES SOLUTIONS
-				
-			</h3>
-			<p>ALWAR, RAJASTHAN - 301001			</p>
-			
-		</div>
-		
-		<div class="col-lg-4 col-6 rounded py-3 mt-lg-2 px-2 bg-danger mx-auto">
-			<h3>
-				2	Vidhaan Digital Private Limited
-				
-			</h3>
-			<p>PUNE MAHARASHTRA - 412307</p>
-			
-		</div>
-		
-		<div class="col-lg-4 col-6 rounded py-3 mt-lg-2 px-2 bg-danger mx-auto">
-			<h3>
-				3	ANJALI  ENTERPRISES
-				
-			</h3>
-			<p>LUCKNOW UTTAR PRADESH - 226002</p>
-			
-		</div>
-		
-		<div class="col-lg-4 col-6 rounded py-3 mt-lg-2 px-2 bg-danger mx-auto">
-			<h3>
-				4	ANANYA TRADERS
-				
-			</h3>
-			<p>HATHRAS UTTAR PRADESH - 204101</p>
-			
-		</div>
-		
-		<div class="col-lg-4 col-6 rounded py-3 mt-lg-2 px-2 bg-danger mx-auto">
-			<h3>
-				5	KAMALA PAPER HOUSE
-				
-			</h3>
-			<p>PURULIA WEST BENGAL - 723101</p>
-			
-		</div>
-		
-		<div class="col-lg-4 col-6 rounded py-3 mt-lg-2 px-2 bg-danger mx-auto">
-			<h3>
-				6	Mahadev Enterprises
-				
-			</h3>
-			<p>KHORDHA ODISHA - 752020</p>
-			
-		</div>
-		
-		<div class="col-lg-4 col-6 rounded py-3 mt-lg-2 px-2 bg-danger mx-auto">
-			<h3>
-				7	 MORANG GANERAL STORE
-				
-			</h3>
-			<p>BIRATNAGR NEPAL</p>
-			
-		</div>
 
-		<div class="col-lg-4 col-6 rounded py-3 mt-lg-2 px-2 bg-danger mx-auto">
-			<h3>
-				8	 NISHIKA CREATION
-				
-			</h3>
-			<p>AHMEDABAD</p>
+
+	<div id="chumchum" class=" bg-white row px-lg-5">
+	</div>
+
+	<div id="map" class="py-lg-5">
+		<div class="imgbox">
+			<img id='india-outline' src="./img/india.png">
 			
 		</div>
 	</div>
-	
+	<!-- ------------------ -->
+	<script type="text/javascript">
+		DISTRIBUTORS={
+		"YASHVI ENTERPRISES SOLUTIONS":"ALWAR, RAJASTHAN - 301001",
+		"VIDHAAN DIGITAL PRIVATE LIMITED":"PUNE MAHARASHTRA - 412307",
+		"ANJALI  ENTERPRISES":"LUCKNOW UTTAR PRADESH - 226002",
+		"ANANYA TRADERS":"HATHRAS UTTAR PRADESH - 204101",
+		"KAMALA PAPER HOUSE":"PURULIA WEST BENGAL - 723101",
+		"MAHADEV ENTERPRISES":"KHORDHA ODISHA - 752020",
+		"MORANG GANERAL STORE":"BIRATNAGR NEPAL",
+		"NISHIKA CREATION":"AHMEDABAD",
+		}
+		PINS={
+			1:{top:17,left:38},
+			2:{top:33,left:34},
+			3:{top:18,left:46},
+			4:{top:15,left:41},
+			5:{top:10,left:20},
+			6:{top:10,left:20},
+			7:{top:10,left:20},
+			8:{top:10,left:20},
+		}
+		for(p in PINS){
+			$pin=$('<span class="pin"> <img src="./img/pin.png"> </span>')
+			$('.imgbox').append($pin)
+			$pin.css({
+				"top": PINS[p].top+"vw",
+				"left": PINS[p].left+"vw",
+			});
+			console.log(p)
+		}
+
+
+		classes1="col-lg-6 col-6  py-2 mt-lg-2 px-2  text-black mx-auto "
+		for (k in DISTRIBUTORS) {
+			var $el=$('<div/>')
+			$el.addClass(classes1).html(`
+				<h class="display-4 rainbow-text">${k}</h>
+				<br>
+				<h3 class="fs-1">${DISTRIBUTORS[k]}</h3>
+				`)
+			$el.appendTo('#chumchum')
+			// console.log(k,DISTRIBUTORS[k])
+		}
+	</script>
+
 	<script type="text/javascript">
 		function slowly_load_div () {
-			$("#chumchum div").each(function(index, el) {
+			$("#chumchum  *").each(function(index, el) {
 				// setTimeout(function () {$(el).attr('hidden',false);console.log(index)},index*1000) ;
 				setTimeout(function () {
 					$(el).css('opacity','1');
 					// $(el).fadeIn(1000);
-				},index *150) ;
+				},Math.random()* index *100) ;
 			})
 		}
 		setTimeout(slowly_load_div,500)
