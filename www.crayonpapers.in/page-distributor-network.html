@@ -16,13 +16,20 @@
 	<style type="text/css">
 		#chumchum{
 		}
+		#chumchum h3{
+			font-size: 2em !important;
+			line-height: 1em;
+			margin: 0;
+			display: inline;
+		}
 		#chumchum div > *{
 			opacity: 0.10;
+			transition: 0.5s;
 
 		}
 		#chumchum div{
 			opacity: 0.10;
-			transition: 1s;
+			transition: 0.5s;
 			/*border-radius: 100em;*/
 		}
 /*		#chumchum div:nth-child(odd){
@@ -31,11 +38,12 @@
 
 		#map{
 			text-align: center;
+			transform: scale(1.0);
 
 		}
 		#india-outline{
 			filter:   invert(100%) brightness(150%) ;
-			width: 50vw;
+			width: 50%;
 
 		}
 		.imgbox{
@@ -43,16 +51,20 @@
 		}
 		.pin{
 			position: absolute;
-			/*left: 10%;*/
-			/*top: ;*/
+			z-index: 10;
 		}
 		span.pin img{
 			max-height: 2vw;
 			/*box-shadow: 0 0 2em #f00 inset;*/
 			border-radius: 1em;
+			z-index: 999;
 		}
 		.pin .material-icons{
 			font-size: 5vw;
+		}
+
+		.manoranjan-lazer{
+
 		}
 	</style>
 </head>
@@ -65,16 +77,13 @@
 
 	<h3 class="pt-5 text-center text-danger text-uppercase display-1"> Distribution Network</h3>
 
-
-
-	<div id="chumchum" class=" bg-white row px-lg-5">
-	</div>
-
-	<div id="map" class="py-lg-5">
+	<div id="map" class="py-lg-5 rainbow-text">
 		<div class="imgbox">
 			<img id='india-outline' src="./img/india.png">
 			
 		</div>
+	</div>
+	<div id="chumchum" class="row px-lg-5">
 	</div>
 	<!-- ------------------ -->
 	<script type="text/javascript">
@@ -86,40 +95,67 @@
 		"KAMALA PAPER HOUSE":"PURULIA WEST BENGAL - 723101",
 		"MAHADEV ENTERPRISES":"KHORDHA ODISHA - 752020",
 		"MORANG GANERAL STORE":"BIRATNAGR NEPAL",
-		"NISHIKA CREATION":"AHMEDABAD",
+		"NISHIKA CREATION":"AHMEDABAD, GUJARAT",
 		}
 		PINS={
 			1:{top:17,left:38},
 			2:{top:33,left:34},
 			3:{top:18,left:46},
 			4:{top:15,left:41},
-			5:{top:10,left:20},
-			6:{top:10,left:20},
-			7:{top:10,left:20},
-			8:{top:10,left:20},
+			5:{top:24.5,left:56},
+			6:{top:31,left:55},
+			7:{top:18,left:57},
+			8:{top:25,left:32},
 		}
-		for(p in PINS){
-			$pin=$('<span class="pin"> <img src="./img/pin.png"> </span>')
-			$('.imgbox').append($pin)
+
+
+		for(i in PINS){
+			var $pin=$(`<span class="pin" pin-id="${i}"> <img src="./img/pin.png"> </span>`)
 			$pin.css({
-				"top": PINS[p].top+"vw",
-				"left": PINS[p].left+"vw",
+				"top": PINS[i].top+"vw",
+				"left": PINS[i].left+"vw",
 			});
-			console.log(p)
+
+
+			$pin.hover(function() {
+				pid = $(this).attr('pin-id')
+				$correspondiv=$("#chumchum div").eq(Number(pid)-1)
+				orignaloffset=$("#chumchum div").eq(Number(pid)-1).offset()
+
+				$(this).css('transform', 'scale(1.5)');
+				$correspondiv.offset({top:$(this).offset().top+50, left:$(this).offset().left-50})
+				$correspondiv.children().toggleClass('bg-white text-white');
+				$correspondiv.toggleClass('bg-white')
+				// $correspondiv.offset({ top: 10, left: 30 })
+			},function(){
+				pid = $(this).attr('pin-id')
+				$correspondiv=$("#chumchum div").eq(Number(pid)-1)
+
+				$(this).css('transform', 'scale(1.0)');
+				$correspondiv.offset(orignaloffset)
+				$correspondiv.children().toggleClass('bg-white text-white');
+				$correspondiv.toggleClass('bg-white')
+
+			});
+			$('.imgbox').append($pin)
+
 		}
 
 
-		classes1="col-lg-6 col-6  py-2 mt-lg-2 px-2  text-black mx-auto "
+		classes1="col-lg-4 col-6  py-2 mt-lg-2 px-2 text-left  text-black  "
 		for (k in DISTRIBUTORS) {
 			var $el=$('<div/>')
 			$el.addClass(classes1).html(`
-				<h class="display-4 rainbow-text">${k}</h>
+				<h3 class="display-4 rainbow-text text-left">${k}</h3>
 				<br>
-				<h3 class="fs-1">${DISTRIBUTORS[k]}</h3>
+				<h4 class="text-white w-50">${DISTRIBUTORS[k]}</h4>
 				`)
 			$el.appendTo('#chumchum')
 			// console.log(k,DISTRIBUTORS[k])
 		}
+		$("#chumchum div").each(function(index, el) {
+			$(el).offset($(el).offset())
+		});
 	</script>
 
 	<script type="text/javascript">
@@ -146,6 +182,14 @@
 
 	</section> -->	
 
+	<style type="text/css">
+		.pointer{
+			height:1em;
+			background-color:#000;
+			transform: rotate(45deg);
+			transform: translate(50%);
+		}
+	</style>
 
 
 	<!-- ||||||||||||||||||||||||||||||||||||| -->
