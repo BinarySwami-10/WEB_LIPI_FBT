@@ -33,6 +33,10 @@
 				opacity: 0.25;
 				transition: 0.5s;
 			}	
+			#about-us p{
+				font-size: 1.25rem;
+				font-weight: 400;
+			}
 			@media(max-width: 768px){
 				#about-us p{
 					font-size: 0.8em;
@@ -43,21 +47,34 @@
 
 		</style>
 		<!-- -------------------------- -->
-		<div id="about-us" class="col-lg-10 text-center mx-auto text-white">
+		<div id="about-us" class="col-lg-8 text-center mx-auto text-white">
 			<h2 class=" f-5 font-weight-bold text-uppercase">About Us</h2>
 			<div class="">
-				<div class="text-capitalize text-justify ">
-					<p class="">
-						Crayon Pulp and  Paper Pvt Ltd, (CPPL) is one of the largest producers and importer of Pulp and paper for printing, writing, and packaging in India.  A sister concern of Lipi Exports PVT Ltd. who is one of the leading importer of copier paper from indonesia. The company also produceit’s own brand Crayon on conversion  basis produced by the Company  whose mills are situated in INDIA, BANGLADESH, THAILAND & INDONESIA.The most popular Brand crayon  serves the needs of various industries in printing, writing, publishing, stationary,notebooks and packaging sectors in India, in the process contributing to the second hand development of the nation. 
+				<div class="text-capitalize text-justify row">
+					<p>
+						Crayon Pulp and  Paper Pvt Ltd, (CPPL) is one of the largest producers and importer of Pulp and paper for printing, writing, and packaging in India.  A sister concern of Lipi Exports PVT Ltd. who is one of the leading importer of copier paper from indonesia. The company also produceit’s own brand Crayon on conversion  basis produced by the Company  whose mills are situated in INDIA, BANGLADESH, THAILAND & INDONESIA.
 					</p>
-					<p class="">
-						Crayon  Pulp and Paper Pvt Ltd   believes in constant innovation as the key to keep abreast of the changing requirements of the market in India and abroad.The saga of our growth and achievements resulting in the satisfaction of our clients and investors is a testimony to our zealous commitment for creativity and innovation. The state of the art and environment friendly paper manufacturing technologies that have been adopted by us over the years have ensured a sustainable growth of the Company brand Crayon.
+
+					<p>
+						The most popular Brand crayon  serves the needs of various industries in printing, writing, publishing, stationary,notebooks and packaging sectors in India, in the process contributing to the second hand development of the nation. 
+						Crayon  Pulp and Paper Pvt Ltd   believes in constant innovation as the key to keep abreast of the changing requirements of the market in India and abroad.
 					</p>
-					<p class="">
+
+					<p>	
+						The saga of our growth and achievements resulting in the satisfaction of our clients and investors is a testimony to our zealous commitment for creativity and innovation. 
+						The state of the art and environment friendly paper manufacturing technologies that have been adopted by us over the years have ensured a sustainable growth of the Company brand Crayon.
+					</p>
+
+					<p>	
 						Crayon pulp and  Paper Pvt Ltd  is committed to stay alert and sensitive to the environmental consequences of its endeavors while persisting on the efforts to better its profits and business interests. We are an environmentally compliant Company that rigorously follows an Eco friendly policy that works towards increasing the green cover of our land and maintaining a sustainable environment for the health and well-being of the current and future generations, particularly of those living in the close vicinity of the Mills.
 					</p>
-					<p class="">
-						Crayon  Pulp Papers Pvt Ltd  follows Total Quality Management System (TQMS) in order to provide best quality products at optimal price to our customers.The highly coveted awards conferred on us by the reputed agencies,including awards from the National Productivity Council,Government of India,speak for themselves about our constant pursuit of industrial excellence. The Research and Development wing at the Organization keeps striving tirelessly to bring in innovations in the manufacturing of paper from wood and to improve the production processes.Further,here at Crayon  Pulp  and Papers Pvt Ltd  stringent measures are put in place for pollution control and industrial safety,thereby providing a safe working environment for all employees.
+
+					<p>
+						Crayon  Pulp Papers Pvt Ltd  follows Total Quality Management System (TQMS) in order to provide best quality products at optimal price to our customers.The highly coveted awards conferred on us by the reputed agencies,including awards from the National Productivity Council,Government of India,speak for themselves about our constant pursuit of industrial excellence.
+					</p>
+
+					<p>
+						The Research and Development wing at the Organization keeps striving tirelessly to bring in innovations in the manufacturing of paper from wood and to improve the production processes.Further,here at Crayon  Pulp  and Papers Pvt Ltd  stringent measures are put in place for pollution control and industrial safety,thereby providing a safe working environment for all employees.
 					</p>			
 				</div>
 			</div>	
@@ -74,14 +91,18 @@
 	<!-- ||||||||||||||||||||||||||||||||||||| -->
 	<script type="text/javascript">
 		function slowly_load_paragraphs () {
-			$("section p").each(function(index, el) {
+			selektor=$("p")
+			selektor.css({'opacity':'0.25','transition':'0.5s'});
+			selektor.each(function(index, el) {
 				// setTimeout(function () {$(el).attr('hidden',false);console.log(index)},index*1000) ;
 				setTimeout(function () {
 					$(el).css('opacity','1');
 					// $(el).fadeIn(1000);
-				},Math.random() *index *250) ;
+				},Math.random() *3000) ;
 			})
 		}
+		setTimeout(slowly_load_paragraphs,10)
+		setTimeout(slowly_load_paragraphs,100)
 		setTimeout(slowly_load_paragraphs,1000)
 		// $(document).ready(function() {});
 	</script>

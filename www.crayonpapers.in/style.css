@@ -1,4 +1,7 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+
 html, body { 
 	overflow: overlay;
 	/*height: 100%;*/
@@ -240,6 +243,9 @@ marquee {
     50%{background-position:100% 25%}
     100%{background-position:0% 50%}
 }
+
+
 /*-------------------------------*/
+@import "https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Teko&family=Roboto+Condensed&family=Material+Icons&family=Black+Ops+One&family=Montserrat&display=swap";
 
 
