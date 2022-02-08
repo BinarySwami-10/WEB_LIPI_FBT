@@ -59,7 +59,6 @@ minified = minify_html.minify(str(soupobj),
 
 
 mx.fwrite('index.html', minified)
-
+print("==========> DEV.HTML FILES HAVE BEEN MINIFIED")
 # print(soupobj.prettify())
 
-print(minified)
