@@ -24,13 +24,16 @@ template = open('./index-dev.html', 'r', encoding="utf-8").read()
 soupobj = mx.make_soup(template)
 
 for section in soupobj.select('[data-load]'):
+	try:
 
-	if (proxypath:= section.get('data-load', None)):  # noqa: E225
-		fileViewData = open(proxypath).read()
-		del section['data-load']
-		# fileViewData = soupobj.new
-		# print(fileViewData)
-		section.append(mx.make_soup(fileViewData))
+		if (proxypath:= section.get('data-load', None)):  # noqa: E225
+			fileViewData = open(proxypath).read()
+			del section['data-load']
+			# fileViewData = soupobj.new
+			# print(fileViewData)
+			section.append(mx.make_soup(fileViewData))
+	except:
+		pass
 
 
 def individual_passes():
