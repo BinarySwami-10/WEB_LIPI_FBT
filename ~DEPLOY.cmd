@@ -2,7 +2,7 @@ call ~CONSTANTS.cmd
 echo %myssh%
 
 ::==COMMIT-NIGGA
-~COMMIT.cmd
+call ~COMMIT.cmd
 
 ::===BUILD STUFF
 call ./www.crayonpapers.in/!BUILD-WEBSITE.cmd
