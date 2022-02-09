@@ -1,1 +1,4 @@
 www.crayonpapers.in/vid/*
+
+./**.git
+node_modules/
