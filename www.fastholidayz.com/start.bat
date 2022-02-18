@@ -1,2 +1,2 @@
-python appserver.py
+uvicorn api:app
 pause
