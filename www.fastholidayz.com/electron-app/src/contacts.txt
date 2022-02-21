@@ -1,3 +1,0 @@
-cancellation
-refund
-affiliateapi@tripadvisor.com

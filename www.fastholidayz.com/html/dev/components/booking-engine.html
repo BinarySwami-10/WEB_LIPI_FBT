@@ -1,0 +1,36 @@
+<div class="w-25 holidaysearchbox animate__animated animate__fadeInLeft">
+    <br>
+    <div class="searchformholder">
+        <div   class="text-center w-100 h2line py-1 bg-black ">
+            <h2 class="blink_me py-0 my-0">Book Holiday instantly </h2>
+        </div>
+        <div class="searchform bg-white p-2">
+            <div class="row">
+                <h5 class=" p-1 formlabels col">Where Do You Want To Go?</h5>
+                <br>
+                <div class="  col-auto dicerandom">
+                    Random   <span class="material-icons btn-group-vertical"> casino </span>
+                </div>
+                <input class=" form-control "  id="holidayDestinationInput" type="text" placeholder="Enter or Choose a Place From Below">
+            </div>
+        </div>
+        
+        <button class="booknowbutton btn table-hover bg-green float-right">
+            BOOK NOW
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+            <!-- <div class="material-icons md-2 px-0 text-center"> arrow_circle_right </div> -->
+        </button>
+        <script type="text/javascript">
+            Destination=["South Island, New Zealand", "Bora Bora", "Maui", "Tahiti", "London", "Rome", "Phuket", "Tokyo", "Glacier National Park", "Barcelona", "Maldives", "Banff", "New York City", "Bali", "Grand Canyon", "Sydney", "Dubai", "St. Lucia", "Yosemite", "Florence", "Santorini", "Great Barrier Reef", "Yellowstone", "Niagara Falls", "San Francisco", "Cancun", "Amalfi Coast", "Argentine Patagonia"]
+            $('.dicerandom').click(function(event) {
+                var randvalue = Destination[Math.floor(Math.random()*Destination.length)];
+                $('#holidayDestinationInput').fadeOut(100, function() {
+                    $('#holidayDestinationInput').fadeIn(100, function() {
+                        
+                    });
+                });
+                $('#holidayDestinationInput').val(randvalue)
+            });
+        </script>
+    </div>
+</div>

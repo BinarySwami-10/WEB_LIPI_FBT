@@ -1,0 +1,117 @@
+<div class="swiper heroslider">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<div class="slide-title">
+				<h2>visit the great Mountain </h2>
+				<button class="btn btn-success bg-green">See Offers</button>
+				<button class="btn btn-Primary bg-blue">More Info</button>
+			</div>
+			<div class="imholder">
+				<img src-set="./media/Banners/vacation2.jpg">
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="slide-title">
+				<h2>Luxury Stay  7 star hotels</h2>
+				<button class="btn btn-success bg-green">See Offers</button>
+				<button class="btn btn-Primary bg-blue">More Info</button>
+			</div>
+			<div class="imholder">
+				<img src-set="./media/Banners/vacation3.jpg">
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="slide-title">
+				<h2>Explore The Old Civilizations</h2>
+				<button class="btn btn-success bg-green">See Offers</button>
+				<button class="btn btn-Primary bg-blue">More Info</button>
+			</div>
+			<div class="imholder">
+				<img src-set="./media/Banners/vacation4.jpg">
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="slide-title">
+				<h2>comfy City side farm houses</h2>
+				<button class="btn btn-success bg-green">See Offers</button>
+				<button class="btn btn-Primary bg-blue">More Info</button>
+			</div>
+			<div class="imholder">
+				<img src-set="./media/Banners/vacation5.jpg">
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="slide-title">
+				<h2>have you tried the cable cars?</h2>
+				<button class="btn btn-success bg-green">See Offers</button>
+				<button class="btn btn-Primary bg-blue">More Info</button>
+			</div>
+			<div class="imholder">
+				<img src-set="./media/Banners/vacation6.jpg">
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="slide-title">
+				<h2>Singapore's  Gardens by the bay</h2>
+				<button class="btn btn-success bg-green">See Offers</button>
+				<button class="btn btn-Primary bg-blue">More Info</button>
+			</div>
+			<div class="imholder">
+				<img  src-set="./media/Banners/vacation7.jpg">
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="slide-title">
+				<h2>cross the beautiful rivers</h2>
+				<button class="btn btn-success bg-green">See Offers</button>
+				<button class="btn btn-Primary bg-blue">More Info</button>
+			</div>
+			<div class="imholder">
+				<img src-set="./media/Banners/vacation8.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<script>
+	/*Generate Slider for hero*/
+	const heroslider = $('.heroslider .swiper-wrapper')
+	var tmp=`<div class="swiper-slide">
+				<div class="slide-title">
+					<h2>Explore the seven Wonders</h2>
+					<button class="btn btn-success bg-green">See Offers</button>
+					<button class="btn btn-Primary bg-blue">More Info</button>
+				</div>
+				<div class="imholder">
+								<img src="./media/Banners/vacation1.jpg">
+				</div>
+			</div>`
+			
+	const swiper = new Swiper('.swiper.heroslider', {
+	    effect: 'fade',
+	    fadeEffect: {
+	        crossFade: true
+	    },
+	    loop: true,
+	    speed: 500,
+	    autoplay: {
+	        delay: 5000,
+	        disableOnInteraction: false,
+	    },
+	    pagination: {
+	        el: '.swiper-pagination',
+	    },
+	    navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	    },
+	    scrollbar: {
+	        el: '.swiper-scrollbar',
+	    },
+	});
+
+	$('img').each( function (index, el) {
+		console.log(this)
+		$(el).attr('src', $(el).attr('src-set'));
+	});
+</script>

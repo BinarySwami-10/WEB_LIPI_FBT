@@ -1,0 +1,35 @@
+<mymenu  class="row">
+    <div class="col-lg-2  p-lg-0 ">
+        <img class="menu-icon logo" src="./media/logo.jpg">
+        <!-- <p class="text-capitalize tagline px-2">make holidays memorable</p> -->
+    </div>
+    
+    <!-- REMOVE OR KEEP BOOK IN LABEL -->
+    <div class="col-lg-2 py-2  m-0 menu-item wow animate__animated animate__fadeInDown bg-blue">
+        <img class="menu-icon " src="./media/holiday1-icon.png">
+        <span class="menu-label">Book Holiday</span>
+    </div>
+    <div class="col-lg-2 py-2  m-0 menu-item wow animate__animated animate__fadeInDown bg-yellow" >
+        <img class="menu-icon text-left" src="./media/hotel-icon.png" >
+        <span class="menu-label ">Book Hotel</span>
+    </div>
+    <div class="col-lg-2 py-2  m-0 menu-item wow animate__animated animate__fadeInDown bg-red">
+        <img class="menu-icon text-left" src="./media/flight-icon.png">
+        <span class="menu-label">Book Flight</span>
+    </div>            
+    <div class="col-lg-2 py-2  m-0 menu-item wow animate__animated animate__fadeInDown bg-green">
+        <img class="menu-icon text-left" src="./media/user2-icon.png">
+        <span class="menu-label">Login</span>
+    </div>
+    <div class="btn  col-1 material-icons md-3 px-2 text-center submenu">
+        menu
+    </div>
+</mymenu>
+
+<script type="text/javascript">
+    $('mymenu .menu-item').each(function(index, val) {
+        $(this).css('left', `-${index}em`);
+        $(this).attr('data-wow-delay', index/3+"s");
+        /* iterate through array or object */
+    });
+</script>
