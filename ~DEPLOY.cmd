@@ -11,7 +11,7 @@ echo %~dp0
 
 ::===CLOUD SYNC
 aws s3 sync . %s3path% --exclude ".git\*" --exclude ".git/*" --exclude "*\node_modules\*" --delete
-%myssh% aws s3 sync %s3path% /usr/share/nginx/html/
+%myssh% aws s3 sync %s3path% /usr/share/nginx/html/ --delete
 
 
 %myssh% "bash -s" < RELOAD-NGINX.sh
