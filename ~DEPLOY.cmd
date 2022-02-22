@@ -14,5 +14,5 @@ aws s3 sync . %s3path% --exclude ".git\*" --exclude ".git/*" --exclude "*\node_m
 %myssh% aws s3 sync %s3path% /usr/share/nginx/html/ --delete
 
 
-%myssh% "bash -s" < RELOAD-NGINX.sh
+%myssh% "bash -s " < RELOAD-NGINX.sh
 timeout 10
