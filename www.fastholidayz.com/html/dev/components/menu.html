@@ -1,35 +1,159 @@
-<mymenu  class="row">
-    <div class="col-lg-2  p-lg-0 ">
-        <img class="menu-icon logo" src="./media/logo.jpg">
+<style type="text/css">
+    .menubar{
+        font-family: Montserrat;
+        background-color: #000;
+    }
+    .branding{
+        font-family: Oxanium;
+    }
+    .branding span{
+
+    }
+
+    .menu-icon.logo{
+        /*width: 100%;*/
+        max-height: 100%;   
+        text-align: left;
+        /*position: absolute;*/
+        animation-duration: 2s;
+        animation-name: slidein;
+        z-index: 100;
+        background: #fffe;
+        /*clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);*/
+        /*margin-top: -1em;*/
+        /*margin-left: -1em;*/
+        /*padding: 0.25em auto;*/
+        /*max-height: 100em;*/
+        /*border-radius: 0 0 10.25em 0 ;*/
+
+    }
+
+
+
+    .tagline{
+        font-size: 2vw;
+        font-family: 'Luxurious Script';
+    }
+
+    .menu-item{
+        text-align: center;
+        transition: 0.5s;
+        clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+        left: 1em;
+        display: inline-block;
+        max-width: 4vh;
+    }
+
+    .no-clip{
+        clip-path: none;
+    }
+
+    .x-icon{
+
+        max-height: 2em;
+        /*box-shadow: 0 0 5em #000;*/
+    }
+
+    @media(max-width: 768px){
+        .x-icon{
+            max-height: 3em;
+        } 
+    }
+
+    .menu-item:hover{
+        transform: scale(1.2);
+    }
+
+    .x-label{
+        font-size: 2.25em;
+        font-family: 'Teko';
+        /*font-weight: 600;*/
+        padding-top: 100em;
+        color: #fff;
+        text-shadow: 0 0 0.75em #000;
+        vertical-align: bottom;
+    }
+    .popover-body{
+        font-family: "Oxanium" !important;
+    }
+
+</style>
+
+<div  class="row menubar">
+    <div class="branding menu-item no-clip col-auto py-1 px-1 text-nowrap">
+        <img class="x-icon logo f2" src="./LOGO.webp">
+        <span class="btn btn-outline-light btn-pill  py-0 m-0  f3 font-weight-bold ">FastHolidayz</span>
         <!-- <p class="text-capitalize tagline px-2">make holidays memorable</p> -->
     </div>
     
     <!-- REMOVE OR KEEP BOOK IN LABEL -->
-    <div class="col-lg-2 py-2  m-0 menu-item wow animate__animated animate__fadeInDown bg-blue">
-        <img class="menu-icon " src="./media/holiday1-icon.png">
-        <span class="menu-label">Book Holiday</span>
+    <div class="col-lg-2 py-2  m-0 menu-item   bg-blue">
+        <img class="x-icon " src="./media/holiday1-icon.png">
+        <span class="x-label">Holidays</span>
     </div>
-    <div class="col-lg-2 py-2  m-0 menu-item wow animate__animated animate__fadeInDown bg-yellow" >
-        <img class="menu-icon text-left" src="./media/hotel-icon.png" >
-        <span class="menu-label ">Book Hotel</span>
+    <div class="col-lg-2 py-2  m-0 menu-item animate__animated  bg-yellow" >
+        <img class="x-icon text-left" src="./media/hotel-icon.png" >
+        <span class="x-label ">Hotels</span>
     </div>
-    <div class="col-lg-2 py-2  m-0 menu-item wow animate__animated animate__fadeInDown bg-red">
-        <img class="menu-icon text-left" src="./media/flight-icon.png">
-        <span class="menu-label">Book Flight</span>
+    <div class="col-lg-2 py-2  m-0 menu-item animate__animated  bg-red">
+        <img class="x-icon text-left" src="./media/flight-icon.png">
+        <span class="x-label">Flights</span>
     </div>            
-    <div class="col-lg-2 py-2  m-0 menu-item wow animate__animated animate__fadeInDown bg-green">
-        <img class="menu-icon text-left" src="./media/user2-icon.png">
-        <span class="menu-label">Login</span>
+    <div class="col-lg-2 py-2  m-0 menu-item animate__animated  bg-green">
+        <img class="x-icon text-left" src="./media/user2-icon.png">
+        <span class="x-label">Login</span>
     </div>
-    <div class="btn  col-1 material-icons md-3 px-2 text-center submenu">
-        menu
+
+    <div class="col-auto mx-auto p-0 m-0 menu-item no-clip submenu z-max text-primary text-right">
+        
+        <button type="button" class="badge badge-danger btn-danger" data-bs-toggle="popover" title="Menu" data-bs-trigger="focus" data-bs-html="">
+            <div class="material-icons md-3 px-2 text-center ">
+                menu
+            </div>
+            <div id='submenu-markup' class="d-none ">
+                <a href="#" class="btn my-1  w-100 btn-primary">Offers</a>
+                <a href="#" class="btn my-1  w-100 btn-success">Discounts</a>
+                <a href="#" class="btn my-1  w-100 btn-secondary">Coupons</a>
+                <a href="#" class="btn my-1  w-100 btn-danger">Help</a>
+                <a href="#" class="btn my-1  w-100 btn-warning">Contact</a>
+            </div>
+        </button>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var $menu=$('.submenu button')
+                $('#submenu-markup')
+                pp= new bootstrap.Popover($menu,
+                    {
+                        html:true,
+                        content: $('#submenu-markup').html()
+                    }
+                    )
+                $menu.hover(function() {
+                    /* Stuff to do when the mouse enters the element */
+                    console.log(this)
+                    var popover = bootstrap.Popover.getOrCreateInstance(this) 
+                    popover.toggle()
+                    // $menu.attr('data-bs-content', );
+
+                },()=>{});
+            });
+        </script>
     </div>
-</mymenu>
+</div>
 
 <script type="text/javascript">
-    $('mymenu .menu-item').each(function(index, val) {
-        $(this).css('left', `-${index}em`);
-        $(this).attr('data-wow-delay', index/3+"s");
+    $('.menubar .menu-item').each(function(index, val) {
+        $(this).addClass('opacity-0');
+        $(this).css('padding-left', `-${index}em`);
+        setTimeout(() => {
+            $(this).addClass('animate__animated animate__fadeInUp');
+            $(this).addClass('opacity-100');
+            // $(this).addClass('visible');
+
+        },index*200)
         /* iterate through array or object */
     });
+</script>
+
+<script type="text/javascript">
 </script>

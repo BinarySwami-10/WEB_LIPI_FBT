@@ -1,25 +1,104 @@
-<div class="w-25 holidaysearchbox animate__animated animate__fadeInLeft">
-    <br>
+<style type="text/css">
+    .holidaysearchbox{
+        font-family: "Teko";
+        font-family: "Montserrat";
+        position: absolute;
+        margin-top: -30%;
+        margin-left: 1em;
+        z-index: 10;
+        min-width: 25em;
+        backdrop-filter: blur(5px);
+    }
+    #holidayDestinationInput{
+      caret-color: black;
+    }
+    .searchformholder{
+        /*border-radius: 1em;*/
+    }
+    .searchform{
+        border-radius: 0.5em;
+        z-index: -10;
+        background-color: #0006;
+        box-shadow: -0.33em 0.33em 0.33em #fffa;
+        color: #fff;
+
+    }
+
+    .booknowbutton{
+        /*position: static;*/
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        /*border-bottom-right-radius: 0.25em;*/
+        /*border-bottom-left-radius: 0.25em;*/
+        font-size: 1em;
+        margin-right: 0.75em;
+        box-shadow: 0 0 0.5em #4f66;
+        /*background-color: ;  */
+        border: none;
+        z-index: -10;
+    }
+
+    .booknowbutton  svg{
+        color:  #fff;
+
+    }
+
+    .dicerandom{
+        /*border: solid 0.5px #ccc;*/
+        max-height: 2em;
+        padding: 0 1em;
+        transition: 0.2s;
+        caret-color: #f0f0;
+        cursor: wait;
+
+    }
+    .dicerandom:hover{
+        border: solid 1px;
+        color: #fff;
+        background-color: #000;
+    }
+    .form-control{
+        font-size: 1em;
+    }
+
+    .h2line{
+        font-family: "Oxanium";
+        color: #fff;
+        font-size: 2em;
+        z-index: 100;
+        position: relative;
+        border-radius: 0.5em 0.5em 0 0;
+        font-weight: 800 !important;
+    }
+    .formlabels{
+        font-weight: bolder;
+    }
+</style>
+
+
+<div class="w-25 holidaysearchbox  animate__animated animate__fadeInLeft">
     <div class="searchformholder">
-        <div   class="text-center w-100 h2line py-1 bg-black ">
-            <h2 class="blink_me py-0 my-0">Book Holiday instantly </h2>
+        <div   class="text-center w-75 mx-auto h2line p-3 bg-black ">
+            <span class="blink_me font-weight-bold ">Start Booking ⇊ </span>
         </div>
-        <div class="searchform bg-white p-2">
+        <div class="searchform  p-2">
             <div class="row">
-                <h5 class=" p-1 formlabels col">Where Do You Want To Go?</h5>
-                <br>
-                <div class="  col-auto dicerandom">
-                    Random   <span class="material-icons btn-group-vertical"> casino </span>
-                </div>
-                <input class=" form-control "  id="holidayDestinationInput" type="text" placeholder="Enter or Choose a Place From Below">
+                <span class="formlabels col p-2 ps-4">Where are you going?</span>
+                <span class="row">
+                    <input class="col  form-control btn-pill"  id="holidayDestinationInput" type="text" placeholder="Enter Destination">
+                    <div class=" col-auto p-0 dicerandom mx-auto text-center">
+                        <span class="material-icons"> casino </span>
+                    </div>
+                    
+                </span>
+
+                <span class="formlabels col p-2 ps-4">How many People?</span>
+                <span class="row">
+                    <input class="col-6 form-control btn-pill"  id="holidayDestinationInput" type="text" placeholder="Start Typing to get suggestion">
+                </span>
             </div>
         </div>
         
-        <button class="booknowbutton btn table-hover bg-green float-right">
-            BOOK NOW
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
-            <!-- <div class="material-icons md-2 px-0 text-center"> arrow_circle_right </div> -->
-        </button>
         <script type="text/javascript">
             Destination=["South Island, New Zealand", "Bora Bora", "Maui", "Tahiti", "London", "Rome", "Phuket", "Tokyo", "Glacier National Park", "Barcelona", "Maldives", "Banff", "New York City", "Bali", "Grand Canyon", "Sydney", "Dubai", "St. Lucia", "Yosemite", "Florence", "Santorini", "Great Barrier Reef", "Yellowstone", "Niagara Falls", "San Francisco", "Cancun", "Amalfi Coast", "Argentine Patagonia"]
             $('.dicerandom').click(function(event) {
@@ -34,3 +113,28 @@
         </script>
     </div>
 </div>
+
+<script type="text/javascript">
+    incrdecr = (inputTagSelector,plusSelector,minusSelector) =>{
+        $(document).ready(function() {
+          const minus = $(minusSelector);
+          const plus = $(plusSelector);
+          const input = $(inputTagSelector);
+          minus.click(function(e) {
+            e.preventDefault();
+            var value = input.val();
+            if (value > 1) {
+              value--;
+            }
+            input.val(value);
+          });
+          
+          plus.click(function(e) {
+            e.preventDefault();
+            var value = input.val();
+            value++;
+            input.val(value);
+          })
+        });
+    }
+</script>

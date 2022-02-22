@@ -1,18 +1,56 @@
-@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+@import "https://fonts.googleapis.com/css2?family=Teko&family=Roboto+Condensed&family=Oxanium&family=Material+Icons&family=Montserrat&display=swap";
 
-
+body{
+    line-height: 1em;
+}
 body *{
     caret-color: #f0f0;
 
 }
+/*Bootstrap Extensions______________________________*/
 .row{
     margin: 0;
 }
+.z-max{
+    z-index: 999;
+}
+.btn-pill{
+    border-radius: 99em;
+}
+.popover-header{
+    text-align: center;
+    font-weight: bolder;
+    font-family: "Oxanium";
+}
+.font-oxanium *{
+    font-family: "Oxanium" !important;
+}
+/*__________________________________________________*/
 .material-icons.md-1 { font-size: 18px; }
 .material-icons.md-2 { font-size: 24px; }
 .material-icons.md-3 { font-size: 36px; }
 .material-icons.md-4 { font-size: 48px; }
 
+/*__________________________________________________*/
+.f1{
+    font-size: 1em;
+}
+.f2{
+    font-size: 1.25em;
+}
+.f3{
+    font-size: 1.5em;
+}
+.f4{
+    font-size: 2em;
+}
+.f5{
+    font-size: 3em;
+}
+/*__________________________________________________*/
 .bg-purple{
     background: rgb(2,0,36);
     background: linear-gradient(38deg, rgba(2,0,36,1) 0%, rgba(149,0,255,1) 100%);
@@ -37,150 +75,18 @@ body *{
 .bg-black{
     background: #000;
 }
-.z-max{
-    z-index: 999;
-}
-.menu-icon.logo{
-    width: 100%;
-    max-height: 100%;   
-    text-align: left;
-    /*position: absolute;*/
-    animation-duration: 2s;
-    animation-name: slidein;
-    z-index: 100;
-    background: #fffe;
-    clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
-    /*margin-top: -1em;*/
-    /*margin-left: -1em;*/
-    /*padding: 0.25em auto;*/
-    /*max-height: 100em;*/
-    /*border-radius: 0 0 10.25em 0 ;*/
-
-}
 
 
-mymenu{
-    /*background-color: #0000;*/
-    background-color: #0000;
-    overflow: visible;
-}
 
-.tagline{
-    font-size: 2vw;
-    font-family: 'Luxurious Script';
-}
 
-.menu-item{
-    text-align: center;
-    transition: 0.5s;
-    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
-    left: 1em;
-    display: inline-block;
-    line-height: 25px;
-}
 
-.menu-icon{
-    max-height: 5   em;
-    max-height: 3em;
-    /*box-shadow: 0 0 5em #000;*/
-}
-
-@media(max-width: 768px){
-    .menu-icon{
-        max-height: 3em;
-    } 
-}
-
-.menu-item:hover{
-    transform: scale(1.2);
-}
-
-.menu-label{
-    font-size: 2.25em;
-    font-family: 'Teko';
-    /*font-weight: 600;*/
-    padding-top: 100em;
-    color: #fff;
-    text-shadow: 0 0 0.75em #000;
-    vertical-align: bottom;
-}
-
-/*__________________________________________________*/
 
 /*__________________________________________________*/
 
 
-.holidaysearchbox{
-    opacity: 0.95;
-    font-family: "Teko";
-    font-family: "Montserrat";
-    position: absolute;
-    margin-top: -25%;
-    margin-left: 1em;
-    z-index: 10;
-}
-#holidayDestinationInput{
-  caret-color: black;
-}
-.searchformholder{
-    /*border-radius: 1em;*/
-}
-.searchform{
-    box-shadow: 0 0 8em #fffa;
-    border-radius: 0.5em;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    z-index: -10;
-}
-
-.booknowbutton{
-    position: static;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    /*border-bottom-right-radius: 0.25em;*/
-    /*border-bottom-left-radius: 0.25em;*/
-    font-size: 1em;
-    margin-right: 0.75em;
-    box-shadow: 0 0 0.5em #4f66;
-    /*background-color: ;  */
-    border: none;
-    z-index: -10;
-}
-
-.booknowbutton  svg{
-    color:  #fff;
-
-}
-
-.dicerandom{
-    border: solid 0.5px #ccc;
-    max-height: 2em;
-    border-radius: 1em;
-    padding: 0 1em;
-    transition: 0.2s;
-    caret-color: #f0f0;
-    cursor: wait;
-
-}
-.dicerandom:hover{
-    border: solid 1px;
-    border-radius: 1em;
-    color: #fff;
-    background-color: #000;
-}
-.form-control{
-    font-size: 1em;
-}
 
 /*__________________________________________________*/
-.h2line{
-    font-family: "Montserrat";
-    color: #fff;
-    font-size: 3em;
-    z-index: 100;
-    position: relative;
-    border-radius: 0.25em 0.25em 0 0;
-}
+
 
 .blink_me {
     animation: blinker 2s ease-in-out infinite;
@@ -264,6 +170,3 @@ section{
 
 
 
-@import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
-@import "https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Teko&family=Roboto+Condensed&family=Oxanium&family=Material+Icons&family=Black+Ops+One&family=Montserrat&display=swap";
