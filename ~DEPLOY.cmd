@@ -10,7 +10,7 @@ cd %~dp0
 echo %~dp0
 
 ::===CLOUD SYNC
-aws s3 sync . %s3path% --exclude ".git\*" --exclude ".git/*" --exclude "*\node_modules\*" --delete
+aws s3 sync . %s3path% --exclude "**.git\**" --exclude ".git/*" --exclude "*\node_modules\*" --delete
 %myssh% aws s3 sync %s3path% /usr/share/nginx/html/ --delete
 
 
