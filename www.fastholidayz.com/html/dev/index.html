@@ -39,78 +39,99 @@
             #associationam img{
                 max-height: 20vh;
             }
+            #package-lister{
+                font-family: "Roboto Condensed";
+            }
+            h2{
+                font-family: "Montserrat";
+                font-weight: 800!important;
+            }
+             #package-lister img{
+                box-shadow: 0 0 0.33em #fff;
+             }
+             #tour-sidelabel{
+                border-radius: 0 0 10em 100em;
+             }
             </style>
-            <div class="row ">
-                <div class="col-6 bg-light ">
-                    <h3 class="py-3 text-center">International Tour Packages</h3>
-                    <ul>
-                        <li>Dubai Packages </li>
-                        <li>Maldives Packages </li>
-                        <li>Singapore Packages </li>
-                        <li>Europe Packages </li>
-                        <li>Mauritius Packages </li>
-                        <li>Bali Packages </li>
-                        <li>Nepal Packages </li>
-                        <li>Switzerland Packages </li>
-                        <li>Malaysia Packages </li>
-                        <li>London Packages </li>
-                        <li>USA Packages </li>
-                        <li>Australia Packages </li>
-                        <li>Hong Kong Packages </li>
-                        <li>Phuket Packages </li>
-                        <li>Sri Lanka Packages </li>
-                    </ul>
-                </div>
-                <div class="col-6 bg-light ">
-                    <h3 class="py-3 text-center">Travel Guides</h3>
-                    <ul>
-                        <li>Travel Destination Guide</li>
-                        <li>Goa Travel Guide</li>
-                        <li>Dubai Travel Guide</li>
-                        <li>Kerala Travel Guide</li>
-                        <li>Phuket Travel Guide</li>
-                        <li>Darjeeling Travel Guide</li>
-                        <li>Singapore Travel Guide</li>
-                    </ul>
-                </div>
-                <!--  -->
-                <div class="col-6 py-5 ">
-                    <style type="text/css">
-                        .social-icon img{
-                            max-height: 6em;
-                        }
-                    </style>
-                    <h3 class="text-center">Our Social Media</h3>
-                    <div class="social-icon text-center py-5">
-                        <a class="m-2" target='blank' href="https://www.facebook.com/fastbooktrip1/" >
-                            <img src="./media/social-facebook.png">
-                        </a>
-                        <a class="m-2" target='blank' href="https://twitter.com/fastbooktrip" >
-                            <img src="./media/social-twitter.png">
-                        </a>
-                        <a class="m-2" target='blank' href="https://www.instagram.com/fastbooktrip/?hl=en" >
-                            <img src="./media/social-instagram.png">
-                        </a>
-                        <a class="m-2" target='blank' href="mailto:info@fastbooktrip.com" class="gplus">
-                            <img src="./media/social-email.png">
-                        </a>
-                        <a class="m-2" target='blank' href="https://www.youtube.com/channel/UCH1xZUI2xmjYyx-4HeYWp7g" class="gplus">
-                            <img src="./media/social-youtube.png">
-                        </a>
-                    </div>
-                </div>
-                <div id="associationam" class="col-6 py-5 text-center">
-                    <h3 class="">Association With</h3>
-                    <div class=" row   ">
-                        <div class="col-auto mx-auto ">
-                            <img class=" " src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Iata_official_logo.png/600px-Iata_official_logo.png">
-                       
-                            <img class=" " src="https://upload.wikimedia.org/wikipedia/commons/1/16/Former_Visa_%28company%29_logo.svg">
+
+            <div class="row px-3 pb-5 bg-black text-white">
+                <div class="col-9  ">
+                    <h2 class="display-1 font-weight-bold">International Tour Packages</h2>
+                    <p class="col-lg-6 py-5"> want to travel the world, but dont know where to start? sit back and relax, we have organized international travel packages according to country, so you can get started.</p>
+                    <div id="package-lister" class="row" >
+                        <div class="row py-1">
+                            <img class="col-1 rounded p-0 my-2" src="./css/{{0}}">
+                            <span class="col-1 text-center py-3 pl-0 ml-0 ">{{1}}</span>             
                         </div>
                     </div>
+
+                    <script type="text/javascript">
+                        country_wise_package_generator= ( () => {
+                            parent = $('#package-lister')
+                            template = parent.children().first().remove().html()
+
+                            $.getJSON('./data/allcountries.json',{}, function(json, textStatus) {
+                                for (d of json.slice(0,24)){
+                                    vars=[d['flag_4x3'], d['name'] ]
+                                    tmp=template
+                                    for (v in vars){
+                                        tmp=tmp.replace(`{{${v}}}`, vars[v])
+                                        console.log(v)
+                                    }
+                                    parent.append(tmp)
+                                }
+                            });
+                        })()
+                    </script>
                 </div>
+
+                <div id="tour-sidelabel" class="col-3 bg-warning text-black">
+                    <h3 class="py-3 text-center display-2 font-weight-bold">Travel Guides</h3>
+                    <p>
+                        To visit India as a foreigner is easier than ever before. A growing number of cities boast gleaming new metro systems, and are linked by faster highways and speedier, more comfortable trains. Affordable but extravagant hotels and a thriving restaurant in the modern cities like Mumbai, make India an attractive place to visit.
+
+                        
+                    </p>
+                </div>
+                <!--  -->
+                
             </div>
         </footer>
+        <div class="col-6 py-5 ">
+            <style type="text/css">
+                .social-icon img{
+                    max-height: 6em;
+                }
+            </style>
+            <h3 class="text-center">Our Social Media</h3>
+            <div class="social-icon text-center py-5">
+                <a class="m-2" target='blank' href="https://www.facebook.com/fastbooktrip1/" >
+                    <img src="./media/social-facebook.png">
+                </a>
+                <a class="m-2" target='blank' href="https://twitter.com/fastbooktrip">
+                    <img src="./media/social-twitter.png">
+                </a>
+                <a class="m-2" target='blank' href="https://www.instagram.com/fastbooktrip/?hl=en" >
+                    <img src="./media/social-instagram.png">
+                </a>
+                <a class="m-2" target='blank' href="mailto:info@fastbooktrip.com" class="gplus">
+                    <img src="./media/social-email.png">
+                </a>
+                <a class="m-2" target='blank' href="https://www.youtube.com/channel/UCH1xZUI2xmjYyx-4HeYWp7g" class="gplus">
+                    <img src="./media/social-youtube.png">
+                </a>
+            </div>
+        </div>
+        <div id="associationam" class="col-6 py-5 text-center">
+            <h3 class="">Association With</h3>
+            <div class=" row   ">
+                <div class="col-auto mx-auto ">
+                    <img class=" " src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Iata_official_logo.png/600px-Iata_official_logo.png">
+               
+                    <img class=" " src="https://upload.wikimedia.org/wikipedia/commons/1/16/Former_Visa_%28company%29_logo.svg">
+                </div>
+            </div>
+        </div>
         <!-- _________________________________________________________________ -->
         
         
