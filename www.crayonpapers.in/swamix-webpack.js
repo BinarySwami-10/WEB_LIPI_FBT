@@ -20,7 +20,7 @@ $('.row').addClass('mx-0')
 
 
 // ------------------------------------------
-const data_loader = $(document).ready(function() {
+$(document).ready(function() {
 	$('[data-load]').each(function(index, el) {
 		$.get($(el).attr('data-load'), function(data) {
 			// console.log("LOADED SUCCESS",el)
@@ -41,7 +41,6 @@ function sleep(ms) {
 
 
 
-import "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
 
 
 
