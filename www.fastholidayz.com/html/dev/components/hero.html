@@ -1,4 +1,61 @@
-<div class="swiper heroslider">
+<style type="text/css">
+	.swiper{
+	    /*height: 75%;*/
+	    max-height: 66vh;
+	}
+
+	
+
+	.swiper .imholder img{
+	    width: 100%;
+	    /*margin: -25% 0;*/
+	}
+
+	.swiper-slide img {
+	    max-width: 100%;
+	    max-height: 100%;
+	    -webkit-transition: .2s all;
+	    -webkit-filter: brightness(66%);
+	}
+
+	.swiper-slide-active img{
+	    transform: scale(1.25);
+	    transition: 10s;
+	    transition-timing-function: linear;
+	}
+
+	.swiper-slide h2{
+	    font-size: 3.5em;
+	    font-family: "Montserrat";
+	    /*font-style: italic;*/
+	    text-transform: capitalize;
+	    font-weight: 200;
+
+	    text-shadow: 2px 2px 8px #000;
+	    text-align: center;
+	    max-width: 12em;
+
+	    color: #fff;
+	}
+
+	.swiper-slide .slide-title {
+		/*float: left;*/
+		position: absolute;
+		margin-top: 25vh;
+		/*margin-left: 60vw;*/
+		z-index: 10;
+		text-align: center;
+
+	}
+
+	.swiper-slide button{
+	  /*position: absolute;*/
+	  border: transparent;
+	  box-shadow: 0 0 3em #fff8;
+	  z-index: 10;
+	}
+</style>
+<div class="swiper heroslider ">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			<div class="slide-title">
