@@ -98,15 +98,15 @@
         
         <script type="text/javascript">
             Destination=["South Island, New Zealand", "Bora Bora", "Maui", "Tahiti", "London", "Rome", "Phuket", "Tokyo", "Glacier National Park", "Barcelona", "Maldives", "Banff", "New York City", "Bali", "Grand Canyon", "Sydney", "Dubai", "St. Lucia", "Yosemite", "Florence", "Santorini", "Great Barrier Reef", "Yellowstone", "Niagara Falls", "San Francisco", "Cancun", "Amalfi Coast", "Argentine Patagonia"]
-            $('.dicerandom').click(function(event) {
-                var randvalue = Destination[Math.floor(Math.random()*Destination.length)];
-                $('#holidayDestinationInput').fadeOut(100, function() {
-                    $('#holidayDestinationInput').fadeIn(100, function() {
-                        
+            var destinationIter= 0
+            $('.dicerandom').hover(function(event) {
+                var rdest = Destination[destinationIter++ % Destination.length];
+                $('#holidayDestinationInput').fadeOut(50, function() {
+                    $('#holidayDestinationInput').fadeIn(50, function() {
                     });
                 });
-                $('#holidayDestinationInput').val(randvalue)
-            });
+                $('#holidayDestinationInput').val(rdest)
+            },()=>{});
         </script>
     </div>
 </div>

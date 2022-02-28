@@ -23,7 +23,6 @@ function smoothScrollWindow () {
 	});
 }
 setTimeout(smoothScrollWindow, 2500)
-
 /*--------------------*/
 
 /*--------------------*/
@@ -35,7 +34,10 @@ const data_loader = $('[data-load]').each(function(index, el) {
 
 
 /*--------------------*/
-
+template_generator = (parentSelector) => {
+	parent = $(parentSelector)
+	child_template = parent.children().first().remove().html()
+}
 /*--------------------*/
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
