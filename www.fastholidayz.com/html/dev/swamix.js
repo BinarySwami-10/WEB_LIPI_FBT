@@ -5,9 +5,7 @@ print = console.log
 
 /*--------------------DOCUMENT READY TRIGGERS*/
 $(document).ready(function() {
-
 	$('.row').addClass('mx-0')
-
 });
 /*--------------------*/
 function smoothScrollWindow () {

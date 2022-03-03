@@ -2,7 +2,7 @@ from mxproxy import mx
 
 url = 'https://www.holidify.com/collections/tourist-places-in-india'
 iter_class = 'div.row.no-gutters.d-flex > div.col-12.col-md-6.pr-md-3'
-filename = url.split('/')[-1]
+filename = f"{url.split('/')[-1]}.json"
 i = 0
 
 parse_table = {
@@ -14,10 +14,16 @@ parse_table = {
 
 json_derulo = {'data': []}
 
-for x in mx.get_page_soup(url).select(iter_class):
+for element in mx.get_page_soup(url).select(iter_class):
     i += 1
-    title = x.select_one('h3')
-    json_derulo['data']
-    # print(x.prettify())
+    document = {}
 
-print(i)
+    for k, v in parse_table.items():
+        try:
+            document.update({k: element.select_one(v).text})
+        except Exception as e:
+            print(e)
+
+    json_derulo['data'].append(document)
+
+print(mx.jdumps(json_derulo))
