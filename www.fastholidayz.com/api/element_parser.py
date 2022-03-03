@@ -27,4 +27,4 @@ for element in mx.get_page_soup(url).select(iter_class):
     json_derulo['data'].append(document)
 
 
-print(mx.jdumps(json_derulo))
+print(mx.jdump(json_derulo, filename))
