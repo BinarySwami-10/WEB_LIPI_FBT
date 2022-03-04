@@ -1,1 +1,1 @@
-sudo cp /usr/share/nginx/html/nginx.conf /etc/nginx/ && sudo nginx -s reload && echo NGINX RELOADED
+sudo cp /srv/lipi/nginx.conf /etc/nginx/ && sudo nginx -s reload && echo NGINX RELOADED
