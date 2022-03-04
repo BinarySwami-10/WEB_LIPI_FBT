@@ -3,11 +3,12 @@
 from mxproxy import mx
 import requests
 import re
+import os
 
-import Auth
-false = False
-true = True
-null = None
+try:
+	import Auth
+except:
+	from api.API_EMT import main_api
 
 
 def get_flights():
@@ -30,9 +31,9 @@ def get_flights():
                 ],
 	    "FlightSearchDetails": [
 	        {
-	            "BeginDate": "2022-02-27",
+	            "BeginDate": "2022-03-15",
 	            "Origin": "DEL",
-	            "Destination": "Hyd"
+	            "Destination": "HYD"
                     },
                 ],
 	    "TripType": 1,
@@ -54,4 +55,5 @@ if __name__ == '__main__':
 	# r=get_tbo_routes()
 	r = get_flights()
 	print(mx.jdumps(r))
-	...
+# else:
+# 	os.chdir("../../")

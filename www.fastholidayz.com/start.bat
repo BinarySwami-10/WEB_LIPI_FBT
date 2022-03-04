@@ -1,2 +1,2 @@
-python appserver.py
+start powershell uvicorn main:app --reload
 pause
