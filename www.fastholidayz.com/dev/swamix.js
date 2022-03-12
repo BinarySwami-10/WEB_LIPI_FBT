@@ -3,10 +3,6 @@ import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js
 /*--------------------*/
 print = console.log
 
-/*--------------------DOCUMENT READY TRIGGERS*/
-$(document).ready(function() {
-	$('.row').addClass('mx-0')
-});
 /*--------------------*/
 function smoothScrollWindow () {
 	$(document).ready(function() {
@@ -24,15 +20,17 @@ setTimeout(smoothScrollWindow, 2500)
 /*--------------------*/
 
 /*--------------------*/
-const data_loader = $('[data-load]').each(function(index, el) {
-	$.get($(el).attr('data-load'), function(data) {
-		$(el).html(data)
+function void_data_loader () {
+	 $('[data-load]').each(function(index, el) {
+		$.get($(el).attr('data-load'), function(data) {
+			$(el).html(data)
+		});
 	});
-});
+}
 
 
 /*--------------------*/
-template_generator = (parentSelector) => {
+function template_generator (parentSelector){
 	parent = $(parentSelector)
 	child_template = parent.children().first().remove().html()
 }
@@ -40,3 +38,10 @@ template_generator = (parentSelector) => {
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+
+/*--------------------DOCUMENT READY TRIGGERS*/
+$(document).ready(function() {
+	$('.row').addClass('mx-0')
+	void_data_loader()
+});
