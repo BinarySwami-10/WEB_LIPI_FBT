@@ -3,7 +3,9 @@ import uvicorn
 from api.API_EMT import Auth
 from api.API_EMT import main_api
 import os
-
+from termcolor import *
+import colorama
+colorama.init()
 app = FastAPI()
 
 
@@ -12,7 +14,7 @@ def home():
     return {"Hello": os.getcwd()}
 
 
-@app.get('/api/v1/flightSearch')
+@app.get('/api/fs')
 def get_flights():
    resp = main_api.get_flights()
    return resp
