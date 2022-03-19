@@ -55,7 +55,7 @@
                 box-shadow: 0 0 2px #fff;
              }
              #tour-sidelabel{
-                border-radius: 0 0 10em 100em;
+                border-radius: 0 0 5em 5em;
              }
             </style>
             
@@ -80,7 +80,7 @@
                             template = parent.children().first().remove().html()
 
                             $.getJSON('./data/allcountries.json',{}, function(json, textStatus) {
-                                for (d of json.slice(0,24)){
+                                for (d of json.slice(24,48)){
                                     vars=[d['flag_4x3'], d['name'] ]
                                     tmp=template
                                     for (v in vars){
