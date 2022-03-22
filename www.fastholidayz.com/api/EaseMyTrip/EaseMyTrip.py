@@ -1,9 +1,16 @@
+try:
+    import Auth
+except Exception as e:
+    pass
+
+import requests
+
 def get_flights():
     # url="http://serviceapi.easemytrip.com/Flight.svc/json/FlightSearch"
     url = "https://stagingapi.easemytrip.com/Flight.svc/json/FlightSearch"
     data = {
         "Adults": "1",
-        "Childs": "1",
+        "Childs": "0",
         "Infants": "0",
         **Auth.test,
         "TraceId": "",
@@ -18,7 +25,7 @@ def get_flights():
             ],
         "FlightSearchDetails": [
             {
-                "BeginDate": "2022-03-15",
+                "BeginDate": "2022-03-25",
                 "Origin": "DEL",
                 "Destination": "HYD"
                 },
@@ -29,3 +36,6 @@ def get_flights():
     # print(mx.jdumps(data))
     r = requests.post(url, json=data)
     return r.json()
+
+if __name__ == '__main__':
+    print(get_flights())

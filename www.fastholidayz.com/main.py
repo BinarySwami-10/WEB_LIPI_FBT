@@ -5,19 +5,20 @@ from fastapi.staticfiles import StaticFiles
 import uvicorn
 
 from api.EaseMyTrip import Auth
-from api.EaseMyTrip import EaseMyTrip
+# from api.EaseMyTrip import EaseMyTrip
 
 
 # GENERAL IMPORTS
 import os
 import colorama
 import requests
+from pathlib import Path
+
 import modulex as mx
 
 # INITIALIZE
 colorama.init()
 app = FastAPI()
-app.mount("/", StaticFiles(directory="./dev/", html = True), name="site")
 
 
 @app.get("/",response_class=HTMLResponse)
@@ -27,11 +28,11 @@ async def home():
 
 @app.get("/api")
 def apihome():
-    return {"Hello": os.getcwd()}
+    return {"Hello": 'This the the home of api Router '}
 
 
 @app.get('/api/fs')
-async def get_flights(src,dst,fromdate):
+def get_flights(src,dst,fromdate):
     url = "https://stagingapi.easemytrip.com/Flight.svc/json/FlightSearch"
     data = {
         "Adults": "1",
@@ -47,22 +48,23 @@ async def get_flights(src,dst,fromdate):
             "7",
             "10",
             "11"
-        ],
+            ],
         "FlightSearchDetails": [
             {
-                "BeginDate": fromdate,
-                "Origin": src,
-                "Destination": dst
-            },
-        ],
-        "TripType": 0,
+                "BeginDate": "2022-03-25",
+                "Origin": "DEL",
+                "Destination": "HYD"
+                },
+            ],
+        "TripType": 1,
         "Cabin": 0
-    }
+        }
     # print(mx.jdumps(data))
-    print(src)
     r = requests.post(url, json=data)
     return r.json()
+    # return {"r.json()","asdasd"}
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", reload=True)
+    app.mount("/", StaticFiles(directory=Path(__file__).parent, html = True), name="site")
+    uvicorn.run(app, reload=True)
