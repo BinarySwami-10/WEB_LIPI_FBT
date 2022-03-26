@@ -2,7 +2,9 @@ call ~CONSTANTS.cmd
 echo %myssh%
 
 ::==COMMIT-NIGGA
-call ~COMMIT.cmd
+git add -A
+git commit -m "PIT=[%DATE%-%TIME%]"
+git push
 
 ::==BUILD STUFF
 call ./www.crayonpapers.in/!BUILD-WEBSITE.cmd
