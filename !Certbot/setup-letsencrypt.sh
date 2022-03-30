@@ -15,4 +15,7 @@ sudo aws s3 sync "/etc/letsencrypt/" "s3://cloud-workspace/WEB_LIPI_FBT/\!Certbo
 sudo aws s3 cp "/etc/nginx/nginx.conf" "s3://cloud-workspace/WEB_LIPI_FBT/nginx.conf"
 
 #DOWNLOAD NEW CERTIFICATE
+sudo aws s3 sync "s3://cloud-workspace/WEB_LIPI_FBT/\!Certbot/certificates/" "/etc/letsencrypt/" 
+sudo aws s3 cp "s3://cloud-workspace/WEB_LIPI_FBT/nginx.conf" "/etc/nginx/nginx.conf" 
+
 aws s3 cp "s3://cloud-workspace/WEB_LIPI_FBT/nginx.conf" "nginx-new.conf" 
