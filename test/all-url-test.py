@@ -15,7 +15,7 @@ if __name__ == '__main__':
     for u in urls:
         try:
             r = requests.get(u)
-            print(r, u, r.url)
+            print(r, u,"=>", r.url)
         except Exception as e:
             print(e.response, u)
 
