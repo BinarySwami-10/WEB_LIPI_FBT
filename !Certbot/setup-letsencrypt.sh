@@ -20,4 +20,4 @@ sudo aws s3 cp "s3://cloud-workspace/WEB_LIPI_FBT/nginx.conf" "/etc/nginx/nginx.
 
 # Download Local
 aws s3 sync "s3://cloud-workspace/WEB_LIPI_FBT/\!Certbot/letsencrypt/" ./letsencrypt
-aws s3 cp "s3://cloud-workspace/WEB_LIPI_FBT/nginx.conf" "nginx-new.conf" 
+aws s3 cp "s3://cloud-workspace/WEB_LIPI_FBT/nginx.conf" "nginx.conf" 
