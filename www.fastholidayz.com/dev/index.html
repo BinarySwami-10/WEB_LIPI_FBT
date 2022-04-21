@@ -20,7 +20,7 @@
 	
 </imports>
 
-<body class="bg-black">
+<body class="">
 
 	<section data-load="./components/menu.html">
 		
@@ -92,7 +92,7 @@
 								tmp=template
 								for (v in vars){
 									tmp=tmp.replace(`{{${v}}}`, vars[v])
-									console.log(v)
+									// console.log(v)
 								}
 								parent.append(tmp)
 							}
@@ -153,10 +153,11 @@
 			</div>
 		</div>
 	</section>
+	<script src="./swamix.js"></script>
 	<!-- _________________________________________________________________ -->
 	
-	<a href="https://crayonpapers.in">cpzpers</a>
-	<link rel="prerender" href="https://crayonpapers.in">
+	<!-- <a href="https://crayonpapers.in">cpzpers</a>
+	<link rel="prerender" href="https://crayonpapers.in"> -->
 	
 
 </body>

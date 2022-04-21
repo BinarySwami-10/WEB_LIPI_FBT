@@ -19,13 +19,7 @@ setTimeout(smoothScrollWindow, 2500)
 /*--------------------*/
 
 /*--------------------*/
-function void_data_loader () {
-	 $('[data-load]').each(function(index, el) {
-		$.get($(el).attr('data-load'), function(data) {
-			$(el).html(data)
-		});
-	});
-}
+
 
 
 /*--------------------*/
@@ -42,5 +36,9 @@ function sleep(ms) {
 /*--------------------DOCUMENT READY TRIGGERS*/
 $(document).ready(function() {
 	$('.row').addClass('mx-0')
-	void_data_loader()
+	$('[data-load]').each(function(index, el) {
+			$.get($(el).attr('data-load'), function(data) {
+				$(el).html(data)
+			});
+		});
 });
