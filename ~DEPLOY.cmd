@@ -17,6 +17,7 @@ echo %~dp0
 aws s3 sync . %s3path% --exclude "*.git\*" --exclude "*.git/*" --exclude "*\node_modules\*" 
 
 %myssh% sudo mkdir -p /srv/lipi/
+%myssh% sudo chmod 777 /srv/lipi/
 %myssh% aws s3 sync %s3path% /srv/lipi/ --exclude "*/node_modules/*"
 
 
