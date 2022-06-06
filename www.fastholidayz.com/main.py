@@ -47,13 +47,13 @@ def get_flights(src,dst,fromdate):
             "6",
             "7",
             "10",
-            "11"
+            "11",
             ],
         "FlightSearchDetails": [
             {
-                "BeginDate": "2022-03-25",
-                "Origin": "DEL",
-                "Destination": "HYD"
+                "BeginDate": fromdate,
+                "Origin": src,
+                "Destination": dst,
                 },
             ],
         "TripType": 1,
@@ -66,5 +66,5 @@ def get_flights(src,dst,fromdate):
 
 
 if __name__ == "__main__":
-    app.mount("/", StaticFiles(directory=Path(__file__).parent, html = True), name="site")
-    uvicorn.run(app, reload=True)
+    app.mount("/dev/", StaticFiles(directory=Path(__file__).parent, html = True), name="site")
+    uvicorn.run('main:app', reload=True, workers=2)

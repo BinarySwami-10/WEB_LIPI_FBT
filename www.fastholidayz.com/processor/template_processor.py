@@ -1,3 +1,7 @@
+'''
+	Minify Files And process templates via the data-load attributes.
+	basically load the data-load url in html inline...
+'''
 import modulex as mx
 import re
 mx.require(['bs4', 'htmlmin', 'minify-html', 'lxml', 'css-html-js-minify'])
@@ -61,3 +65,4 @@ minified = minify_html.minify(str(soupobj),
 mx.fwrite('index.html', minified)
 print("==========> DEV.HTML FILES HAVE BEEN MINIFIED")
 # print(soupobj.prettify())
+

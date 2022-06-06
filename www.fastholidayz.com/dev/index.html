@@ -1,157 +1,164 @@
 <html  lang="">
-    <head>
-        <meta charset="utf-8">
-        <title>FastHolidayz</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<title>FastHolidayz</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:title" content="">
-        <meta property="og:type" content="">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
 
-        <link rel="icon" href="LOGO.webp">
-        <meta name="theme-color" content="#fafafa">
+	<link rel="icon" href="LOGO.webp">
+	<meta name="theme-color" content="#fafafa">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>    
-    </head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>    
+</head>
 
-    <body class="bg-black">
+<imports data-load="./components/imports.html">
+	
+</imports>
 
-        <section data-load="./components/menu.html"> </section>
+<body class="">
 
-        <section class="row py-5" >
-            <section class="col-lg-9 px-0" data-load="./components/hero.html"> </section>
-            <section class="col-lg-3 px-0 mx-auto " style="overflow: hidden;" data-load="./components/booking-engine.html"></section>
-        </section>
+	<section data-load="./components/menu.html">
+		
+	</section>
+
+	<section class="row py-5" >
+		<section class="col-lg-9 px-0" data-load="./components/hero.html"> </section>
+		<section class="col-lg-3 px-0 mx-auto " style="overflow: hidden;" data-load="./components/booking-engine.html"></section>
+	</section>
 
 
-        <section data-load="./components/holiday-cards.html"> 
-        </section>
-        
-        
-        <section class="my-5">
+	<section data-load="./components/holiday-cards.html">
+		
+	</section>
+	
+	
+	<section class="my-5">
 
-            <style type="text/css">
-            section li{
-            float: left;
-            line-height: 2em;
-            padding: 0 1em;
-            width: 25%;
-            color: #066;
-            list-style: none;
-            }
-            #associationam img{
-                max-height: 20vh;
-            }
-            #package-lister{
-                font-family: "Roboto Condensed";
-            }
-            h2{
-                font-family: "Montserrat";
-                font-weight: 800!important;
-            }
-             #package-lister img{
-                box-shadow: 0 0 2px #fff;
-             }
-             #tour-sidelabel{
-                border-radius: 0 0 5em 5em;
-             }
-            </style>
-            
-            <!-- ------------------------- -->
-            <div class="row px-3 pb-5 bg-black text-white">
-                <div class="col-9  ">
-                    <h2 class="display-1 font-weight-bold">International Tour Packages</h2>
-                    <p class="col-lg-8 py-5 mx-auto text-center"> Travel the world with us, but dont know where to start? Take a seat and relax, we have organized international travel packages according to country, just book a by giving us a call and we confirm your trip.</p>
-                    <div id="package-lister" class="row" >
-                        <div class="row py-1">
-                            <img class="col-1 rounded p-0 my-2" src="./css/{{0}}">
-                            <span class="col-1 text-center py-3 pl-0 ml-0 ">{{1}}</span>             
-                        </div>
-                    </div>
-                    <div>
-                        
-                    </div>
+		<style type="text/css">
+			section li{
+				float: left;
+				line-height: 2em;
+				padding: 0 1em;
+				width: 25%;
+				color: #066;
+				list-style: none;
+			}
+			#associationam img{
+				max-height: 20vh;
+			}
+			#package-lister{
+				font-family: "Roboto Condensed";
+			}
+			h2{
+				font-family: "Montserrat";
+				font-weight: 800!important;
+			}
+			#package-lister img{
+				box-shadow: 0 0 2px #fff;
+			}
+			#tour-sidelabel{
+				border-radius: 0 0 5em 5em;
+			}
+		</style>
+		
+		<!-- ------------------------- -->
+		<div class="row px-3 pb-5 bg-black text-white">
+			<div class="col-9  ">
+				<h2 class="display-1 font-weight-bold">International Tour Packages</h2>
+				<p class="col-lg-8 py-5 mx-auto text-center"> Travel the world with us, but dont know where to start? Take a seat and relax, we have organized international travel packages according to country, just book a by giving us a call and we confirm your trip.</p>
+				<div id="package-lister" class="row" >
+					<div class="row py-1">
+						<img class="col-1 rounded p-0 my-2" src="./css/{{0}}">
+						<span class="col-1 text-center py-3 pl-0 ml-0 ">{{1}}</span>             
+					</div>
+				</div>
+				<div>
+					
+				</div>
 
-                    <script type="text/javascript">
-                        country_wise_package_generator= ( () => {
-                            parent = $('#package-lister')
-                            template = parent.children().first().remove().html()
+				<script type="text/javascript">
+					country_wise_package_generator= ( () => {
+						parent = $('#package-lister')
+						template = parent.children().first().remove().html()
 
-                            $.getJSON('./data/allcountries.json',{}, function(json, textStatus) {
-                                for (d of json.slice(24,48)){
-                                    vars=[d['flag_4x3'], d['name'] ]
-                                    tmp=template
-                                    for (v in vars){
-                                        tmp=tmp.replace(`{{${v}}}`, vars[v])
-                                        console.log(v)
-                                    }
-                                    parent.append(tmp)
-                                }
-                            });
-                        })()
-                    </script>
-                </div>
+						$.getJSON('./data/allcountries.json',{}, function(json, textStatus) {
+							for (d of json.slice(24,48)){
+								vars=[d['flag_4x3'], d['name'] ]
+								tmp=template
+								for (v in vars){
+									tmp=tmp.replace(`{{${v}}}`, vars[v])
+									// console.log(v)
+								}
+								parent.append(tmp)
+							}
+						});
+					})()
+				</script>
+			</div>
 
-                <div id="tour-sidelabel" class="col-3 bg-warning text-black">
-                    <h3 class="py-3 text-center display-2 font-weight-bold">Travel Guides</h3>
-                    <p>
-                        To visit India as a foreigner is easier than ever before. A growing number of cities boast gleaming new metro systems, and are linked by faster highways and speedier, more comfortable trains. Affordable but extravagant hotels and a thriving restaurant in the modern cities like Mumbai, make India an attractive place to visit.
-                    </p>
-                </div>
-                <!--  -->
-                
-            </div>
-        </section>
+			<div id="tour-sidelabel" class="col-3 bg-warning text-black">
+				<h3 class="py-3 text-center display-2 font-weight-bold">Travel Guides</h3>
+				<p>
+					To visit India as a foreigner is easier than ever before. A growing number of cities boast gleaming new metro systems, and are linked by faster highways and speedier, more comfortable trains. Affordable but extravagant hotels and a thriving restaurant in the modern cities like Mumbai, make India an attractive place to visit.
+				</p>
+			</div>
+			<!--  -->
+			
+		</div>
+	</section>
 
-        <section class="row">
-            <div class="col-4 ">
-                <style type="text/css">
-                    .social-icon img{
-                        max-height: 3em;
-                    }
-                    .social-icon a{
-                        text-decoration: none;
-                    }
-                </style>
-                <h3 class="text-center">Our Social Media</h3>
-                <div class="social-icon text-center ">
-                    <a class="m-2" target='blank' href="https://www.facebook.com/fastbooktrip1/" >
-                        <img src="./media/social-facebook.png">
-                    </a>
-                    <a class="m-2" target='blank' href="https://twitter.com/fastbooktrip">
-                        <img src="./media/social-twitter.png">
-                    </a>
-                    <a class="m-2" target='blank' href="https://www.instagram.com/fastbooktrip/?hl=en" >
-                        <img src="./media/social-instagram.png">
-                    </a>
-                    <a class="m-2" target='blank' href="mailto:info@fastbooktrip.com" class="gplus">
-                        <img src="./media/social-email.png">
-                    </a>
-                    <a class="m-2" target='blank' href="https://www.youtube.com/channel/UCH1xZUI2xmjYyx-4HeYWp7g" class="gplus">
-                        <img src="./media/social-youtube.png">
-                    </a>
-                </div>
-            </div>
-            
-            <div id="associationam" class="col-4 text-center">
-                <h3 class="">Association With</h3>
-                <div class=" row   ">
-                    <div class="col-auto mx-auto ">
-                        <img class=" " src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Iata_official_logo.png/600px-Iata_official_logo.png">
-                   
-                        <img class=" " src="https://upload.wikimedia.org/wikipedia/commons/1/16/Former_Visa_%28company%29_logo.svg">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- _________________________________________________________________ -->
-        
-        <a href="https://crayonpapers.in">cpzpers</a>
-        <link rel="prerender" href="https://crayonpapers.in">
-        <link rel="stylesheet"href="./styles.css">
-        <script type="module" src="./swamix.js"></script>
+	<section class="row">
+		<div class="col-4 ">
+			<style type="text/css">
+				.social-icon img{
+					max-height: 3em;
+				}
+				.social-icon a{
+					text-decoration: none;
+				}
+			</style>
+			<h3 class="text-center">Our Social Media</h3>
+			<div class="social-icon text-center ">
+				<a class="m-2" target='blank' href="https://www.facebook.com/fastbooktrip1/" >
+					<img src="./media/social-facebook.png">
+				</a>
+				<a class="m-2" target='blank' href="https://twitter.com/fastbooktrip">
+					<img src="./media/social-twitter.png">
+				</a>
+				<a class="m-2" target='blank' href="https://www.instagram.com/fastbooktrip/?hl=en" >
+					<img src="./media/social-instagram.png">
+				</a>
+				<a class="m-2" target='blank' href="mailto:info@fastbooktrip.com" class="gplus">
+					<img src="./media/social-email.png">
+				</a>
+				<a class="m-2" target='blank' href="https://www.youtube.com/channel/UCH1xZUI2xmjYyx-4HeYWp7g" class="gplus">
+					<img src="./media/social-youtube.png">
+				</a>
+			</div>
+		</div>
+		
+		<div id="associationam" class="col-4 text-center">
+			<h3 class="">Association With</h3>
+			<div class=" row   ">
+				<div class="col-auto mx-auto ">
+					<img class=" " src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Iata_official_logo.png/600px-Iata_official_logo.png">
+					
+					<img class=" " src="https://upload.wikimedia.org/wikipedia/commons/1/16/Former_Visa_%28company%29_logo.svg">
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="./swamix.js"></script>
+	<!-- _________________________________________________________________ -->
+	
+	<!-- <a href="https://crayonpapers.in">cpzpers</a>
+	<link rel="prerender" href="https://crayonpapers.in"> -->
+	
 
-    </body>
+</body>
 </html>

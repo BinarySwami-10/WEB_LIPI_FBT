@@ -25,7 +25,7 @@ def get_flights():
             ],
         "FlightSearchDetails": [
             {
-                "BeginDate": "2022-03-25",
+                "BeginDate": "2022-06-01",
                 "Origin": "DEL",
                 "Destination": "HYD"
                 },

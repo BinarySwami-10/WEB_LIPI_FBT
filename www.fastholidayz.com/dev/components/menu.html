@@ -35,14 +35,7 @@
         font-family: 'Luxurious Script';
     }
 
-    .menu-item{
-        text-align: center;
-        transition: 0.5s;
-        clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
-        left: 1em;
-        display: inline-block;
-        max-width: 4vh;
-    }
+
 
     .no-clip{
         clip-path: none;
@@ -80,33 +73,32 @@
 
 </style>
 
-<div  class="row menubar">
-    <div class="branding menu-item no-clip col-auto py-1 px-1 text-nowrap">
+<div  class="row w-100 ">
+    <div class=" menu-item no-clip col-auto py-1 px-1 text-nowrap">
         <img class="x-icon logo f2" src="./LOGO.webp">
         <span class="btn btn-outline-light btn-pill  py-0 m-0  f3 font-weight-bold ">FastHolidayz</span>
         <!-- <p class="text-capitalize tagline px-2">make holidays memorable</p> -->
     </div>
     
     <!-- REMOVE OR KEEP BOOK IN LABEL -->
-    <div class="col-lg-2 py-2  m-0 menu-item   bg-blue">
+    <div class="col-lg-4 py-2  m-0 menu-item   bg-blue">
         <img class="x-icon " src="./media/holiday1-icon.png">
         <span class="x-label">Holidays</span>
     </div>
-    <div class="col-lg-2 py-2  m-0 menu-item animate__animated  " >
+    <div class="col-lg-4 py-2  m-0 menu-item animate__animated  " >
         <img class="x-icon text-left" src="./media/hotel-icon.png" >
         <span class="x-label ">Hotels</span>
     </div>
-    <div class="col-lg-2 py-2  m-0 menu-item animate__animated  ">
+    <div class="col-lg-4 py-2  m-0 menu-item animate__animated  ">
         <img class="x-icon text-left" src="./media/flight-icon.png">
         <span class="x-label">Flights</span>
     </div>            
-    <div class="col-lg-2 py-2  m-0 menu-item animate__animated  ">
+    <div class="col-lg-4 py-2  m-0 menu-item animate__animated  ">
         <img class="x-icon text-left" src="./media/user2-icon.png">
         <span class="x-label">Login</span>
     </div>
 
     <div class="col-auto mx-auto p-0 m-0 menu-item no-clip submenu z-max text-primary text-right">
-        
         <button type="button" class="badge badge-danger btn-danger" data-bs-toggle="popover" title="Menu" data-bs-trigger="focus" data-bs-html="">
             <div class="material-icons md-3 px-2 text-center ">
                 menu
