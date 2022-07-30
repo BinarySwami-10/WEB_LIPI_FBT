@@ -15,9 +15,10 @@ if __name__ == '__main__':
     for u in urls:
         try:
             r = requests.get(u)
-            print(r, u,"=>", r.url)
+            print(r, "=>", r.url)
         except Exception as e:
-            print(e.response, u)
+            print('FAILED', u)
+            print('might be due to SSL')
 
 '''
 [ 'args', 'characters_written', 'errno', 'filename', 'filename2', 'request', 'response', 'strerror', 'winerror', 'with_traceback']
