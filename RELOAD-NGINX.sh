@@ -1,1 +1,1 @@
-sudo cp /srv/lipi/nginx.conf /etc/nginx/nginx.conf && sudo nginx -s reload && echo NGINX RELOADED
+sudo cp /home/ec2-user/github/WEB_LIPI_FBT/nginx.conf /etc/nginx/nginx.conf && sudo nginx -s reload && echo NGINX RELOADED
